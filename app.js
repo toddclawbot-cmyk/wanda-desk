@@ -426,13 +426,15 @@
     if (led.status === "fulfilled")      S.ledger  = parseJSONL(led.value);
     if (watch.status === "fulfilled")    S.watchlist = watch.value;
 
-    renderHero();
-    renderChart();
-    renderAllocations();
-    renderPositions();
-    renderTrades();
-    renderWatchlist();
-    renderChrome();
+    // isolate each render so a single bug can't blank the whole page
+    const safe = (name, fn) => { try { fn(); } catch (e) { console.error(`[render:${name}]`, e); } };
+    safe("hero",        renderHero);
+    safe("chart",       renderChart);
+    safe("allocations", renderAllocations);
+    safe("positions",   renderPositions);
+    safe("trades",      renderTrades);
+    safe("watchlist",   renderWatchlist);
+    safe("chrome",      renderChrome);
   }
 
   // ---------- range buttons ----------
