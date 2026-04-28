@@ -289,6 +289,136 @@
     }
   }
 
+  // ---------- render: P&L attribution ----------
+  // Combines realized P&L (summed from ledger EXIT/SELL entries)
+  // with unrealized P&L (from positions.json).
+  // Shows a divergent bar chart: losers to the left, winners to the right.
+  function computeAttribution() {
+    const byTicker = new Map();
+    const ensure = (tk, cls) => {
+      if (!byTicker.has(tk)) byTicker.set(tk, { ticker: tk, cls: cls || "equity", realized: 0, unrealized: 0 });
+      const row = byTicker.get(tk);
+      if (cls && row.cls !== cls) row.cls = cls;
+      return row;
+    };
+
+    // realized: walk the ledger
+    for (const t of S.ledger) {
+      const tk = t.ticker;
+      if (!tk) continue;
+      const act = (t.action || "").toUpperCase();
+      const cls = t.asset_class || null;
+      const row = ensure(tk, cls);
+      // prefer explicit pnl field; otherwise derive from proceeds - cost
+      if (typeof t.pnl === "number") {
+        row.realized += t.pnl;
+      } else if (act === "EXIT" || act === "SELL") {
+        const proceeds = t.proceeds ?? ((t.exit_price ?? t.price ?? 0) * (t.quantity ?? 0));
+        const cost = t.cost_basis ?? 0;
+        if (proceeds && cost) row.realized += (proceeds - cost);
+      }
+    }
+
+    // unrealized: current positions
+    const classes = ["equity", "crypto", "options"];
+    for (const cls of classes) {
+      const arr = S.positions?.[cls] || [];
+      for (const p of arr) {
+        const row = ensure(p.ticker, cls);
+        const pnl = p.unrealized_pnl ?? ((p.current_price ?? 0) * (p.quantity ?? 0) - (p.cost_basis ?? 0));
+        row.unrealized += pnl;
+      }
+    }
+
+    const rows = [...byTicker.values()]
+      .map(r => ({ ...r, total: r.realized + r.unrealized }))
+      .filter(r => Math.abs(r.total) > 0.005);
+    rows.sort((a, b) => b.total - a.total);
+    return rows;
+  }
+
+  function renderAttribution() {
+    const host = $("#attr-bars");
+    const summary = $("#attr-summary");
+    const rows = computeAttribution();
+
+    // summary KPIs
+    const winners = rows.filter(r => r.total > 0);
+    const losers  = rows.filter(r => r.total < 0);
+    const totalReal = rows.reduce((a, r) => a + r.realized, 0);
+    const totalUnr  = rows.reduce((a, r) => a + r.unrealized, 0);
+    const net = totalReal + totalUnr;
+    const best = winners[0];
+    const worst = losers[losers.length - 1];
+
+    summary.innerHTML = `
+      <div class="attr-kpi ${net >= 0 ? 'pos' : 'neg'}">
+        <div class="k-label">NET P&amp;L</div>
+        <div class="k-value">${fmtUSD(net)}</div>
+        <div class="k-sub">REAL ${fmtUSD(totalReal)} · UNR ${fmtUSD(totalUnr)}</div>
+      </div>
+      <div class="attr-kpi">
+        <div class="k-label">WIN RATE</div>
+        <div class="k-value">${rows.length ? Math.round(winners.length / rows.length * 100) : 0}%</div>
+        <div class="k-sub">${winners.length}W · ${losers.length}L</div>
+      </div>
+      <div class="attr-kpi pos">
+        <div class="k-label">TOP WINNER</div>
+        <div class="k-value">${best ? best.ticker : '—'}</div>
+        <div class="k-sub">${best ? fmtUSD(best.total) : ''}</div>
+      </div>
+      <div class="attr-kpi neg">
+        <div class="k-label">TOP LOSER</div>
+        <div class="k-value">${worst ? worst.ticker : '—'}</div>
+        <div class="k-sub">${worst ? fmtUSD(worst.total) : ''}</div>
+      </div>
+    `;
+
+    host.innerHTML = "";
+    if (!rows.length) {
+      host.innerHTML = `<div style="color:var(--ink-mute);font-size:11px;letter-spacing:.2em;text-align:center;padding:14px">NO P&amp;L YET — ALL POSITIONS FLAT</div>`;
+      return;
+    }
+
+    // scale bars against the largest absolute move so relative magnitude is readable
+    const maxAbs = rows.reduce((m, r) => Math.max(m, Math.abs(r.total), Math.abs(r.realized) + Math.abs(r.unrealized)), 0) || 1;
+
+    for (const r of rows) {
+      const isWin = r.total >= 0;
+      const totalPct = Math.min(100, (Math.abs(r.total) / maxAbs) * 100);
+      // segment the bar: realized vs unrealized share of the |total|
+      const denom = Math.abs(r.realized) + Math.abs(r.unrealized) || 1;
+      const realPct = (Math.abs(r.realized) / denom) * totalPct;
+      const unrPct  = (Math.abs(r.unrealized) / denom) * totalPct;
+
+      const posBar = isWin ? `
+        <div class="attr-pos-fill" style="width:${totalPct}%">
+          <span class="attr-seg-unr"  style="width:${totalPct ? (unrPct / totalPct) * 100 : 0}%"></span>
+          <span class="attr-seg-real" style="width:${totalPct ? (realPct / totalPct) * 100 : 0}%"></span>
+        </div>` : "";
+      const negBar = !isWin ? `
+        <div class="attr-neg-fill" style="width:${totalPct}%">
+          <span class="attr-seg-unr"  style="width:${totalPct ? (unrPct / totalPct) * 100 : 0}%"></span>
+          <span class="attr-seg-real" style="width:${totalPct ? (realPct / totalPct) * 100 : 0}%"></span>
+        </div>` : "";
+
+      const row = document.createElement("div");
+      row.className = "attr-row";
+      row.innerHTML = `
+        <span class="tk">${r.ticker}</span>
+        <span class="cls">${(r.cls || "").toUpperCase().slice(0,3) || "—"}</span>
+        <div class="attr-neg-track">${negBar}</div>
+        <div class="attr-pos-track">${posBar}</div>
+        <div class="attr-amt ${isWin ? 'pos' : 'neg'}">
+          ${fmtUSD(r.total)}
+          <small>R ${fmtUSD(r.realized, 2)} · U ${fmtUSD(r.unrealized, 2)}</small>
+        </div>
+      `;
+      row.title = `${r.ticker} · realized ${fmtUSD(r.realized)} · unrealized ${fmtUSD(r.unrealized)}`;
+      host.appendChild(row);
+    }
+  }
+
   // ---------- render: positions ----------
   function renderPositions() {
     if (!S.positions || !S.nav) return;
@@ -431,6 +561,7 @@
     safe("hero",        renderHero);
     safe("chart",       renderChart);
     safe("allocations", renderAllocations);
+    safe("attribution", renderAttribution);
     safe("positions",   renderPositions);
     safe("trades",      renderTrades);
     safe("watchlist",   renderWatchlist);
