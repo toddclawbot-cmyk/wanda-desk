@@ -469,6 +469,9 @@
     const rows = computeAttribution();
 
     // summary KPIs
+    // NET P&L + TOP WINNER/LOSER are attribution-level (include unrealized).
+    // WIN RATE is ledger-truth ONLY — same source as the hero "CLOSED TRADES"
+    // card, so the two can never disagree.
     const winners = rows.filter(r => r.total > 0);
     const losers  = rows.filter(r => r.total < 0);
     const totalReal = rows.reduce((a, r) => a + r.realized, 0);
@@ -477,6 +480,12 @@
     const best = winners[0];
     const worst = losers[losers.length - 1];
 
+    const stats = S.nav?.stats || statsFromLedger(S.ledger);
+    const closed = stats?.closed ?? 0;
+    const wins = stats?.wins ?? 0;
+    const losses = stats?.losses ?? 0;
+    const wrPct = stats?.win_rate ?? 0;
+
     summary.innerHTML = `
       <div class="attr-kpi ${net >= 0 ? 'pos' : 'neg'}">
         <div class="k-label">NET P&amp;L</div>
@@ -484,9 +493,9 @@
         <div class="k-sub">REAL ${fmtUSD(totalReal)} · UNR ${fmtUSD(totalUnr)}</div>
       </div>
       <div class="attr-kpi">
-        <div class="k-label">WIN RATE</div>
-        <div class="k-value">${rows.length ? Math.round(winners.length / rows.length * 100) : 0}%</div>
-        <div class="k-sub">${winners.length}W · ${losers.length}L</div>
+        <div class="k-label">WIN RATE (CLOSED)</div>
+        <div class="k-value">${closed ? wrPct.toFixed(0) + '%' : '—'}</div>
+        <div class="k-sub">${wins}W · ${losses}L · ${closed} closed</div>
       </div>
       <div class="attr-kpi pos">
         <div class="k-label">TOP WINNER</div>
