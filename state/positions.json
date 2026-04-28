@@ -8,7 +8,7 @@
       "current_price": 429.36,
       "unrealized_pnl": 11.88,
       "pct_change": 0.94,
-      "last_refresh": "2026-04-28T23:07:05+00:00"
+      "last_refresh": "2026-04-28T23:17:40+00:00"
     },
     {
       "ticker": "XLF",
@@ -18,7 +18,7 @@
       "current_price": 51.86,
       "unrealized_pnl": 0.6,
       "pct_change": 0.06,
-      "last_refresh": "2026-04-28T23:07:05+00:00"
+      "last_refresh": "2026-04-28T23:17:40+00:00"
     },
     {
       "ticker": "NVDA",
@@ -28,7 +28,7 @@
       "current_price": 213.15,
       "unrealized_pnl": 0.99,
       "pct_change": -1.59,
-      "last_refresh": "2026-04-28T23:07:05+00:00"
+      "last_refresh": "2026-04-28T23:17:40+00:00"
     },
     {
       "ticker": "GOOGL",
@@ -38,7 +38,7 @@
       "current_price": 349.835,
       "unrealized_pnl": 0.9,
       "pct_change": -0.16,
-      "last_refresh": "2026-04-28T23:07:05+00:00"
+      "last_refresh": "2026-04-28T23:17:40+00:00"
     },
     {
       "ticker": "XLE",
@@ -48,7 +48,7 @@
       "current_price": 57.73,
       "unrealized_pnl": -1.2,
       "pct_change": 1.66,
-      "last_refresh": "2026-04-28T23:07:05+00:00"
+      "last_refresh": "2026-04-28T23:17:40+00:00"
     }
   ],
   "crypto": [
@@ -57,21 +57,21 @@
       "quantity": 0.01303,
       "avg_cost": 76745.78,
       "cost_basis": 1000.0,
-      "current_price": 76223.3828,
+      "current_price": 76334.3984,
       "unrealized_pnl": -6.18,
       "pct_change": -1.31,
-      "last_refresh": "2026-04-28T23:07:05+00:00"
+      "last_refresh": "2026-04-28T23:17:40+00:00"
     },
     {
       "ticker": "ETH-USD",
       "quantity": 0.43719,
       "avg_cost": 2287.32,
       "cost_basis": 999.99,
-      "current_price": 2286.1799,
+      "current_price": 2288.3501,
       "unrealized_pnl": -0.26,
       "pct_change": -0.57,
-      "last_refresh": "2026-04-28T23:07:05+00:00"
+      "last_refresh": "2026-04-28T23:17:40+00:00"
     }
   ],
-  "last_updated": "2026-04-28T23:07:05+00:00"
+  "last_updated": "2026-04-28T23:17:40+00:00"
 }
