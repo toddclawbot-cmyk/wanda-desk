@@ -14,6 +14,13 @@
   const CLASS_CAP = 0.33;          // 33% per asset class
   const CASH_FLOOR = 0.05;
 
+  // Options contracts cover 100 shares — must match trade.py + render.py
+  const OPTIONS_MULTIPLIER = 100;
+  const unitMult = (cls) => (cls === "options" ? OPTIONS_MULTIPLIER : 1);
+  const posMV = (p, cls) => (p.market_value != null
+    ? Number(p.market_value)
+    : Number(p.current_price ?? p.avg_cost ?? 0) * Number(p.quantity ?? 0) * unitMult(cls));
+
   const $ = (sel) => document.querySelector(sel);
 
   // ---------- boot screen ----------
@@ -148,6 +155,28 @@
     el.classList.add("glitch-on");
   }
 
+  // Fallback if nav.json doesn't carry a pre-computed stats block.
+  // Keep this logic in sync with render.realized_stats() on the Pi.
+  const SCRATCH = 0.01;
+  const CLOSING = new Set(["EXIT", "SELL", "TRIM", "RECONCILE_EXIT"]);
+  function statsFromLedger(ledger) {
+    const trades = (ledger || []).filter(t => CLOSING.has((t.action || "").toUpperCase()) && typeof t.pnl === "number");
+    const wins = trades.filter(t => t.pnl > SCRATCH);
+    const losses = trades.filter(t => t.pnl < -SCRATCH);
+    const scratches = trades.filter(t => Math.abs(t.pnl) <= SCRATCH);
+    const realized = trades.reduce((a, t) => a + t.pnl, 0);
+    const decided = wins.length + losses.length;
+    const winRate = decided ? (wins.length / decided) * 100 : 0;
+    const best = trades.reduce((b, t) => (b == null || t.pnl > b.pnl ? t : b), null);
+    const worst = trades.reduce((w, t) => (w == null || t.pnl < w.pnl ? t : w), null);
+    return {
+      closed: trades.length, wins: wins.length, losses: losses.length, scratches: scratches.length,
+      win_rate: +winRate.toFixed(1), realized_pnl: +realized.toFixed(2),
+      best_ticker: best?.ticker, best_pnl: best?.pnl,
+      worst_ticker: worst?.ticker, worst_pnl: worst?.pnl,
+    };
+  }
+
   // ---------- state ----------
   const S = {
     nav: null,
@@ -192,6 +221,37 @@
     const posCount = (S.positions?.equity?.length || 0) + (S.positions?.crypto?.length || 0) + (S.positions?.options?.length || 0);
     $("#stat-positions").textContent = String(posCount);
     $("#positions-count").textContent = `${posCount} open`;
+
+    // Realized W/L — prefer nav.json.stats (written by render.refresh_prices)
+    // and fall back to walking the ledger for robustness.
+    const stats = S.nav.stats || statsFromLedger(S.ledger);
+    const recEl = $("#stat-record");
+    const recSubEl = $("#stat-record-sub");
+    const realEl = $("#stat-realized");
+    const realSubEl = $("#stat-realized-sub");
+    if (recEl && stats) {
+      const closed = stats.closed ?? 0;
+      const wins = stats.wins ?? 0;
+      const losses = stats.losses ?? 0;
+      const wr = stats.win_rate ?? 0;
+      if (closed) {
+        recEl.innerHTML = `<span class="pnl up">${wins}W</span> · <span class="pnl down">${losses}L</span>`;
+        if (recSubEl) recSubEl.textContent = `${wr.toFixed(1)}% · ${closed} closed`;
+      } else {
+        recEl.textContent = "—";
+        if (recSubEl) recSubEl.textContent = "no closes yet";
+      }
+    }
+    if (realEl && stats) {
+      const r = stats.realized_pnl ?? 0;
+      realEl.textContent = fmtUSD(r, 2);
+      realEl.classList.toggle("up", r > 0);
+      realEl.classList.toggle("down", r < 0);
+      if (realSubEl) {
+        const best = stats.best_ticker ? `${stats.best_ticker} ${fmtUSD(stats.best_pnl || 0)}` : "—";
+        realSubEl.textContent = `best ${best}`;
+      }
+    }
 
     // breaker chip
     const breakerEl = $("#breaker-val");
@@ -327,12 +387,12 @@
     if (!S.positions || !S.nav) return;
     const host = $("#alloc-grid");
     const nav = S.nav.nav || 1;
-    const sumBy = (arr) => (arr || []).reduce((acc, p) => acc + (p.current_price * p.quantity || p.cost_basis || 0), 0);
+    const sumBy = (arr, cls) => (arr || []).reduce((acc, p) => acc + posMV(p, cls || "equity"), 0);
 
     const classes = [
-      { key: "EQUITY",  val: sumBy(S.positions.equity),  cap: CLASS_CAP * nav },
-      { key: "CRYPTO",  val: sumBy(S.positions.crypto),  cap: CLASS_CAP * nav },
-      { key: "OPTIONS", val: sumBy(S.positions.options), cap: CLASS_CAP * nav },
+      { key: "EQUITY",  val: sumBy(S.positions.equity, "equity"),   cap: CLASS_CAP * nav },
+      { key: "CRYPTO",  val: sumBy(S.positions.crypto, "crypto"),   cap: CLASS_CAP * nav },
+      { key: "OPTIONS", val: sumBy(S.positions.options, "options"), cap: CLASS_CAP * nav },
       { key: "CASH",    val: S.nav.cash ?? 0,            cap: null, floor: CASH_FLOOR * nav },
     ];
 
@@ -502,21 +562,21 @@
       return;
     }
 
-    // sort by % NAV desc
-    rows.sort((a, b) => {
-      const av = (a[1].current_price * a[1].quantity) / nav;
-      const bv = (b[1].current_price * b[1].quantity) / nav;
-      return bv - av;
-    });
+    // sort by % NAV desc (multiplier-aware)
+    rows.sort((a, b) => posMV(b[1], b[0]) - posMV(a[1], a[0]));
 
     for (const [cls, p] of rows) {
-      const mv = (p.current_price ?? 0) * (p.quantity ?? 0);
+      const mv = posMV(p, cls);
       const navPct = (mv / nav) * 100;
       const pnl = p.unrealized_pnl ?? (mv - (p.cost_basis ?? 0));
       const up = pnl >= 0;
       const tr = document.createElement("tr");
+      const stale = !!p.stale;
+      const staleMark = stale
+        ? `<span class="stale-chip" title="${(p.stale_reason || 'stale quote').replace(/"/g,'&quot;')}">⚠ STALE</span>`
+        : "";
       tr.innerHTML = `
-        <td class="ticker">${p.ticker}</td>
+        <td class="ticker">${p.ticker}${staleMark}</td>
         <td class="class"><span class="cls-chip cls-${cls}">${cls.toUpperCase()}</span></td>
         <td class="num">${fmtNum(p.quantity, cls === "crypto" ? 5 : 2)}</td>
         <td class="num">${fmtUSD(p.avg_cost)}</td>
@@ -525,6 +585,7 @@
         <td class="num ${up ? "pnl up" : "pnl down"}">${fmtUSD(pnl)}</td>
         <td class="num">${navPct.toFixed(1)}%</td>
       `;
+      if (stale) tr.classList.add("row-stale");
       tbody.appendChild(tr);
     }
   }

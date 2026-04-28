@@ -209,6 +209,21 @@ body {
 .stat-value { margin-top: 4px; font-size: 20px; font-weight: 700; color: var(--ink); font-family: var(--display); }
 .stat-value.up { color: var(--green); }
 .stat-value.down { color: var(--red); }
+.stat-sub { margin-top: 2px; font-size: 10px; letter-spacing: .12em; color: var(--ink-mute); font-family: var(--mono); text-transform: uppercase; }
+.stale-chip {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 5px;
+  font-size: 9px;
+  letter-spacing: .12em;
+  font-weight: 700;
+  font-family: var(--mono, "JetBrains Mono", monospace);
+  color: var(--amber, #ffbf00);
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+.row-stale { opacity: 0.78; }
 
 /* ------- chart ------- */
 .chart-wrap { position: relative; height: 300px; }
