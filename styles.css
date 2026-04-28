@@ -326,6 +326,9 @@ body {
 }
 .attr-zero-wrap { position: relative; grid-column: 3 / 5; }
 
+/* hide mobile fallback on desktop */
+.attr-mobile-bar { display: none; }
+
 .attr-amt {
   font-family: var(--display); font-weight: 700; font-size: 14px;
   text-align: right; letter-spacing: .02em;
@@ -380,21 +383,47 @@ body {
   display: flex; flex-direction: column; gap: 6px;
 }
 .trade {
-  display: grid; grid-template-columns: 72px 1fr auto; gap: 8px;
+  display: grid; grid-template-columns: 68px 1fr auto; gap: 8px;
   padding: 8px 10px;
   border: 1px solid var(--line-soft);
   border-radius: 3px;
   background: rgba(6,10,18,.55);
   font-size: 12px;
   align-items: center;
+  min-width: 0;
+}
+.trade.reconcile {
+  border-style: dashed;
+  border-color: rgba(255,176,32,.3);
+  background: rgba(255,176,32,.035);
 }
 .trade .act {
-  font-size: 10px; letter-spacing: .25em; font-weight: 700; text-align: center;
-  padding: 3px 0; border-radius: 2px; border: 1px solid;
+  font-size: 10px; letter-spacing: .18em; font-weight: 700; text-align: center;
+  padding: 4px 2px; border-radius: 2px; border: 1px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .act-BUY { color: var(--green); border-color: rgba(61,255,154,.4); background: rgba(61,255,154,.06); }
 .act-SELL, .act-EXIT { color: var(--red); border-color: rgba(255,59,107,.4); background: rgba(255,59,107,.06); }
 .act-TRIM { color: var(--amber); border-color: rgba(255,176,32,.4); background: rgba(255,176,32,.06); }
+.act-RECONCILE_BUY, .act-RECONCILE_EXIT, .act-RECONCILE_RESTORE {
+  color: var(--amber); border-color: rgba(255,176,32,.4);
+  background: rgba(255,176,32,.06);
+  letter-spacing: .12em;
+  font-size: 9px;
+}
+.trade .body { min-width: 0; overflow: hidden; }
+.trade .body .why {
+  /* clamp long reconciliation messages to 2 lines with ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+}
+.trade .when { white-space: nowrap; }
 .trade .body { color: var(--ink); }
 .trade .body .tk { color: var(--cyan); font-weight: 800; margin-right: 6px; }
 .trade .body .why { color: var(--ink-mute); font-size: 11px; display: block; margin-top: 2px; }
@@ -499,3 +528,148 @@ body {
 *::-webkit-scrollbar { width: 8px; height: 8px; }
 *::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
 *::-webkit-scrollbar-thumb:hover { background: var(--cyan-dim); }
+
+/* =========================================================
+   MOBILE — everything below is phone / small-tablet overrides.
+   Breakpoint order: 900 → 640 → 420.
+   Touch-friendly sizing (44px targets), no horizontal scroll,
+   single-column stacking, NAV readout stays legible.
+   ========================================================= */
+
+/* ---- tablets & small laptops ---- */
+@media (max-width: 900px) {
+  .stage { padding: 14px; gap: 12px; }
+  .topbar { padding: 10px 14px; flex-wrap: wrap; gap: 8px; row-gap: 8px; }
+  .bottombar { padding: 10px 14px; flex-wrap: wrap; gap: 8px; row-gap: 6px; }
+
+  /* stack all mid-size panels */
+  .chart-panel, .alloc-panel, .attr-panel, .positions-panel, .trades-panel {
+    grid-column: span 12;
+  }
+  .chart-wrap { height: 260px; }
+}
+
+/* ---- phones ---- */
+@media (max-width: 640px) {
+  .stage { padding: 10px; gap: 10px; }
+  .panel { padding: 12px 12px 14px; }
+  .panel::before { inset: 4px; }              /* pull corner brackets closer */
+  .panel-label { font-size: 9px; gap: 6px; flex-wrap: wrap; row-gap: 4px; }
+  .panel-label .panel-meta { letter-spacing: .08em; font-size: 9px; }
+
+  /* topbar: hide brand subtitle on phones, keep chips readable */
+  .topbar { padding: 10px 12px; }
+  .brand-name { font-size: 18px; letter-spacing: .18em; }
+  .brand-sub  { display: none; }
+  .chip { font-size: 10px; letter-spacing: .1em; padding: 5px 8px; }
+
+  /* hero — mobile-first typography: big NAV number, stats below */
+  .hero-grid { grid-template-columns: 1fr; gap: 14px; }
+  .nav-big {
+    font-size: clamp(44px, 13vw, 72px);
+    line-height: .95;
+    word-break: break-all;             /* never let the $ number clip */
+  }
+  .nav-delta { font-size: 12px; letter-spacing: .14em; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .stat { padding: 8px 10px; }
+  .stat-label { font-size: 9px; letter-spacing: .16em; }
+  .stat-value { font-size: 15px; }
+
+  /* chart — shorter on phones, thicker line so it reads */
+  .chart-wrap { height: 220px; }
+  .range-btn { padding: 6px 10px; min-height: 30px; }  /* touch target */
+
+  /* allocation rows — make the ticker column narrower */
+  .alloc-row { grid-template-columns: 64px 1fr 52px; gap: 8px; }
+  .alloc-label { font-size: 10px; letter-spacing: .12em; }
+  .alloc-val { font-size: 12px; }
+
+  /* P&L attribution — collapse to a single-bar layout on phones
+     (negative / positive halves were unreadable at mobile widths) */
+  .attr-summary { grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 10px; }
+  .attr-kpi { padding: 8px 10px; }
+  .attr-kpi .k-label { font-size: 9px; letter-spacing: .14em; }
+  .attr-kpi .k-value { font-size: 15px; }
+  .attr-kpi .k-sub { font-size: 9px; letter-spacing: .08em; }
+  .attr-row {
+    grid-template-columns: 56px 1fr 96px;
+    gap: 6px;
+    padding: 6px 4px;
+  }
+  .attr-row .cls { display: none; }          /* free up space */
+  .attr-row .tk  { font-size: 12px; }
+  .attr-row .attr-neg-track,
+  .attr-row > .attr-pos-track {
+    display: none;                           /* left+right track grid doesn't work on phones */
+  }
+  .attr-row .attr-mobile-bar {
+    display: block;                          /* show mobile single-bar */
+    position: relative;
+    height: 14px;
+    background: rgba(6,12,20,.5);
+    border: 1px solid var(--line-soft);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .attr-row .attr-mobile-fill {
+    position: absolute; top: 0; bottom: 0;
+    border-radius: 2px;
+  }
+  .attr-row.pos .attr-mobile-fill { background: linear-gradient(90deg, rgba(61,255,154,.35), rgba(61,255,154,.9)); box-shadow: 0 0 8px rgba(61,255,154,.35); }
+  .attr-row.neg .attr-mobile-fill { background: linear-gradient(90deg, rgba(255,59,107,.35), rgba(255,59,107,.9)); box-shadow: 0 0 8px rgba(255,59,107,.35); }
+  .attr-amt { font-size: 12px; }
+  .attr-amt small { font-size: 9px; letter-spacing: .06em; }
+
+  /* positions table — horizontal scroll with sticky ticker column */
+  .pos-table { font-size: 11px; }
+  .pos-table th, .pos-table td { padding: 6px 8px; font-size: 11px; }
+  .pos-table th { font-size: 9px; letter-spacing: .14em; }
+  .pos-table td.ticker { position: sticky; left: 0; background: rgba(6,10,18,.95); z-index: 1; }
+  .pos-table th:first-child { position: sticky; left: 0; z-index: 2; }
+  .cls-chip { font-size: 8px; letter-spacing: .14em; padding: 1px 4px; }
+
+  /* trades — compress the action chip column */
+  .trade { grid-template-columns: 56px 1fr auto; gap: 6px; padding: 7px 8px; font-size: 11px; }
+  .trade .act { font-size: 9px; letter-spacing: .1em; padding: 3px 2px; }
+  .act-RECONCILE_BUY, .act-RECONCILE_EXIT, .act-RECONCILE_RESTORE { font-size: 8px; }
+  .trade .body .tk { margin-right: 4px; }
+  .trade .body .why { font-size: 10px; -webkit-line-clamp: 2; line-clamp: 2; }
+  .trade .when { font-size: 9px; letter-spacing: .08em; }
+
+  /* watchlist — single-column on narrow phones */
+  .watch-grid { grid-template-columns: 1fr; gap: 8px; }
+  .watch-card { padding: 9px 10px; }
+  .watch-card .tk { font-size: 16px; }
+  .watch-card .strategy { font-size: 9px; letter-spacing: .14em; }
+  .watch-card .trigger { font-size: 10px; }
+  .watch-card .st-line { font-size: 9px; letter-spacing: .08em; }
+  /* disable lift-on-hover — can look stuck on touch devices */
+  .watch-card:hover { transform: none; }
+
+  /* footer tightens + wraps naturally */
+  .foot-right { gap: 6px; font-size: 10px; }
+  .foot-left  { font-size: 10px; }
+
+  /* reduce overlay intensity slightly on smaller screens for readability */
+  .grid-bg { background-size: 32px 32px; }
+}
+
+/* ---- small phones (iPhone SE, etc.) ---- */
+@media (max-width: 420px) {
+  .nav-big { font-size: clamp(38px, 14vw, 54px); }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .topnav { width: 100%; justify-content: flex-start; flex-wrap: wrap; }
+  .attr-summary { grid-template-columns: repeat(2, 1fr); }
+  .bottombar { font-size: 9px; }
+  .foot-right span:nth-child(1),  /* hide inception on micro screens */
+  .foot-right span:nth-child(2) { display: none; }
+}
+
+/* ---- reduced motion — respect user preference ---- */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  .pulse-dot { animation: none; }
+  .glitch-on { animation: none; }
+  .scanlines { opacity: .4; }
+}

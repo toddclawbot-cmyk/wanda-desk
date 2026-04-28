@@ -421,12 +421,13 @@
         </div>` : "";
 
       const row = document.createElement("div");
-      row.className = "attr-row";
+      row.className = "attr-row " + (isWin ? "pos" : "neg");
       row.innerHTML = `
         <span class="tk">${r.ticker}</span>
         <span class="cls">${(r.cls || "").toUpperCase().slice(0,3) || "—"}</span>
         <div class="attr-neg-track">${negBar}</div>
         <div class="attr-pos-track">${posBar}</div>
+        <div class="attr-mobile-bar"><div class="attr-mobile-fill" style="width:${totalPct}%"></div></div>
         <div class="attr-amt ${isWin ? 'pos' : 'neg'}">
           ${fmtUSD(r.total)}
           <small>R ${fmtUSD(r.realized, 2)} · U ${fmtUSD(r.unrealized, 2)}</small>
@@ -489,15 +490,27 @@
       host.innerHTML = `<li class="trade"><span class="body" style="grid-column:1/-1;color:var(--ink-mute);text-align:center">NO TRADES YET</span></li>`;
       return;
     }
+    // abbreviate long action names so the chip doesn't overflow
+    const ACT_LABEL = {
+      BUY: "BUY", SELL: "SELL", EXIT: "EXIT", TRIM: "TRIM", HOLD: "HOLD",
+      RECONCILE_BUY: "RECON·B", RECONCILE_EXIT: "RECON·X", RECONCILE_RESTORE: "RECON·R",
+    };
+
     for (const t of items) {
       const ts = t.timestamp || t.ts;
       const act = (t.action || "").toUpperCase();
+      const label = ACT_LABEL[act] || act.slice(0, 7);
       const why = t.reason || t.strategy || "";
-      const qtyStr = t.quantity != null ? `${fmtNum(t.quantity, 5)} @ ${fmtUSD(t.price ?? t.exit_price ?? 0)}` : "";
+      // only show "qty @ price" if we actually have a price (reconcile restores don't)
+      const price = t.price ?? t.exit_price;
+      const qtyStr = (t.quantity != null && price != null)
+        ? `${fmtNum(t.quantity, 5)} @ ${fmtUSD(price)}`
+        : (t.quantity != null ? `${fmtNum(t.quantity, 5)} shares` : "");
       const li = document.createElement("li");
-      li.className = "trade";
+      li.className = "trade" + (act.startsWith("RECONCILE") ? " reconcile" : "");
+      li.title = act + (why ? " — " + why : "");
       li.innerHTML = `
-        <span class="act act-${act}">${act}</span>
+        <span class="act act-${act}" title="${act}">${label}</span>
         <span class="body"><span class="tk">${t.ticker || "—"}</span>${qtyStr}<span class="why">${escapeHTML(why)}</span></span>
         <span class="when">${fmtTimeAgo(ts)}</span>
       `;
