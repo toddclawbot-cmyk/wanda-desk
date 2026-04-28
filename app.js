@@ -17,35 +17,83 @@
   const $ = (sel) => document.querySelector(sel);
 
   // ---------- boot screen ----------
+  // Each entry is either a string or {t: string, pause?: ms, bar?: true}.
+  // `pause` = extra delay AFTER the line finishes typing.
+  // `bar`   = after typing, animate a short progress bar in-place.
   const BOOT_LINES = [
-    "WANDA // DESK  v1.0",
-    "SYS_BOOT  ......................... OK",
-    "LINK  pi@todd-pi  (192.168.1.16)  ... OK",
-    "FETCH  nav.json / positions.json  .. OK",
-    "STREAM  ledger.jsonl / nav_history  . OK",
-    "RENDER  engaged.",
+    "WANDA // DESK    v1.1",
+    "─────────────────────────────────────────",
+    "SYS_BOOT       ....................... OK",
+    "MANDATE        load aggressive.md ..... OK",
+    { t: "UPLINK         handshake ...............", bar: true },
+    "CHANNEL        secure · read-only ..... OK",
+    "FETCH          nav.json / positions ... OK",
+    "STREAM         ledger / nav_history ... OK",
+    "RISK           breaker ARMED · dd 0.0% · OK",
+    "REGIME         classifier online ..... OK",
+    { t: "RENDER         engaged.", pause: 420 },
     "",
-    "  >  welcome back, todd."
+    { t: "  >  welcome back, operator.", pause: 260 }
   ];
+
   function boot() {
     const el = $("#boot-text");
-    let i = 0, j = 0, out = "";
-    const tick = () => {
+    const rendered = [];
+    let i = 0;
+
+    const commit = (line) => { rendered.push(line); };
+    const paint = (pending = "") => {
+      const body = rendered.join("\n");
+      el.textContent = (body ? body + "\n" : "") + pending;
+    };
+
+    const typeLine = (full, done) => {
+      let j = 0;
+      const step = () => {
+        if (j > full.length) { commit(full); paint(""); return done(); }
+        paint(full.slice(0, j) + "▊");
+        j += 2;
+        setTimeout(step, 14);
+      };
+      step();
+    };
+
+    const runBar = (prefix, done) => {
+      // 20-cell bar; fills left-to-right, then replaces the trailing "..." with OK
+      const cells = 20;
+      let k = 0;
+      const render = () => {
+        const filled = "█".repeat(k) + "░".repeat(cells - k);
+        paint(prefix.replace(/\.+$/, "") + " [" + filled + "]");
+      };
+      const step = () => {
+        if (k > cells) {
+          commit(prefix.replace(/\.+$/, "") + " ............... OK");
+          paint("");
+          return done();
+        }
+        render();
+        k++;
+        setTimeout(step, 32);
+      };
+      step();
+    };
+
+    const next = () => {
       if (i >= BOOT_LINES.length) {
-        setTimeout(() => { $("#boot").classList.add("done"); }, 350);
+        setTimeout(() => { $("#boot").classList.add("done"); }, 420);
         return;
       }
-      const line = BOOT_LINES[i];
-      if (j <= line.length) {
-        out = BOOT_LINES.slice(0, i).join("\n") + (i ? "\n" : "") + line.slice(0, j) + "▊";
-        el.textContent = out;
-        j += 2;
-        setTimeout(tick, 14);
+      const entry = BOOT_LINES[i++];
+      const spec = typeof entry === "string" ? { t: entry } : entry;
+      const after = () => setTimeout(next, 40 + (spec.pause || 0));
+      if (spec.bar) {
+        typeLine(spec.t, () => runBar(spec.t, after));
       } else {
-        i++; j = 0; setTimeout(tick, 40);
+        typeLine(spec.t, after);
       }
     };
-    tick();
+    next();
   }
 
   // ---------- fetch helpers ----------
