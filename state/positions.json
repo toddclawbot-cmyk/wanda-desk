@@ -5,20 +5,20 @@
       "quantity": 3,
       "avg_cost": 425.4,
       "cost_basis": 1276.1999999999998,
-      "current_price": 427.77,
+      "current_price": 429.365,
       "unrealized_pnl": 7.11,
       "pct_change": 0.56,
-      "last_refresh": "2026-04-28T19:16:45.643156+00:00"
+      "last_refresh": "2026-04-28T19:31:30+00:00"
     },
     {
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
       "cost_basis": 1036.6,
-      "current_price": 51.855,
+      "current_price": 51.82,
       "unrealized_pnl": 0.5,
       "pct_change": 0.05,
-      "last_refresh": "2026-04-28T19:16:45.643181+00:00"
+      "last_refresh": "2026-04-28T19:31:30+00:00"
     }
   ],
   "crypto": [
@@ -27,21 +27,21 @@
       "quantity": 0.01303,
       "avg_cost": 76745.78,
       "cost_basis": 999.9975134,
-      "current_price": 76056.5469,
+      "current_price": 76131.9688,
       "unrealized_pnl": -8.98,
       "pct_change": -0.9,
-      "last_refresh": "2026-04-28T19:16:45.643190+00:00"
+      "last_refresh": "2026-04-28T19:31:30+00:00"
     },
     {
       "ticker": "ETH-USD",
       "quantity": 0.43719,
       "avg_cost": 2287.32,
       "cost_basis": 999.9934308000002,
-      "current_price": 2290.78,
+      "current_price": 2291.1399,
       "unrealized_pnl": 1.51,
       "pct_change": 0.15,
-      "last_refresh": "2026-04-28T19:16:45.643197+00:00"
+      "last_refresh": "2026-04-28T19:31:30+00:00"
     }
   ],
-  "last_updated": "2026-04-28T19:16:45.643346+00:00"
+  "last_updated": "2026-04-28T19:31:30+00:00"
 }
