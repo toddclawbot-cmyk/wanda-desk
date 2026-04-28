@@ -8,7 +8,7 @@
       "current_price": 429.25,
       "unrealized_pnl": 11.55,
       "pct_change": 0.91,
-      "last_refresh": "2026-04-28T20:17:05.511811+00:00"
+      "last_refresh": "2026-04-28T20:33:02.914188+00:00"
     },
     {
       "ticker": "XLF",
@@ -18,7 +18,7 @@
       "current_price": 51.85,
       "unrealized_pnl": 0.4,
       "pct_change": 0.04,
-      "last_refresh": "2026-04-28T20:17:05.511811+00:00"
+      "last_refresh": "2026-04-28T20:33:02.914188+00:00"
     },
     {
       "ticker": "NVDA",
@@ -28,7 +28,7 @@
       "current_price": 213.17,
       "unrealized_pnl": 1.05,
       "pct_change": 0.16,
-      "last_refresh": "2026-04-28T20:17:05.511811+00:00"
+      "last_refresh": "2026-04-28T20:33:02.914188+00:00"
     },
     {
       "ticker": "GOOGL",
@@ -38,7 +38,7 @@
       "current_price": 349.78,
       "unrealized_pnl": 0.75,
       "pct_change": 0.07,
-      "last_refresh": "2026-04-28T20:17:05.511811+00:00"
+      "last_refresh": "2026-04-28T20:33:02.914188+00:00"
     },
     {
       "ticker": "XLE",
@@ -48,7 +48,7 @@
       "current_price": 57.71,
       "unrealized_pnl": -1.5,
       "pct_change": -0.17,
-      "last_refresh": "2026-04-28T20:17:05.511811+00:00",
+      "last_refresh": "2026-04-28T20:33:02.914188+00:00",
       "restored_by_repair": "repair-20260428-xle15-pass2"
     }
   ],
@@ -58,21 +58,21 @@
       "quantity": 0.01303,
       "avg_cost": 76745.78,
       "cost_basis": 1000.0,
-      "current_price": 76391.07,
-      "unrealized_pnl": -4.62,
+      "current_price": 76392.0,
+      "unrealized_pnl": -4.61,
       "pct_change": -0.46,
-      "last_refresh": "2026-04-28T20:17:05.511811+00:00"
+      "last_refresh": "2026-04-28T20:33:02.914188+00:00"
     },
     {
       "ticker": "ETH-USD",
       "quantity": 0.43719,
       "avg_cost": 2287.32,
       "cost_basis": 999.99,
-      "current_price": 2299.59,
-      "unrealized_pnl": 5.36,
-      "pct_change": 0.54,
-      "last_refresh": "2026-04-28T20:17:05.511811+00:00"
+      "current_price": 2297.29,
+      "unrealized_pnl": 4.36,
+      "pct_change": 0.44,
+      "last_refresh": "2026-04-28T20:33:02.914188+00:00"
     }
   ],
-  "last_updated": "2026-04-28T20:17:05.511811+00:00"
+  "last_updated": "2026-04-28T20:33:02.914188+00:00"
 }
