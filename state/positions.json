@@ -4,21 +4,41 @@
       "ticker": "MSFT",
       "quantity": 3,
       "avg_cost": 425.4,
-      "cost_basis": 1276.1999999999998,
-      "current_price": 429.365,
-      "unrealized_pnl": 7.11,
-      "pct_change": 0.56,
-      "last_refresh": "2026-04-28T19:31:30+00:00"
+      "cost_basis": 1276.2,
+      "current_price": 429.33,
+      "unrealized_pnl": 11.79,
+      "pct_change": 0.92,
+      "last_refresh": "2026-04-28T19:47:39.986477+00:00"
     },
     {
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
       "cost_basis": 1036.6,
-      "current_price": 51.82,
-      "unrealized_pnl": 0.5,
-      "pct_change": 0.05,
-      "last_refresh": "2026-04-28T19:31:30+00:00"
+      "current_price": 51.86,
+      "unrealized_pnl": 0.6,
+      "pct_change": 0.06,
+      "last_refresh": "2026-04-28T19:47:39.986499+00:00"
+    },
+    {
+      "ticker": "NVDA",
+      "quantity": 3,
+      "avg_cost": 212.82,
+      "cost_basis": 638.46,
+      "current_price": 212.82,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-04-28T19:47:39.986505+00:00"
+    },
+    {
+      "ticker": "GOOGL",
+      "quantity": 3,
+      "avg_cost": 349.53,
+      "cost_basis": 1048.59,
+      "current_price": 349.53,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-04-28T19:47:39.986510+00:00"
     }
   ],
   "crypto": [
@@ -26,22 +46,22 @@
       "ticker": "BTC-USD",
       "quantity": 0.01303,
       "avg_cost": 76745.78,
-      "cost_basis": 999.9975134,
-      "current_price": 76131.9688,
-      "unrealized_pnl": -8.98,
-      "pct_change": -0.9,
-      "last_refresh": "2026-04-28T19:31:30+00:00"
+      "cost_basis": 1000.0,
+      "current_price": 76319.98,
+      "unrealized_pnl": -5.55,
+      "pct_change": -0.55,
+      "last_refresh": "2026-04-28T19:47:39.986516+00:00"
     },
     {
       "ticker": "ETH-USD",
       "quantity": 0.43719,
       "avg_cost": 2287.32,
-      "cost_basis": 999.9934308000002,
-      "current_price": 2291.1399,
-      "unrealized_pnl": 1.51,
-      "pct_change": 0.15,
-      "last_refresh": "2026-04-28T19:31:30+00:00"
+      "cost_basis": 999.99,
+      "current_price": 2300.48,
+      "unrealized_pnl": 5.75,
+      "pct_change": 0.58,
+      "last_refresh": "2026-04-28T19:47:39.986521+00:00"
     }
   ],
-  "last_updated": "2026-04-28T19:31:30+00:00"
+  "last_updated": "2026-04-28T19:47:39.986523+00:00"
 }
