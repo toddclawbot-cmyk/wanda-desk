@@ -102,6 +102,10 @@ body {
 .chip em { font-style: normal; color: var(--cyan); font-weight: 700; }
 #breaker-chip em.armed { color: var(--lime); }
 #breaker-chip em.tripped { color: var(--red); }
+#recon-chip em.ok     { color: var(--lime); }
+#recon-chip em.drift  { color: var(--red); animation: blink 1.2s step-end infinite; }
+#recon-chip em.unknown { color: var(--ink-mute); }
+@keyframes blink { 50% { opacity: .3; } }
 
 /* ------- layout ------- */
 .stage {

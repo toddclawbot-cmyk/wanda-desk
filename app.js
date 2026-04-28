@@ -162,6 +162,24 @@
     if (hb > DEAD_MS) pulse.classList.add("dead");
     else if (hb > STALE_MS) pulse.classList.add("stale");
     $("#heartbeat-text").textContent = `LAST HEARTBEAT · ${fmtTimeAgo(S.nav.last_updated)}`;
+
+    // reconcile chip
+    const reconEl = $("#recon-val");
+    const recon = S.nav.reconcile;
+    if (!reconEl) return;
+    if (!recon) {
+      reconEl.textContent = "—";
+      reconEl.className = "unknown";
+      $("#recon-chip").title = "No reconciliation data yet";
+    } else if (recon.status === "ok") {
+      reconEl.textContent = "OK";
+      reconEl.className = "ok";
+      $("#recon-chip").title = `Books reconcile · ledger cash $${recon.ledger_cash}`;
+    } else {
+      reconEl.textContent = "DRIFT";
+      reconEl.className = "drift";
+      $("#recon-chip").title = `DRIFT · cash_drift $${recon.cash_drift} · nav_drift $${recon.nav_drift}`;
+    }
   }
 
   // ---------- render: chart ----------
