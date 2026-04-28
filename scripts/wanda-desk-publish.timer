@@ -1,0 +1,12 @@
+[Unit]
+Description=Wanda Desk publish cadence (every 2 min)
+
+[Timer]
+OnBootSec=90s
+OnUnitActiveSec=2min
+AccuracySec=15s
+Persistent=true
+Unit=wanda-desk-publish.service
+
+[Install]
+WantedBy=timers.target

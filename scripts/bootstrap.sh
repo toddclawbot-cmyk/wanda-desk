@@ -28,9 +28,7 @@ cd "$TARGET"
 git remote set-url origin "$REPO_URL"
 git config pull.rebase false
 
-if ! command -v jq >/dev/null; then
-  echo "installing jq (needed by publish.sh)"
-  sudo apt-get update -y && sudo apt-get install -y jq
-fi
+# publish.sh uses python3 (already on the Pi) to read NAV from nav.json —
+# no external deps required.
 
 echo "bootstrap ok → $TARGET"

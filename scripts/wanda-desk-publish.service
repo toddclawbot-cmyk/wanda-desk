@@ -1,0 +1,12 @@
+[Unit]
+Description=Wanda Desk — publish state to GitHub Pages
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/wanda-desk-publish/scripts/publish.sh
+Nice=10
+
+[Install]
+WantedBy=default.target

@@ -54,7 +54,7 @@ if git diff --cached --quiet; then
 fi
 
 STAMP="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-NAV="$(jq -r '.nav' "$REPO/state/nav.json" 2>/dev/null || echo "?")"
+NAV="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["nav"])' "$REPO/state/nav.json" 2>/dev/null || echo "?")"
 git -c user.name="Wanda" -c user.email="wanda@todd-pi.local" \
     commit -q -m "heartbeat ${STAMP} · NAV ${NAV}"
 
