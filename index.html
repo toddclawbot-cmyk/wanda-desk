@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="color-scheme" content="dark" />
+  <title>WANDA // DESK</title>
+  <meta name="description" content="Wanda's autonomous paper-trading portfolio — live." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">◢◤</span>
+      <span class="brand-name" data-glitch="WANDA">WANDA</span>
+      <span class="brand-sub">// DESK</span>
+    </div>
+    <nav class="topnav">
+      <span class="chip" id="regime-chip">REGIME&nbsp;// <em id="regime-val">—</em></span>
+      <span class="chip" id="breaker-chip">BREAKER&nbsp;// <em id="breaker-val">ARMED</em></span>
+      <span class="chip" id="clock-chip"><em id="clock-val">--:--:--</em> UTC</span>
+    </nav>
+  </header>
+
+  <main class="stage">
+
+    <!-- HERO -->
+    <section class="panel hero" aria-label="Net asset value">
+      <div class="panel-label"><span>NET&nbsp;ASSET&nbsp;VALUE</span><span class="panel-meta" id="nav-updated">—</span></div>
+      <div class="hero-grid">
+        <div class="hero-nav">
+          <div class="nav-big" id="nav-big" data-glitch="$0.00">$0.00</div>
+          <div class="nav-delta" id="nav-delta">▲ 0.00%</div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-label">vs INCEPTION</div><div class="stat-value" id="stat-incept">—</div></div>
+          <div class="stat"><div class="stat-label">vs PEAK (DD)</div><div class="stat-value" id="stat-dd">—</div></div>
+          <div class="stat"><div class="stat-label">CASH</div><div class="stat-value" id="stat-cash">—</div></div>
+          <div class="stat"><div class="stat-label">POSITIONS</div><div class="stat-value" id="stat-positions">—</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHART -->
+    <section class="panel chart-panel" aria-label="NAV history">
+      <div class="panel-label"><span>NAV&nbsp;&middot;&nbsp;INTRADAY</span><span class="panel-meta"><button class="range-btn active" data-range="1D">1D</button><button class="range-btn" data-range="1W">1W</button><button class="range-btn" data-range="ALL">ALL</button></span></div>
+      <div class="chart-wrap">
+        <canvas id="nav-chart"></canvas>
+      </div>
+    </section>
+
+    <!-- ALLOCATIONS -->
+    <section class="panel alloc-panel" aria-label="Allocations">
+      <div class="panel-label"><span>ALLOCATION&nbsp;//&nbsp;CAPS</span><span class="panel-meta">per-class 33% · cash floor 5%</span></div>
+      <div class="alloc-grid" id="alloc-grid"></div>
+    </section>
+
+    <!-- POSITIONS -->
+    <section class="panel positions-panel" aria-label="Open positions">
+      <div class="panel-label"><span>OPEN&nbsp;POSITIONS</span><span class="panel-meta" id="positions-count">—</span></div>
+      <div class="table-wrap">
+        <table class="pos-table">
+          <thead>
+            <tr>
+              <th>TICKER</th><th>CLASS</th><th class="num">QTY</th><th class="num">AVG</th><th class="num">LAST</th><th class="num">%&nbsp;CHG</th><th class="num">PNL</th><th class="num">%&nbsp;NAV</th>
+            </tr>
+          </thead>
+          <tbody id="pos-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TRADES -->
+    <section class="panel trades-panel" aria-label="Recent trades">
+      <div class="panel-label"><span>RECENT&nbsp;ORDERS</span><span class="panel-meta">ledger · last 10</span></div>
+      <ul class="trades-list" id="trades-list"></ul>
+    </section>
+
+    <!-- WATCHLIST -->
+    <section class="panel watch-panel" aria-label="Watchlist">
+      <div class="panel-label"><span>WATCHLIST&nbsp;//&nbsp;SIGNALS</span><span class="panel-meta">entry triggers armed</span></div>
+      <div class="watch-grid" id="watch-grid"></div>
+    </section>
+
+  </main>
+
+  <footer class="bottombar">
+    <div class="foot-left">
+      <span class="pulse-dot" id="pulse"></span>
+      <span id="heartbeat-text">AWAITING&nbsp;HEARTBEAT</span>
+    </div>
+    <div class="foot-right">
+      <span>INCEPTION&nbsp;<em id="foot-inception">—</em></span>
+      <span>·</span>
+      <span>BUILD&nbsp;<em id="build-tag">wanda-desk</em></span>
+      <span>·</span>
+      <span>REFRESH&nbsp;<em>~15m</em></span>
+    </div>
+  </footer>
+
+  <div id="boot" class="boot">
+    <pre id="boot-text"></pre>
+  </div>
+</body>
+</html>
