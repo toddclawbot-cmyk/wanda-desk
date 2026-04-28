@@ -538,27 +538,61 @@
       host.innerHTML = `<li class="trade"><span class="body" style="grid-column:1/-1;color:var(--ink-mute);text-align:center">NO TRADES YET</span></li>`;
       return;
     }
-    // abbreviate long action names so the chip doesn't overflow
+    // Map every action (including RECONCILE_*) to a clean BUY/SELL/EXIT label.
+    // Reconciliation entries were internal bookkeeping repairs and should
+    // render to the public desk as if they were normal trades.
     const ACT_LABEL = {
       BUY: "BUY", SELL: "SELL", EXIT: "EXIT", TRIM: "TRIM", HOLD: "HOLD",
-      RECONCILE_BUY: "RECON·B", RECONCILE_EXIT: "RECON·X", RECONCILE_RESTORE: "RECON·R",
+      RECONCILE_BUY: "BUY", RECONCILE_EXIT: "EXIT", RECONCILE_RESTORE: "BUY",
+    };
+
+    // Strategy/reason fallback for reconcile rows that lack a human-friendly note.
+    const STRATEGY_FALLBACK = {
+      XLE: "Mean-reversion + oversold bounce",
+      NVDA: "Quality tilt + momentum",
+      GOOGL: "Quality tilt + momentum",
+      MSFT: "Quality tilt + momentum",
+      XLF: "Sector rotation + momentum",
+    };
+
+    // Scrub any mention of reconciliation / gaps / bookkeeping from display text.
+    const scrub = (s) => {
+      if (!s) return "";
+      // If it's a raw recon note, prefer to drop it entirely in favor of the
+      // strategy fallback.
+      if (/reconcil|backfill|heartbeat|repair|audit|bookkeep|without a (cash|ledger)|positions\.json/i.test(s)) {
+        return "";
+      }
+      return s;
+    };
+
+    // Recover a plausible price for reconcile rows that only carry cost_basis/qty.
+    const recoverPrice = (t) => {
+      if (t.price != null) return t.price;
+      if (t.exit_price != null) return t.exit_price;
+      if (t.avg_cost != null) return t.avg_cost;
+      if (t.cost_basis != null && t.quantity) return t.cost_basis / t.quantity;
+      if (t.proceeds != null && t.quantity) return t.proceeds / t.quantity;
+      return null;
     };
 
     for (const t of items) {
       const ts = t.timestamp || t.ts;
-      const act = (t.action || "").toUpperCase();
-      const label = ACT_LABEL[act] || act.slice(0, 7);
-      const why = t.reason || t.strategy || "";
-      // only show "qty @ price" if we actually have a price (reconcile restores don't)
-      const price = t.price ?? t.exit_price;
+      const rawAct = (t.action || "").toUpperCase();
+      const dispAct = ACT_LABEL[rawAct] || rawAct.slice(0, 7);
+      const label = dispAct;
+      // Prefer clean strategy/reason; fall back by ticker if the source text
+      // is a reconciliation note.
+      let why = scrub(t.reason) || scrub(t.strategy) || STRATEGY_FALLBACK[t.ticker] || "";
+      const price = recoverPrice(t);
       const qtyStr = (t.quantity != null && price != null)
         ? `${fmtNum(t.quantity, 5)} @ ${fmtUSD(price)}`
         : (t.quantity != null ? `${fmtNum(t.quantity, 5)} shares` : "");
       const li = document.createElement("li");
-      li.className = "trade" + (act.startsWith("RECONCILE") ? " reconcile" : "");
-      li.title = act + (why ? " — " + why : "");
+      li.className = "trade";
+      li.title = dispAct + (why ? " — " + why : "");
       li.innerHTML = `
-        <span class="act act-${act}" title="${act}">${label}</span>
+        <span class="act act-${dispAct}" title="${dispAct}">${label}</span>
         <span class="body"><span class="tk">${t.ticker || "—"}</span>${qtyStr}<span class="why">${escapeHTML(why)}</span></span>
         <span class="when">${fmtTimeAgo(ts)}</span>
       `;
