@@ -1,3 +1,4 @@
+Positions ready
 {
   "equity": [
     {
@@ -10,7 +11,7 @@
       "market_value": 1288.08,
       "unrealized_pnl": 11.88,
       "pct_change": 0.93,
-      "last_refresh": "2026-04-29T04:01:06+00:00",
+      "last_refresh": "2026-04-29T04:16:03.321964+00:00",
       "stale": false
     },
     {
@@ -23,7 +24,7 @@
       "market_value": 639.45,
       "unrealized_pnl": 0.99,
       "pct_change": 0.16,
-      "last_refresh": "2026-04-29T04:01:06+00:00",
+      "last_refresh": "2026-04-29T04:16:03.321987+00:00",
       "stale": false
     },
     {
@@ -36,7 +37,7 @@
       "market_value": 1037.2,
       "unrealized_pnl": 0.6,
       "pct_change": 0.06,
-      "last_refresh": "2026-04-29T04:01:06+00:00",
+      "last_refresh": "2026-04-29T04:16:03.321990+00:00",
       "stale": false
     },
     {
@@ -49,7 +50,7 @@
       "market_value": 1049.49,
       "unrealized_pnl": 0.9,
       "pct_change": 0.09,
-      "last_refresh": "2026-04-29T04:01:06+00:00",
+      "last_refresh": "2026-04-29T04:16:03.321994+00:00",
       "stale": false
     },
     {
@@ -62,7 +63,7 @@
       "market_value": 865.95,
       "unrealized_pnl": -1.2,
       "pct_change": -0.14,
-      "last_refresh": "2026-04-29T04:01:06+00:00",
+      "last_refresh": "2026-04-29T04:16:03.321996+00:00",
       "stale": false
     }
   ],
@@ -72,12 +73,12 @@
       "quantity": 0.01303,
       "avg_cost": 76861.09,
       "cost_basis": 1001.5,
-      "current_price": 76978.62,
+      "current_price": 76915.86,
       "multiplier": 1,
-      "market_value": 1003.03,
-      "unrealized_pnl": 1.53,
-      "pct_change": 0.15,
-      "last_refresh": "2026-04-29T04:01:06+00:00",
+      "market_value": 1002.21,
+      "unrealized_pnl": 0.71,
+      "pct_change": 0.07,
+      "last_refresh": "2026-04-29T04:16:03.322007+00:00",
       "stale": false
     },
     {
@@ -85,14 +86,14 @@
       "quantity": 0.43719,
       "avg_cost": 2290.77,
       "cost_basis": 1001.5,
-      "current_price": 2311.02,
+      "current_price": 2309.93,
       "multiplier": 1,
-      "market_value": 1010.35,
-      "unrealized_pnl": 8.85,
-      "pct_change": 0.88,
-      "last_refresh": "2026-04-29T04:01:06+00:00",
+      "market_value": 1009.88,
+      "unrealized_pnl": 8.38,
+      "pct_change": 0.84,
+      "last_refresh": "2026-04-29T04:16:03.322013+00:00",
       "stale": false
     }
   ],
-  "last_updated": "2026-04-29T04:01:06+00:00"
+  "last_updated": "2026-04-29T04:16:03.322016+00:00"
 }
