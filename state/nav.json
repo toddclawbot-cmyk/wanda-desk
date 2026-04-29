@@ -1,16 +1,16 @@
 {
-  "nav": 10059.9,
+  "nav": 10058.78,
   "cash": 3157.97,
   "peak": 10066.1,
-  "dd_pct": -0.06,
+  "dd_pct": -0.07,
   "inception": "2026-04-27T14:05:00Z",
-  "last_updated": "2026-04-29T06:31:58.103926+00:00",
+  "last_updated": "2026-04-29T06:49:23+00:00",
   "reconcile": {
     "status": "ok",
     "cash_drift": 0.0,
-    "nav_drift": 0.0,
+    "nav_drift": -0.0,
     "ledger_cash": 3157.97,
-    "checked_at": "2026-04-29T06:31:58.103948+00:00"
+    "checked_at": "2026-04-29T06:49:23+00:00"
   },
   "circuit_breaker": false,
   "stats": {
@@ -24,6 +24,6 @@
     "best_pnl": 18.36,
     "worst_ticker": "AAPL",
     "worst_pnl": -1.4,
-    "checked_at": "2026-04-29T06:31:58.103952+00:00"
+    "checked_at": "2026-04-29T06:49:23+00:00"
   }
 }
