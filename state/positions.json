@@ -62,23 +62,23 @@
       "quantity": 0.01303,
       "avg_cost": 76861.09,
       "cost_basis": 1001.5,
-      "current_price": 76494.1015625,
+      "current_price": 76334.09,
       "multiplier": 1,
-      "market_value": 996.718143359375,
-      "unrealized_pnl": -4.781856640625051,
-      "pct_change": -0.47746972818105693
+      "market_value": 994.6331927,
+      "unrealized_pnl": -6.866807300000005,
+      "pct_change": -0.98
     },
     {
       "ticker": "ETH-USD",
       "quantity": 0.43719,
       "avg_cost": 2290.77,
       "cost_basis": 1001.5,
-      "current_price": 2290.699951171875,
+      "current_price": 2283.85,
       "multiplier": 1,
-      "market_value": 1001.4711116528321,
-      "unrealized_pnl": -0.028888347167935535,
-      "pct_change": -0.003057872598510869
+      "market_value": 998.4763815,
+      "unrealized_pnl": -3.0236184999999978,
+      "pct_change": -0.65
     }
   ],
-  "last_updated": "2026-04-29T01:04:04.049314+00:00"
+  "last_updated": "2026-04-29T01:17:00+00:00"
 }
