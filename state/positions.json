@@ -8,7 +8,7 @@
       "market_value": 1287.75,
       "unrealized_pnl": 11.55,
       "pct_change": 0.91,
-      "last_refresh": "2026-04-29T11:27:57.482901+00:00",
+      "last_refresh": "2026-04-29T11:32:15.985269+00:00",
       "cost_basis": 1276.2,
       "multiplier": 1,
       "stale": false
@@ -21,7 +21,7 @@
       "market_value": 1037.0,
       "unrealized_pnl": 0.4,
       "pct_change": 0.04,
-      "last_refresh": "2026-04-29T11:27:57.482927+00:00",
+      "last_refresh": "2026-04-29T11:32:15.985269+00:00",
       "cost_basis": 1036.6,
       "multiplier": 1,
       "stale": false
@@ -34,7 +34,7 @@
       "market_value": 639.51,
       "unrealized_pnl": 1.05,
       "pct_change": 0.16,
-      "last_refresh": "2026-04-29T11:27:57.482935+00:00",
+      "last_refresh": "2026-04-29T11:32:15.985269+00:00",
       "cost_basis": 638.46,
       "multiplier": 1,
       "stale": false
@@ -47,7 +47,7 @@
       "market_value": 1049.34,
       "unrealized_pnl": 0.75,
       "pct_change": 0.07,
-      "last_refresh": "2026-04-29T11:27:57.482942+00:00",
+      "last_refresh": "2026-04-29T11:32:15.985269+00:00",
       "cost_basis": 1048.59,
       "multiplier": 1,
       "stale": false
@@ -60,7 +60,7 @@
       "market_value": 865.65,
       "unrealized_pnl": -1.5,
       "pct_change": -0.17,
-      "last_refresh": "2026-04-29T11:27:57.482948+00:00",
+      "last_refresh": "2026-04-29T11:32:15.985269+00:00",
       "cost_basis": 867.15,
       "multiplier": 1,
       "stale": false
@@ -71,11 +71,11 @@
       "ticker": "BTC-USD",
       "quantity": 0.01303,
       "avg_cost": 76745.78,
-      "current_price": 77490.5469,
-      "market_value": 1009.7,
-      "unrealized_pnl": 9.7,
+      "current_price": 77511.4609,
+      "market_value": 1009.97,
+      "unrealized_pnl": 9.97,
       "pct_change": 0.97,
-      "last_refresh": "2026-04-29T11:27:57.482955+00:00",
+      "last_refresh": "2026-04-29T11:32:15.985269+00:00",
       "cost_basis": 1000.0,
       "multiplier": 1,
       "stale": false
@@ -84,15 +84,15 @@
       "ticker": "ETH-USD",
       "quantity": 0.43719,
       "avg_cost": 2287.32,
-      "current_price": 2329.7,
-      "market_value": 1018.52,
-      "unrealized_pnl": 18.53,
+      "current_price": 2330.04,
+      "market_value": 1018.67,
+      "unrealized_pnl": 18.68,
       "pct_change": 1.85,
-      "last_refresh": "2026-04-29T11:27:57.482962+00:00",
+      "last_refresh": "2026-04-29T11:32:15.985269+00:00",
       "cost_basis": 999.99,
       "multiplier": 1,
       "stale": false
     }
   ],
-  "last_updated": "2026-04-29T11:27:57.482971+00:00"
+  "last_updated": "2026-04-29T11:32:15.985269+00:00"
 }
