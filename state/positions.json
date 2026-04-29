@@ -9,9 +9,7 @@
       "multiplier": 1,
       "market_value": 1287.75,
       "unrealized_pnl": 11.55,
-      "pct_change": 0.91,
-      "last_refresh": "2026-04-29T00:31:56.526147+00:00",
-      "stale": false
+      "pct_change": 0.91
     },
     {
       "ticker": "XLF",
@@ -22,9 +20,7 @@
       "multiplier": 1,
       "market_value": 1037.0,
       "unrealized_pnl": 0.4,
-      "pct_change": 0.04,
-      "last_refresh": "2026-04-29T00:31:56.526159+00:00",
-      "stale": false
+      "pct_change": 0.04
     },
     {
       "ticker": "NVDA",
@@ -35,9 +31,7 @@
       "multiplier": 1,
       "market_value": 639.51,
       "unrealized_pnl": 1.05,
-      "pct_change": 0.16,
-      "last_refresh": "2026-04-29T00:31:56.526164+00:00",
-      "stale": false
+      "pct_change": 0.16
     },
     {
       "ticker": "GOOGL",
@@ -48,9 +42,7 @@
       "multiplier": 1,
       "market_value": 1049.34,
       "unrealized_pnl": 0.75,
-      "pct_change": 0.07,
-      "last_refresh": "2026-04-29T00:31:56.526168+00:00",
-      "stale": false
+      "pct_change": 0.07
     },
     {
       "ticker": "XLE",
@@ -61,9 +53,7 @@
       "multiplier": 1,
       "market_value": 865.65,
       "unrealized_pnl": -1.5,
-      "pct_change": -0.17,
-      "last_refresh": "2026-04-29T00:31:56.526172+00:00",
-      "stale": false
+      "pct_change": -0.17
     }
   ],
   "crypto": [
@@ -72,27 +62,23 @@
       "quantity": 0.01303,
       "avg_cost": 76861.09,
       "cost_basis": 1001.5,
-      "current_price": 76333.31,
+      "current_price": 76395.96,
       "multiplier": 1,
-      "market_value": 994.62,
-      "unrealized_pnl": -6.88,
-      "pct_change": -0.69,
-      "last_refresh": "2026-04-29T00:31:56.526177+00:00",
-      "stale": false
+      "market_value": 995.44,
+      "unrealized_pnl": -6.06,
+      "pct_change": -0.69
     },
     {
       "ticker": "ETH-USD",
       "quantity": 0.43719,
       "avg_cost": 2290.77,
       "cost_basis": 1001.5,
-      "current_price": 2287.2,
+      "current_price": 2288.86,
       "multiplier": 1,
-      "market_value": 999.94,
-      "unrealized_pnl": -1.56,
-      "pct_change": -0.16,
-      "last_refresh": "2026-04-29T00:31:56.526186+00:00",
-      "stale": false
+      "market_value": 1000.67,
+      "unrealized_pnl": -0.83,
+      "pct_change": -0.16
     }
   ],
-  "last_updated": "2026-04-29T00:31:56.526190+00:00"
+  "last_updated": "2026-04-29T00:46:17.927493+00:00"
 }
