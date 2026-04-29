@@ -1,10 +1,10 @@
 {
-  "nav": 9976.71,
+  "nav": 9975.93,
   "cash": 6583.46,
   "peak": 10076.54,
-  "dd_pct": -0.99,
+  "dd_pct": -1.0,
   "inception": "2026-04-27T14:05:00Z",
-  "last_updated": "2026-04-29T19:47:34Z",
+  "last_updated": "2026-04-29T20:02:36+00:00",
   "circuit_breaker": false,
   "stats": {
     "closed": 6,
@@ -17,6 +17,6 @@
     "best_pnl": 18.36,
     "worst_ticker": "ETH-USD",
     "worst_pnl": -30.34,
-    "checked_at": "2026-04-29T19:47:34Z"
+    "checked_at": "2026-04-29T20:02:36+00:00"
   }
 }
