@@ -4,37 +4,37 @@
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
-      "current_price": 51.91,
-      "market_value": 1038.2,
-      "unrealized_pnl": 1.6,
-      "pct_change": 0.1735
+      "current_price": 51.815,
+      "market_value": 1036.30,
+      "unrealized_pnl": -0.30,
+      "pct_change": -0.029
     },
     {
       "ticker": "NVDA",
       "quantity": 2.0,
       "avg_cost": 212.82,
-      "current_price": 208.93,
-      "market_value": 417.86,
-      "unrealized_pnl": -7.78,
-      "pct_change": -0.2316
+      "current_price": 208.18,
+      "market_value": 416.36,
+      "unrealized_pnl": -9.28,
+      "pct_change": -2.180
     },
     {
       "ticker": "GOOGL",
       "quantity": 3,
       "avg_cost": 349.53,
-      "current_price": 348.93,
-      "market_value": 1046.79,
-      "unrealized_pnl": -1.8,
-      "pct_change": 0.0487
+      "current_price": 349.37,
+      "market_value": 1048.11,
+      "unrealized_pnl": -0.48,
+      "pct_change": -0.046
     },
     {
       "ticker": "XLE",
       "quantity": 15,
       "avg_cost": 57.81,
-      "current_price": 58.885,
-      "market_value": 883.27,
-      "unrealized_pnl": 16.12,
-      "pct_change": -0.1526
+      "current_price": 58.84,
+      "market_value": 882.60,
+      "unrealized_pnl": 15.45,
+      "pct_change": 1.782
     }
   ],
   "crypto": [
@@ -42,20 +42,20 @@
       "ticker": "BTC-USD",
       "quantity": 0.01303,
       "avg_cost": 76745.78,
-      "current_price": 76106.6562,
-      "market_value": 991.67,
-      "unrealized_pnl": -8.33,
-      "pct_change": 0.1737
+      "current_price": 75083.9922,
+      "market_value": 978.34,
+      "unrealized_pnl": -21.65,
+      "pct_change": -1.612
     },
     {
       "ticker": "ETH-USD",
       "quantity": 0.43719,
       "avg_cost": 2287.32,
-      "current_price": 2280.74,
-      "market_value": 997.12,
-      "unrealized_pnl": -2.87,
-      "pct_change": 0.2858
+      "current_price": 2239.9099,
+      "market_value": 979.27,
+      "unrealized_pnl": -20.73,
+      "pct_change": -2.074
     }
   ],
-  "last_updated": "2026-04-29T18:01:47.885363+00:00"
+  "last_updated": "2026-04-29T18:16:20.000000+00:00"
 }

@@ -1,10 +1,10 @@
 {
-  "nav": 10013.23,
+  "nav": 9979.30,
   "cash": 4638.32,
   "peak": 10076.54,
-  "dd_pct": -0.63,
+  "dd_pct": -0.97,
   "inception": "2026-04-27T14:05:00Z",
-  "last_updated": "2026-04-29T18:01:47.885700+00:00",
+  "last_updated": "2026-04-29T18:16:20.000000+00:00",
   "circuit_breaker": false,
   "stats": {
     "closed": 4,
@@ -17,6 +17,6 @@
     "best_pnl": 18.36,
     "worst_ticker": "MSFT",
     "worst_pnl": -8.64,
-    "checked_at": "2026-04-29T17:47:00.473948+00:00"
+    "checked_at": "2026-04-29T18:16:20.000000+00:00"
   }
 }
