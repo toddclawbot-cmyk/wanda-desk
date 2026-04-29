@@ -2,91 +2,91 @@
   {
     "ticker": "NVDA",
     "asset_class": "equity",
-    "thesis": "AI infrastructure buildout – NVIDIA GPU dominance, data center rev recursion, Q1 earnings beat. Riding 12-1 momentum with MACD breakout.",
-    "entry_trigger": "MA50 > MA200 golden cross + RSI > 60 + MACD histogram expanding",
-    "stop_loss": "MA50 ($185)",
-    "target": "MA200 breakout retest + trendline ($240)",
-    "strategy": "Momentum (12-1) + breakout"
-  },
-  {
-    "ticker": "MSFT",
-    "asset_class": "equity",
-    "thesis": "Cloud + AI Copilot growth story. Trading above all major MAs, RSI mid-70s with room to run. Quality tilt with strong institutional ownership.",
-    "entry_trigger": "Price > MA200 + RSI 65-75 + MACD positive",
-    "stop_loss": "MA50 ($394)",
-    "target": "All-time high breakout ($460)",
-    "strategy": "Quality tilt + momentum"
-  },
-  {
-    "ticker": "XLF",
-    "asset_class": "equity",
-    "thesis": "Financials sector – yield curve normalization benefiting banks. Price just cleared MA200 after 6 months below. RSI 66 confirms fresh momentum.",
-    "entry_trigger": "MA50 > MA200 + price > MA200 + RSI 60+",
-    "stop_loss": "MA50 ($50.56)",
-    "target": "Previous resistance $56",
-    "strategy": "Sector rotation + momentum"
-  },
-  {
-    "ticker": "BTC-USD",
-    "asset_class": "crypto",
-    "thesis": "BTC held $75K support, now reclaiming MA20. Institutional demand (ETF flows), macro tailwinds. Base layer crypto allocation.",
-    "entry_trigger": "Price > MA20 ($75,208) + RSI > 50 + MACD histogram turning positive",
-    "stop_loss": "MA50 ($71,785)",
-    "target": "MA200 resistance at $84,756",
-    "strategy": "Trend-following + BTC macro hedge"
-  },
-  {
-    "ticker": "ETH-USD",
-    "asset_class": "crypto",
-    "thesis": "ETH testing MA20 support ($2,309). Layer 2 adoption + post-merge fundamentals intact. MACD histogram negative but narrowing – accumulation phase.",
-    "entry_trigger": "MACD histogram cross above zero + RSI > 45",
-    "stop_loss": "MA50 ($2,188)",
-    "target": "$2,600 (previous range top)",
-    "strategy": "Mean-reversion from oversold + catalyst"
-  },
-  {
-    "ticker": "GLD",
-    "asset_class": "equity",
-    "thesis": "Gold as DXY breakdown play. DXY testing support 98. Gold holding 200EMA ($389) with RSI 48 – not overbought, room to run.",
-    "entry_trigger": "DXY < 98.5 + GLD > MA50 ($446) pullback entry",
-    "stop_loss": "MA200 ($389)",
-    "target": "$460 (inflation hedge target)",
-    "strategy": "Macro pairs trade + low-vol"
-  },
-  {
-    "ticker": "XLE",
-    "asset_class": "equity",
-    "thesis": "Energy sector oversold – RSI 32, MACD histogram negative but flattening. OPEC+ supply management improving. Mean-reversion setup.",
-    "entry_trigger": "RSI < 40 + MACD histogram divergence",
-    "stop_loss": "MA200 ($47.67)",
-    "target": "MA50 ($57.15) or +20%",
-    "strategy": "Mean-reversion + oversold bounce"
+    "thesis": "AI infrastructure backbone — dominant GPU share, data center growth, momentum stock. 50SMA > 200SMA, RSI rising.",
+    "entry_target": 135.00,
+    "stop_loss": 125.00,
+    "max_size_pct": 15,
+    "status": "watching"
   },
   {
     "ticker": "AAPL",
     "asset_class": "equity",
-    "thesis": "AAPL range-bound – waiting for earnings 5/2. Holding 200EMA support ($253). V-shaped recovery from Feb selloff. May post earnings breakout.",
-    "entry_trigger": "MA50 > MA200 (uptrend) + price > $265 pre-earnings",
-    "stop_loss": "MA200 ($253)",
-    "target": "$290 (earnings implied vol)",
-    "strategy": "Event-driven + earnings straddles"
+    "thesis": "Services growth + hardware cycle. Earnings 5/2 — IV crush opportunity via covered call or put sale.",
+    "entry_target": 215.00,
+    "stop_loss": 200.00,
+    "max_size_pct": 15,
+    "status": "watching"
   },
   {
-    "ticker": "GOOGL",
+    "ticker": "MSFT",
     "asset_class": "equity",
-    "thesis": "AI search / Gemini momentum. All MAs stacked bullishly above price. RSI 83 – extended but momentum intact. Quality tech with cloud tailwinds.",
-    "entry_trigger": "Pullback to MA20 ($321) + RSI < 70",
-    "stop_loss": "MA50 ($310)",
-    "target": "$390",
-    "strategy": "Momentum + quality growth"
+    "thesis": "Cloud & AI integration (Copilot). Quality tilt, FCF positive, institutional ownership high.",
+    "entry_target": 415.00,
+    "stop_loss": 390.00,
+    "max_size_pct": 15,
+    "status": "watching"
   },
   {
-    "ticker": "TLT",
+    "ticker": "TSLA",
     "asset_class": "equity",
-    "thesis": "Long-duration Treasuries as defensive anti-beta. If risk-off deepens, TLT rallies. Currently neutral zone – VIX 18.5, not yet alarm.",
-    "entry_trigger": "VIX > 25 OR price > MA200 ($86.75)",
-    "stop_loss": "MA50 ($87.36)",
-    "target": "$95 (flight to safety)",
-    "strategy": "Low-vol defensive + regime hedge"
+    "thesis": "High-beta momentum play. Elon/government tailwinds, robotaxi event pending. Volatile — size small.",
+    "entry_target": 280.00,
+    "stop_loss": 245.00,
+    "max_size_pct": 10,
+    "status": "watching"
+  },
+  {
+    "ticker": "AMZN",
+    "asset_class": "equity",
+    "thesis": "AWS + advertising + e-commerce. Margin expansion story. Breakout above 200SMA on volume.",
+    "entry_target": 205.00,
+    "stop_loss": 185.00,
+    "max_size_pct": 15,
+    "status": "watching"
+  },
+  {
+    "ticker": "SPXL",
+    "asset_class": "equity",
+    "thesis": "3x leveraged S&P — risk-on signal play. Low VIX + bullish macro = strong uptrend. Use small.",
+    "entry_target": 125.00,
+    "stop_loss": 110.00,
+    "max_size_pct": 10,
+    "status": "watching"
+  },
+  {
+    "ticker": "BTC-USD",
+    "asset_class": "crypto",
+    "thesis": "Macro hedge + risk asset. ETF inflows, halving narrative. Base crypto layer.",
+    "entry_target": 95000,
+    "stop_loss": 75000,
+    "max_size_pct": 10,
+    "status": "watching"
+  },
+  {
+    "ticker": "ETH-USD",
+    "asset_class": "crypto",
+    "thesis": "Ethereum network — DeFi + L2 growth. Correlated to BTC but higher beta. Satellite crypto.",
+    "entry_target": 3800,
+    "stop_loss": 2800,
+    "max_size_pct": 8,
+    "status": "watching"
+  },
+  {
+    "ticker": "GLD",
+    "asset_class": "equity",
+    "thesis": "Gold breakout — DXY weakening thesis. Fed dovish pivot narrative. Low-vol safe haven.",
+    "entry_target": 245,
+    "stop_loss": 220,
+    "max_size_pct": 10,
+    "status": "watching"
+  },
+  {
+    "ticker": "XLE",
+    "asset_class": "equity",
+    "thesis": "Energy sector — OPEC+ supply discipline + geopolitical premium. Value tilt vs growth.",
+    "entry_target": 92.00,
+    "stop_loss": 83.00,
+    "max_size_pct": 10,
+    "status": "watching"
   }
 ]
