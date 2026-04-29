@@ -4,51 +4,51 @@
       "ticker": "MSFT",
       "quantity": 3,
       "avg_cost": 425.4,
-      "current_price": 429.25,
-      "market_value": 1287.75,
-      "unrealized_pnl": 11.55,
-      "pct_change": 1.102,
-      "last_refresh": "2026-04-29T10:32:36+00:00"
+      "current_price": 429.3599853515625,
+      "market_value": 1288.0799560546875,
+      "unrealized_pnl": 11.879956054687568,
+      "pct_change": 0.9308851320081154,
+      "last_refresh": "2026-04-29T11:16:29.793588+00:00"
     },
     {
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
-      "current_price": 51.85,
-      "market_value": 1037.0,
-      "unrealized_pnl": 0.4,
-      "pct_change": -0.671,
-      "last_refresh": "2026-04-29T10:32:36+00:00"
+      "current_price": 51.86000061035156,
+      "market_value": 1037.2000122070312,
+      "unrealized_pnl": 0.6000122070312841,
+      "pct_change": 0.057882713392946566,
+      "last_refresh": "2026-04-29T11:16:29.793615+00:00"
     },
     {
       "ticker": "NVDA",
       "quantity": 3,
       "avg_cost": 212.82,
-      "current_price": 213.17,
-      "market_value": 639.51,
-      "unrealized_pnl": 1.05,
-      "pct_change": 1.757,
-      "last_refresh": "2026-04-29T10:32:36+00:00"
+      "current_price": 213.14999389648438,
+      "market_value": 639.4499816894531,
+      "unrealized_pnl": 0.9899816894531455,
+      "pct_change": 0.15505774668000274,
+      "last_refresh": "2026-04-29T11:16:29.793621+00:00"
     },
     {
       "ticker": "GOOGL",
       "quantity": 3,
       "avg_cost": 349.53,
-      "current_price": 349.78,
-      "market_value": 1049.34,
-      "unrealized_pnl": 0.75,
-      "pct_change": 0.353,
-      "last_refresh": "2026-04-29T10:32:36+00:00"
+      "current_price": 349.8349914550781,
+      "market_value": 1049.5049743652344,
+      "unrealized_pnl": 0.9149743652344569,
+      "pct_change": 0.08725759021490352,
+      "last_refresh": "2026-04-29T11:16:29.793625+00:00"
     },
     {
       "ticker": "XLE",
       "quantity": 15,
       "avg_cost": 57.81,
-      "current_price": 57.71,
-      "market_value": 865.65,
-      "unrealized_pnl": -1.5,
-      "pct_change": -0.017,
-      "last_refresh": "2026-04-29T10:32:36+00:00"
+      "current_price": 57.72999954223633,
+      "market_value": 865.9499931335449,
+      "unrealized_pnl": -1.2000068664551122,
+      "pct_change": -0.13838515440870808,
+      "last_refresh": "2026-04-29T11:16:29.793629+00:00"
     }
   ],
   "crypto": [
@@ -56,22 +56,22 @@
       "ticker": "BTC-USD",
       "quantity": 0.01303,
       "avg_cost": 76745.78,
-      "current_price": 77548.29,
-      "market_value": 1010.45,
-      "unrealized_pnl": 10.45,
-      "pct_change": 1.046,
-      "last_refresh": "2026-04-29T11:02:05.354643+00:00"
+      "current_price": 77593.7734375,
+      "market_value": 1011.046867890625,
+      "unrealized_pnl": 11.049354490625015,
+      "pct_change": 1.1049381966018212,
+      "last_refresh": "2026-04-29T11:16:29.793634+00:00"
     },
     {
       "ticker": "ETH-USD",
       "quantity": 0.43719,
       "avg_cost": 2287.32,
-      "current_price": 2331.08,
-      "market_value": 1019.12,
-      "unrealized_pnl": 19.13,
-      "pct_change": 1.913,
-      "last_refresh": "2026-04-29T11:02:05.354657+00:00"
+      "current_price": 2334.52001953125,
+      "market_value": 1020.6288073388672,
+      "unrealized_pnl": 20.635376538867117,
+      "pct_change": 2.0635512097673185,
+      "last_refresh": "2026-04-29T11:16:29.793639+00:00"
     }
   ],
-  "last_updated": "2026-04-29T10:32:36+00:00"
+  "last_updated": "2026-04-29T11:16:29.793642+00:00"
 }
