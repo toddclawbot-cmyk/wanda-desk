@@ -5,8 +5,8 @@
       "quantity": 20,
       "avg_cost": 51.83,
       "current_price": 51.815,
-      "market_value": 1036.30,
-      "unrealized_pnl": -0.30,
+      "market_value": 1036.3,
+      "unrealized_pnl": -0.3,
       "pct_change": -0.029
     },
     {
@@ -16,7 +16,7 @@
       "current_price": 208.18,
       "market_value": 416.36,
       "unrealized_pnl": -9.28,
-      "pct_change": -2.180
+      "pct_change": -2.18
     },
     {
       "ticker": "GOOGL",
@@ -32,30 +32,11 @@
       "quantity": 15,
       "avg_cost": 57.81,
       "current_price": 58.84,
-      "market_value": 882.60,
+      "market_value": 882.6,
       "unrealized_pnl": 15.45,
       "pct_change": 1.782
     }
   ],
-  "crypto": [
-    {
-      "ticker": "BTC-USD",
-      "quantity": 0.01303,
-      "avg_cost": 76745.78,
-      "current_price": 75083.9922,
-      "market_value": 978.34,
-      "unrealized_pnl": -21.65,
-      "pct_change": -1.612
-    },
-    {
-      "ticker": "ETH-USD",
-      "quantity": 0.43719,
-      "avg_cost": 2287.32,
-      "current_price": 2239.9099,
-      "market_value": 979.27,
-      "unrealized_pnl": -20.73,
-      "pct_change": -2.074
-    }
-  ],
-  "last_updated": "2026-04-29T18:16:20.000000+00:00"
+  "crypto": [],
+  "last_updated": "2026-04-29T18:32:57+00:00"
 }
