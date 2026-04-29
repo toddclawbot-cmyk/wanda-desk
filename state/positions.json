@@ -10,7 +10,7 @@
       "market_value": 1288.08,
       "unrealized_pnl": 11.88,
       "pct_change": 0.93,
-      "last_refresh": "2026-04-29T01:46:18+00:00",
+      "last_refresh": "2026-04-29T02:01:00+00:00",
       "stale": false
     },
     {
@@ -23,7 +23,7 @@
       "market_value": 1037.2,
       "unrealized_pnl": 0.6,
       "pct_change": 0.06,
-      "last_refresh": "2026-04-29T01:46:18+00:00",
+      "last_refresh": "2026-04-29T02:01:00+00:00",
       "stale": false
     },
     {
@@ -36,7 +36,7 @@
       "market_value": 639.45,
       "unrealized_pnl": 0.99,
       "pct_change": 0.16,
-      "last_refresh": "2026-04-29T01:46:18+00:00",
+      "last_refresh": "2026-04-29T02:01:00+00:00",
       "stale": false
     },
     {
@@ -49,7 +49,7 @@
       "market_value": 1049.5,
       "unrealized_pnl": 0.91,
       "pct_change": 0.09,
-      "last_refresh": "2026-04-29T01:46:18+00:00",
+      "last_refresh": "2026-04-29T02:01:00+00:00",
       "stale": false
     },
     {
@@ -62,7 +62,7 @@
       "market_value": 865.95,
       "unrealized_pnl": -1.2,
       "pct_change": -0.14,
-      "last_refresh": "2026-04-29T01:46:18+00:00",
+      "last_refresh": "2026-04-29T02:01:00+00:00",
       "stale": false
     }
   ],
@@ -72,12 +72,12 @@
       "quantity": 0.01303,
       "avg_cost": 76861.09,
       "cost_basis": 1001.5,
-      "current_price": 76376.5781,
+      "current_price": 76629.92,
       "multiplier": 1,
-      "market_value": 995.19,
-      "unrealized_pnl": -6.31,
-      "pct_change": -0.63,
-      "last_refresh": "2026-04-29T01:46:18+00:00",
+      "market_value": 998.49,
+      "unrealized_pnl": -3.01,
+      "pct_change": -0.95,
+      "last_refresh": "2026-04-29T02:01:00+00:00",
       "stale": false
     },
     {
@@ -85,14 +85,14 @@
       "quantity": 0.43719,
       "avg_cost": 2290.77,
       "cost_basis": 1001.5,
-      "current_price": 2285.5701,
+      "current_price": 2295.12,
       "multiplier": 1,
-      "market_value": 999.23,
-      "unrealized_pnl": -2.27,
-      "pct_change": -0.23,
-      "last_refresh": "2026-04-29T01:46:18+00:00",
+      "market_value": 1003.4,
+      "unrealized_pnl": 1.73,
+      "pct_change": -0.35,
+      "last_refresh": "2026-04-29T02:01:00+00:00",
       "stale": false
     }
   ],
-  "last_updated": "2026-04-29T01:46:18+00:00"
+  "last_updated": "2026-04-29T02:01:00+00:00"
 }
