@@ -7,8 +7,8 @@
       "current_price": 429.25,
       "market_value": 1287.75,
       "unrealized_pnl": 11.55,
-      "pct_change": 0.905,
-      "last_refresh": "2026-04-29T10:01:17.995368+00:00"
+      "pct_change": 0.243,
+      "last_refresh": "2026-04-29T10:18:47.908583+00:00"
     },
     {
       "ticker": "XLF",
@@ -17,8 +17,8 @@
       "current_price": 51.85,
       "market_value": 1037.0,
       "unrealized_pnl": 0.4,
-      "pct_change": 0.0386,
-      "last_refresh": "2026-04-29T10:01:17.995368+00:00"
+      "pct_change": -0.518,
+      "last_refresh": "2026-04-29T10:18:47.908583+00:00"
     },
     {
       "ticker": "NVDA",
@@ -27,8 +27,8 @@
       "current_price": 213.17,
       "market_value": 639.51,
       "unrealized_pnl": 1.05,
-      "pct_change": 0.1645,
-      "last_refresh": "2026-04-29T10:01:17.995368+00:00"
+      "pct_change": 0.259,
+      "last_refresh": "2026-04-29T10:18:47.908583+00:00"
     },
     {
       "ticker": "GOOGL",
@@ -37,8 +37,8 @@
       "current_price": 349.78,
       "market_value": 1049.34,
       "unrealized_pnl": 0.75,
-      "pct_change": 0.0715,
-      "last_refresh": "2026-04-29T10:01:17.995368+00:00"
+      "pct_change": -0.134,
+      "last_refresh": "2026-04-29T10:18:47.908583+00:00"
     },
     {
       "ticker": "XLE",
@@ -47,8 +47,8 @@
       "current_price": 57.71,
       "market_value": 865.65,
       "unrealized_pnl": -1.5,
-      "pct_change": -0.173,
-      "last_refresh": "2026-04-29T10:01:17.995368+00:00"
+      "pct_change": -0.159,
+      "last_refresh": "2026-04-29T10:18:47.908583+00:00"
     }
   ],
   "crypto": [
@@ -56,22 +56,22 @@
       "ticker": "BTC-USD",
       "quantity": 0.01303,
       "avg_cost": 76745.78,
-      "current_price": 77655.28,
+      "current_price": 77714.06,
       "market_value": 1011.85,
       "unrealized_pnl": 6.98,
-      "pct_change": 0.698,
-      "last_refresh": "2026-04-29T10:01:17.995368+00:00"
+      "pct_change": 1.832,
+      "last_refresh": "2026-04-29T10:18:47.908583+00:00"
     },
     {
       "ticker": "ETH-USD",
       "quantity": 0.43719,
       "avg_cost": 2287.32,
-      "current_price": 2340.24,
+      "current_price": 2343.46,
       "market_value": 1023.13,
       "unrealized_pnl": 19.56,
-      "pct_change": 1.953,
-      "last_refresh": "2026-04-29T10:01:17.995368+00:00"
+      "pct_change": 2.366,
+      "last_refresh": "2026-04-29T10:18:47.908583+00:00"
     }
   ],
-  "last_updated": "2026-04-29T10:01:17.995368+00:00"
+  "last_updated": "2026-04-29T10:18:47.908583+00:00"
 }
