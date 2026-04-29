@@ -1,10 +1,10 @@
 {
-  "nav": 10043.74,
+  "nav": 10041.91,
   "cash": 4638.32,
   "peak": 10076.54,
-  "dd_pct": -0.3255,
+  "dd_pct": -0.34,
   "inception": "2026-04-27T14:05:00Z",
-  "last_updated": "2026-04-29T14:32:00.000000+00:00",
+  "last_updated": "2026-04-29T14:45:00.000000+00:00",
   "circuit_breaker": false,
   "stats": {
     "closed": 4,
@@ -17,13 +17,13 @@
     "best_pnl": 18.36,
     "worst_ticker": "MSFT",
     "worst_pnl": -8.64,
-    "checked_at": "2026-04-29T14:32:00.000000+00:00"
+    "checked_at": "2026-04-29T14:45:00.000000+00:00"
   },
   "reconcile": {
     "status": "ok",
     "cash_drift": 0.0,
     "nav_drift": 0.0,
     "ledger_cash": 4638.32,
-    "checked_at": "2026-04-29T14:32:00.000000+00:00"
+    "checked_at": "2026-04-29T14:45:00.000000+00:00"
   }
 }
