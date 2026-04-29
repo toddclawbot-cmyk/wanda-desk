@@ -4,37 +4,37 @@
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
-      "current_price": 51.825,
-      "market_value": 1036.5,
-      "unrealized_pnl": -0.1,
-      "pct_change": -0.048
+      "current_price": 51.845,
+      "market_value": 1036.9,
+      "unrealized_pnl": 0.30000000000001137,
+      "pct_change": 0.028940767895035968
     },
     {
       "ticker": "NVDA",
       "quantity": 2.0,
       "avg_cost": 212.82,
-      "current_price": 209.365,
-      "market_value": 418.73,
-      "unrealized_pnl": -6.91,
-      "pct_change": -1.74
+      "current_price": 208.935,
+      "market_value": 417.87,
+      "unrealized_pnl": -7.769999999999982,
+      "pct_change": -1.8254863264730692
     },
     {
       "ticker": "GOOGL",
       "quantity": 3,
       "avg_cost": 349.53,
-      "current_price": 349.025,
-      "market_value": 1047.08,
-      "unrealized_pnl": -1.52,
-      "pct_change": -0.22
+      "current_price": 347.88,
+      "market_value": 1043.6399999999999,
+      "unrealized_pnl": -4.949999999999932,
+      "pct_change": -0.47206248390695427
     },
     {
       "ticker": "XLE",
       "quantity": 15,
       "avg_cost": 57.81,
-      "current_price": 59.025,
-      "market_value": 885.38,
-      "unrealized_pnl": 18.23,
-      "pct_change": 2.28
+      "current_price": 58.985,
+      "market_value": 884.775,
+      "unrealized_pnl": 17.624999999999957,
+      "pct_change": 2.0325203252032464
     }
   ],
   "crypto": [
@@ -42,20 +42,20 @@
       "ticker": "BTC-USD",
       "quantity": 0.01303,
       "avg_cost": 76745.78,
-      "current_price": 75838.0,
-      "market_value": 988.17,
-      "unrealized_pnl": -11.83,
-      "pct_change": -0.36
+      "current_price": 75819.65,
+      "market_value": 987.9300394999999,
+      "unrealized_pnl": -12.06747390000006,
+      "pct_change": -1.2067503907055244
     },
     {
       "ticker": "ETH-USD",
       "quantity": 0.43719,
       "avg_cost": 2287.32,
-      "current_price": 2273.8,
-      "market_value": 994.14,
-      "unrealized_pnl": -5.91,
-      "pct_change": -0.53
+      "current_price": 2267.07,
+      "market_value": 991.1403333000002,
+      "unrealized_pnl": -8.8530975,
+      "pct_change": -0.8853155658150147
     }
   ],
-  "last_updated": "2026-04-29T16:30:00.000000+00:00"
+  "last_updated": "2026-04-29T17:01:13.541087+00:00"
 }
