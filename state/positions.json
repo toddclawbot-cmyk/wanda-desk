@@ -4,34 +4,34 @@
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
-      "current_price": 52.065,
-      "market_value": 1041.30,
-      "unrealized_pnl": 4.70,
+      "current_price": 52.03,
+      "market_value": 1040.6,
+      "unrealized_pnl": 4.000000000000057,
       "cost_basis": 1036.6,
-      "pct_change": 0.45,
-      "last_refresh": "2026-04-30T15:02:15.095637+00:00"
+      "pct_change": 0.38587690526722523,
+      "last_refresh": "2026-04-30T15:16:28.995771+00:00"
     },
     {
       "ticker": "NVDA",
       "quantity": 2,
       "avg_cost": 212.82,
-      "current_price": 202.40,
-      "market_value": 404.80,
-      "unrealized_pnl": -20.84,
+      "current_price": 201.88,
+      "market_value": 403.76,
+      "unrealized_pnl": -21.879999999999995,
       "cost_basis": 425.64,
-      "pct_change": -4.90,
-      "last_refresh": "2026-04-30T15:02:15.095637+00:00"
+      "pct_change": -5.14049431444413,
+      "last_refresh": "2026-04-30T15:16:28.995771+00:00"
     },
     {
       "ticker": "GOOGL",
       "quantity": 3,
       "avg_cost": 349.53,
-      "current_price": 373.33,
-      "market_value": 1119.99,
-      "unrealized_pnl": 71.40,
+      "current_price": 377.41,
+      "market_value": 1132.23,
+      "unrealized_pnl": 83.64000000000016,
       "cost_basis": 1048.59,
-      "pct_change": 6.81,
-      "last_refresh": "2026-04-30T15:02:15.095637+00:00"
+      "pct_change": 7.976425485652178,
+      "last_refresh": "2026-04-30T15:16:28.995771+00:00"
     },
     {
       "ticker": "XLE",
@@ -39,13 +39,13 @@
       "avg_cost": 57.81,
       "current_price": 59.35,
       "market_value": 890.25,
-      "unrealized_pnl": 23.10,
+      "unrealized_pnl": 23.099999999999987,
       "cost_basis": 867.15,
-      "pct_change": 2.66,
-      "last_refresh": "2026-04-30T15:02:15.095637+00:00"
+      "pct_change": 2.6638989794153245,
+      "last_refresh": "2026-04-30T15:16:28.995771+00:00"
     }
   ],
   "crypto": [],
   "options": [],
-  "last_updated": "2026-04-30T15:02:15.095637+00:00"
+  "last_updated": "2026-04-30T15:16:28.995771+00:00"
 }
