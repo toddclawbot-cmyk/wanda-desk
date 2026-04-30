@@ -4,12 +4,12 @@
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
-      "current_price": 52.14,
-      "market_value": 1042.8,
-      "unrealized_pnl": 6.2,
+      "current_price": 52.13,
+      "market_value": 1042.6,
+      "unrealized_pnl": 6.0,
       "cost_basis": 1036.6,
-      "pct_change": 0.6,
-      "last_refresh": "2026-04-30T20:17:24.217574+00:00",
+      "pct_change": 0.58,
+      "last_refresh": "2026-04-30T20:31:53.525059+00:00",
       "multiplier": 1,
       "stale": false
     },
@@ -22,7 +22,7 @@
       "unrealized_pnl": -26.5,
       "cost_basis": 425.64,
       "pct_change": -6.23,
-      "last_refresh": "2026-04-30T20:17:24.217574+00:00",
+      "last_refresh": "2026-04-30T20:31:53.525082+00:00",
       "multiplier": 1,
       "stale": false
     },
@@ -35,7 +35,7 @@
       "unrealized_pnl": 105.81,
       "cost_basis": 1048.59,
       "pct_change": 10.09,
-      "last_refresh": "2026-04-30T20:17:24.217574+00:00",
+      "last_refresh": "2026-04-30T20:31:53.525089+00:00",
       "multiplier": 1,
       "stale": false
     },
@@ -43,12 +43,12 @@
       "ticker": "XLE",
       "quantity": 15,
       "avg_cost": 57.81,
-      "current_price": 59.62,
-      "market_value": 894.3,
-      "unrealized_pnl": 27.15,
+      "current_price": 59.65,
+      "market_value": 894.75,
+      "unrealized_pnl": 27.6,
       "cost_basis": 867.15,
-      "pct_change": 3.13,
-      "last_refresh": "2026-04-30T20:17:24.217574+00:00",
+      "pct_change": 3.18,
+      "last_refresh": "2026-04-30T20:31:53.525094+00:00",
       "multiplier": 1,
       "stale": false
     },
@@ -61,7 +61,7 @@
       "unrealized_pnl": -1.7,
       "cost_basis": 817.26,
       "pct_change": -0.21,
-      "last_refresh": "2026-04-30T20:17:24.217574+00:00",
+      "last_refresh": "2026-04-30T20:31:53.525099+00:00",
       "multiplier": 1,
       "stale": false
     }
@@ -71,18 +71,18 @@
       "ticker": "SOL-USD",
       "quantity": 6,
       "avg_cost": 82.94,
-      "current_price": 83.08,
-      "market_value": 498.48,
-      "unrealized_pnl": 0.84,
+      "current_price": 83.06,
+      "market_value": 498.36,
+      "unrealized_pnl": 0.72,
       "cost_basis": 497.64,
-      "pct_change": 0.17,
+      "pct_change": 0.14,
       "entry_date": "2026-04-30T17:33:00+00:00",
       "stop_loss": 66.35,
-      "last_refresh": "2026-04-30T20:17:24.217574+00:00",
+      "last_refresh": "2026-04-30T20:31:53.525105+00:00",
       "multiplier": 1,
       "stale": false
     }
   ],
   "options": [],
-  "last_updated": "2026-04-30T20:17:24.217574+00:00"
+  "last_updated": "2026-04-30T20:31:53.525108+00:00"
 }
