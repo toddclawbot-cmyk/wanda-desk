@@ -5,12 +5,12 @@
       "quantity": 20,
       "avg_cost": 51.83,
       "multiplier": 1,
-      "current_price": 51.92,
-      "market_value": 1038.4,
-      "unrealized_pnl": 1.800000000000182,
+      "current_price": 51.91999816894531,
+      "market_value": 1038.3999633789062,
+      "unrealized_pnl": 1.799963378906284,
       "cost_basis": 1036.6,
-      "pct_change": 0.17364460737025547,
-      "last_refresh": "2026-04-30T11:01:32.036153+00:00",
+      "pct_change": 0.17364107456167124,
+      "last_refresh": "2026-04-30T11:46:46.642503+00:00",
       "stale": false
     },
     {
@@ -23,7 +23,7 @@
       "unrealized_pnl": -7.139999999999986,
       "cost_basis": 425.64,
       "pct_change": -1.6774739216239045,
-      "last_refresh": "2026-04-30T11:01:32.036177+00:00",
+      "last_refresh": "2026-04-30T11:46:46.642545+00:00",
       "stale": false
     },
     {
@@ -31,12 +31,12 @@
       "quantity": 3,
       "avg_cost": 349.53,
       "multiplier": 1,
-      "current_price": 349.94,
-      "market_value": 1049.82,
-      "unrealized_pnl": 1.2300000000000182,
+      "current_price": 349.94000244140625,
+      "market_value": 1049.8200073242188,
+      "unrealized_pnl": 1.2300073242188319,
       "cost_basis": 1048.59,
-      "pct_change": 0.11730037478900955,
-      "last_refresh": "2026-04-30T11:01:32.036181+00:00",
+      "pct_change": 0.1173010732716154,
+      "last_refresh": "2026-04-30T11:46:46.642559+00:00",
       "stale": false
     },
     {
@@ -44,16 +44,16 @@
       "quantity": 15,
       "avg_cost": 57.81,
       "multiplier": 1,
-      "current_price": 59.03,
-      "market_value": 885.45,
-      "unrealized_pnl": 18.300000000000068,
+      "current_price": 59.029998779296875,
+      "market_value": 885.4499816894531,
+      "unrealized_pnl": 18.29998168945309,
       "cost_basis": 867.15,
-      "pct_change": 2.1103615291472044,
-      "last_refresh": "2026-04-30T11:01:32.036185+00:00",
+      "pct_change": 2.1103594175694043,
+      "last_refresh": "2026-04-30T11:46:46.642568+00:00",
       "stale": false
     }
   ],
   "crypto": [],
   "options": [],
-  "last_updated": "2026-04-30T10:46:15.000000+00:00"
+  "last_updated": "2026-04-30T11:46:46.642575+00:00"
 }
