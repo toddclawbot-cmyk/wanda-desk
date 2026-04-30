@@ -4,44 +4,44 @@
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
-      "current_price": 52.12,
-      "market_value": 1042.4,
-      "unrealized_pnl": 5.8,
+      "current_price": 52.125,
+      "market_value": 1042.5,
+      "unrealized_pnl": 5.9,
       "cost_basis": 1036.6,
-      "pct_change": 0.56
+      "pct_change": 0.57
     },
     {
       "ticker": "NVDA",
       "quantity": 2,
       "avg_cost": 212.82,
-      "current_price": 200.505,
-      "market_value": 401.01,
-      "unrealized_pnl": -24.63,
+      "current_price": 199.925,
+      "market_value": 399.85,
+      "unrealized_pnl": -25.79,
       "cost_basis": 425.64,
-      "pct_change": -5.79
+      "pct_change": -6.06
     },
     {
       "ticker": "GOOGL",
       "quantity": 3,
       "avg_cost": 349.53,
-      "current_price": 376.55,
-      "market_value": 1129.65,
-      "unrealized_pnl": 81.06,
+      "current_price": 377.039,
+      "market_value": 1131.12,
+      "unrealized_pnl": 82.53,
       "cost_basis": 1048.59,
-      "pct_change": 7.73
+      "pct_change": 7.87
     },
     {
       "ticker": "XLE",
       "quantity": 15,
       "avg_cost": 57.81,
-      "current_price": 59.575,
-      "market_value": 893.62,
-      "unrealized_pnl": 26.47,
+      "current_price": 59.72,
+      "market_value": 895.8,
+      "unrealized_pnl": 28.65,
       "cost_basis": 867.15,
-      "pct_change": 3.05
+      "pct_change": 3.3
     }
   ],
   "crypto": [],
   "options": [],
-  "last_updated": "2026-04-30T16:16:00Z"
+  "last_updated": "2026-04-30T16:31:59.976793+00:00"
 }
