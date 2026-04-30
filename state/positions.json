@@ -8,7 +8,7 @@
       "market_value": 1038.4,
       "unrealized_pnl": 1.8,
       "pct_change": 0.174,
-      "last_refresh": "2026-04-30T01:16:59.825304+00:00",
+      "last_refresh": "2026-04-30T01:31:35.800881+00:00",
       "cost_basis": 1036.6,
       "multiplier": 1,
       "stale": false
@@ -21,7 +21,7 @@
       "market_value": 418.5,
       "unrealized_pnl": -7.14,
       "pct_change": -1.674,
-      "last_refresh": "2026-04-30T01:16:59.825349+00:00",
+      "last_refresh": "2026-04-30T01:31:35.800881+00:00",
       "cost_basis": 425.64,
       "multiplier": 1,
       "stale": false
@@ -34,7 +34,7 @@
       "market_value": 1049.82,
       "unrealized_pnl": 1.23,
       "pct_change": 0.117,
-      "last_refresh": "2026-04-30T01:16:59.825364+00:00",
+      "last_refresh": "2026-04-30T01:31:35.800881+00:00",
       "cost_basis": 1048.59,
       "multiplier": 1,
       "stale": false
@@ -47,7 +47,7 @@
       "market_value": 885.45,
       "unrealized_pnl": 18.3,
       "pct_change": 2.11,
-      "last_refresh": "2026-04-30T01:16:59.825375+00:00",
+      "last_refresh": "2026-04-30T01:31:35.800881+00:00",
       "cost_basis": 867.15,
       "multiplier": 1,
       "stale": false
@@ -55,5 +55,5 @@
   ],
   "crypto": [],
   "options": [],
-  "last_updated": "2026-04-30T01:16:59.825384+00:00"
+  "last_updated": "2026-04-30T01:31:35.800881+00:00"
 }
