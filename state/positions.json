@@ -4,45 +4,45 @@
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
-      "current_price": 52.075,
-      "market_value": 1041.5,
-      "unrealized_pnl": 4.9,
+      "current_price": 52.06,
+      "market_value": 1041.2,
+      "unrealized_pnl": 4.600000000000136,
       "cost_basis": 1036.6,
-      "pct_change": 0.47,
-      "last_refresh": "2026-04-30T17:47:20.341639+00:00"
+      "pct_change": 0.44375844105731593,
+      "last_refresh": "2026-04-30T18:00:00+00:00"
     },
     {
       "ticker": "NVDA",
       "quantity": 2,
       "avg_cost": 212.82,
-      "current_price": 200.87,
-      "market_value": 401.74,
-      "unrealized_pnl": -23.9,
+      "current_price": 201.49,
+      "market_value": 402.98,
+      "unrealized_pnl": -22.659999999999968,
       "cost_basis": 425.64,
-      "pct_change": -5.62,
-      "last_refresh": "2026-04-30T17:47:20.341639+00:00"
+      "pct_change": -5.323747768066904,
+      "last_refresh": "2026-04-30T18:00:00+00:00"
     },
     {
       "ticker": "GOOGL",
       "quantity": 3,
       "avg_cost": 349.53,
-      "current_price": 383.03,
-      "market_value": 1149.09,
-      "unrealized_pnl": 100.5,
+      "current_price": 385.24,
+      "market_value": 1155.72,
+      "unrealized_pnl": 107.13000000000011,
       "cost_basis": 1048.59,
-      "pct_change": 9.58,
-      "last_refresh": "2026-04-30T17:47:20.341639+00:00"
+      "pct_change": 10.216576545647023,
+      "last_refresh": "2026-04-30T18:00:00+00:00"
     },
     {
       "ticker": "XLE",
       "quantity": 15,
       "avg_cost": 57.81,
-      "current_price": 59.365,
-      "market_value": 890.48,
-      "unrealized_pnl": 23.33,
+      "current_price": 59.24,
+      "market_value": 888.6,
+      "unrealized_pnl": 21.449999999999932,
       "cost_basis": 867.15,
-      "pct_change": 2.69,
-      "last_refresh": "2026-04-30T17:47:20.341639+00:00"
+      "pct_change": 2.4736204808856517,
+      "last_refresh": "2026-04-30T18:00:00+00:00"
     }
   ],
   "crypto": [
@@ -50,16 +50,16 @@
       "ticker": "SOL-USD",
       "quantity": 6,
       "avg_cost": 82.94,
-      "current_price": 82.98,
-      "market_value": 497.88,
-      "unrealized_pnl": 0.24,
+      "current_price": 83.11,
+      "market_value": 498.65999999999997,
+      "unrealized_pnl": 1.0199999999999818,
       "cost_basis": 497.64,
-      "pct_change": 0.05,
+      "pct_change": 0.20496744634675304,
       "entry_date": "2026-04-30T17:33:00+00:00",
       "stop_loss": 66.35,
-      "last_refresh": "2026-04-30T17:47:20.341639+00:00"
+      "last_refresh": "2026-04-30T18:00:00+00:00"
     }
   ],
   "options": [],
-  "last_updated": "2026-04-30T17:47:20.341639+00:00"
+  "last_updated": "2026-04-30T18:00:00+00:00"
 }
