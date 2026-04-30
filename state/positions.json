@@ -4,48 +4,48 @@
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
-      "current_price": 51.93,
-      "market_value": 1038.6,
-      "unrealized_pnl": 2.0,
+      "current_price": 52.015,
+      "market_value": 1040.3,
+      "unrealized_pnl": 3.7,
       "cost_basis": 1036.6,
-      "pct_change": 0.02,
-      "last_refresh": "2026-04-30T14:17:25.683570+00:00"
+      "pct_change": 0.36,
+      "last_refresh": "2026-04-30T14:32:09.349815+00:00"
     },
     {
       "ticker": "NVDA",
       "quantity": 2,
       "avg_cost": 212.82,
-      "current_price": 200.3,
-      "market_value": 400.6,
-      "unrealized_pnl": -25.04,
+      "current_price": 200.492,
+      "market_value": 400.98,
+      "unrealized_pnl": -24.66,
       "cost_basis": 425.64,
-      "pct_change": -4.27,
-      "last_refresh": "2026-04-30T14:17:25.683570+00:00"
+      "pct_change": -5.79,
+      "last_refresh": "2026-04-30T14:32:09.349838+00:00"
     },
     {
       "ticker": "GOOGL",
       "quantity": 3,
       "avg_cost": 349.53,
-      "current_price": 369.93,
-      "market_value": 1109.79,
-      "unrealized_pnl": 61.2,
+      "current_price": 369.2,
+      "market_value": 1107.6,
+      "unrealized_pnl": 59.01,
       "cost_basis": 1048.59,
-      "pct_change": 5.71,
-      "last_refresh": "2026-04-30T14:17:25.683570+00:00"
+      "pct_change": 5.63,
+      "last_refresh": "2026-04-30T14:32:09.349845+00:00"
     },
     {
       "ticker": "XLE",
       "quantity": 15,
       "avg_cost": 57.81,
-      "current_price": 58.94,
-      "market_value": 884.1,
-      "unrealized_pnl": 16.95,
+      "current_price": 59.17,
+      "market_value": 887.55,
+      "unrealized_pnl": 20.4,
       "cost_basis": 867.15,
-      "pct_change": -0.15,
-      "last_refresh": "2026-04-30T14:17:25.683570+00:00"
+      "pct_change": 2.35,
+      "last_refresh": "2026-04-30T14:32:09.349942+00:00"
     }
   ],
   "crypto": [],
   "options": [],
-  "last_updated": "2026-04-30T14:17:25.683570+00:00"
+  "last_updated": "2026-04-30T14:32:09.349949+00:00"
 }
