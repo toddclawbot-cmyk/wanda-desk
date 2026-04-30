@@ -4,7 +4,7 @@
   "peak": 10076.54,
   "dd_pct": -0.03,
   "inception": "2026-04-27T14:05:00Z",
-  "last_updated": "2026-04-30T21:00:19+00:00",
+  "last_updated": "2026-04-30T21:02:03.407419+00:00",
   "circuit_breaker": false,
   "stats": {
     "closed": 8,

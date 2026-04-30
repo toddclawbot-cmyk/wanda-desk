@@ -72,13 +72,13 @@
       "quantity": 6,
       "avg_cost": 82.94,
       "current_price": 83.07,
-      "market_value": 498.42,
-      "unrealized_pnl": 0.78,
+      "market_value": 498.41999999999996,
+      "unrealized_pnl": 0.7799999999999727,
       "cost_basis": 497.64,
-      "pct_change": 0.16,
+      "pct_change": 0.15673981191222097,
       "entry_date": "2026-04-30T17:33:00+00:00",
       "stop_loss": 66.35,
-      "last_refresh": "2026-04-30T21:00:19+00:00",
+      "last_refresh": "2026-04-30T21:02:03.407395+00:00",
       "multiplier": 1,
       "stale": false
     }
