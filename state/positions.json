@@ -4,48 +4,48 @@
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
-      "current_price": 51.92,
-      "market_value": 1038.40,
-      "unrealized_pnl": 1.80,
-      "cost_basis": 1036.60,
-      "pct_change": 0.0017,
-      "last_refresh": "2026-04-30T13:16:00.000000+00:00"
+      "current_price": 51.34,
+      "market_value": 1026.8000000000002,
+      "unrealized_pnl": -9.8,
+      "cost_basis": 1036.6,
+      "pct_change": -0.009454,
+      "last_refresh": "2026-04-30T13:33:00.910683+00:00"
     },
     {
       "ticker": "NVDA",
-      "quantity": 2.0,
+      "quantity": 2,
       "avg_cost": 212.82,
-      "current_price": 209.25,
-      "market_value": 418.50,
-      "unrealized_pnl": -7.14,
+      "current_price": 208.74,
+      "market_value": 417.48,
+      "unrealized_pnl": -8.16,
       "cost_basis": 425.64,
-      "pct_change": -0.0168,
-      "last_refresh": "2026-04-30T13:16:00.000000+00:00"
+      "pct_change": -0.019171,
+      "last_refresh": "2026-04-30T13:33:00.910711+00:00"
     },
     {
       "ticker": "GOOGL",
       "quantity": 3,
       "avg_cost": 349.53,
-      "current_price": 349.94,
-      "market_value": 1049.82,
-      "unrealized_pnl": 1.23,
+      "current_price": 375.47,
+      "market_value": 1126.41,
+      "unrealized_pnl": 77.82,
       "cost_basis": 1048.59,
-      "pct_change": 0.0012,
-      "last_refresh": "2026-04-30T13:16:00.000000+00:00"
+      "pct_change": 0.074214,
+      "last_refresh": "2026-04-30T13:33:00.910717+00:00"
     },
     {
       "ticker": "XLE",
       "quantity": 15,
       "avg_cost": 57.81,
-      "current_price": 59.03,
-      "market_value": 885.45,
-      "unrealized_pnl": 18.30,
-      "cost_basis": 867.15,
-      "pct_change": 0.0211,
-      "last_refresh": "2026-04-30T13:16:00.000000+00:00"
+      "current_price": 58.31,
+      "market_value": 874.6500000000001,
+      "unrealized_pnl": 7.5,
+      "cost_basis": 867.1500000000001,
+      "pct_change": 0.008649,
+      "last_refresh": "2026-04-30T13:33:00.910722+00:00"
     }
   ],
   "crypto": [],
   "options": [],
-  "last_updated": "2026-04-30T13:16:00.000000+00:00"
+  "last_updated": "2026-04-30T13:33:00.910725+00:00"
 }
