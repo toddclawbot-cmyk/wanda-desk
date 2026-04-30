@@ -1,10 +1,10 @@
 {
-  "nav": 10065.25,
-  "cash": 6085.82,
+  "nav": 10064.85,
+  "cash": 5268.15,
   "peak": 10076.54,
-  "dd_pct": -0.112,
+  "dd_pct": -0.116,
   "inception": "2026-04-27T14:05:00Z",
-  "last_updated": "2026-04-30T19:31:00+00:00",
+  "last_updated": "2026-04-30T19:45:00+00:00",
   "circuit_breaker": false,
   "stats": {
     "closed": 8,
@@ -17,12 +17,12 @@
     "best_pnl": 27.31,
     "worst_ticker": "ETH-USD",
     "worst_pnl": -30.34,
-    "checked_at": "2026-04-30T19:31:00+00:00"
+    "checked_at": "2026-04-30T19:45:00+00:00"
   },
   "reconcile": {
     "status": "ok",
     "cash_drift": 0.0,
     "nav_drift": 0.0,
-    "ledger_cash": 6085.82
+    "ledger_cash": 5268.15
   }
 }
