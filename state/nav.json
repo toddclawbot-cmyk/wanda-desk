@@ -1,27 +1,27 @@
 {
-  "nav": 10052.73,
-  "cash": 6583.46,
+  "nav": 10052.51,
+  "cash": 6960.30,
   "peak": 10076.54,
   "dd_pct": -0.24,
   "inception": "2026-04-27T14:05:00Z",
-  "last_updated": "2026-04-30T16:31:59.976451+00:00",
+  "last_updated": "2026-04-30T16:46:31Z",
   "circuit_breaker": false,
   "stats": {
-    "closed": 7,
-    "wins": 2,
+    "closed": 8,
+    "wins": 3,
     "losses": 5,
     "scratches": 0,
-    "win_rate": 28.6,
-    "realized_pnl": -35.55,
-    "best_ticker": "XLE",
-    "best_pnl": 18.36,
+    "win_rate": 37.5,
+    "realized_pnl": -8.24,
+    "best_ticker": "GOOGL",
+    "best_pnl": 27.31,
     "worst_ticker": "ETH-USD",
     "worst_pnl": -30.34
   },
   "reconcile": {
     "status": "ok",
     "cash_drift": 0.0,
-    "nav_drift": -0.18,
-    "ledger_cash": 6583.46
+    "nav_drift": 0.0,
+    "ledger_cash": 6960.30
   }
 }
