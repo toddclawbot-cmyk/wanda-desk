@@ -1,10 +1,10 @@
 {
-  "nav": 11947.86,
-  "cash": 4476.34,
+  "nav": 11772.88,
+  "cash": 5451.36,
   "peak": 11960.14,
-  "dd_pct": -0.1,
+  "dd_pct": -1.57,
   "inception": "2026-04-27T14:05:00Z",
-  "last_updated": "2026-05-01T16:46:28+00:00",
+  "last_updated": "2026-05-01T16:47:21+00:00",
   "circuit_breaker": false,
   "reconcile": {
     "status": "ok",
@@ -13,16 +13,16 @@
     "ledger_cash": 4135.12
   },
   "stats": {
-    "closed": 13,
+    "closed": 12,
     "wins": 8,
-    "losses": 5,
+    "losses": 7,
     "scratches": 0,
-    "win_rate": 61.5,
-    "realized_pnl": 1854.4,
+    "win_rate": 50.0,
+    "realized_pnl": 1630.52,
     "best_ticker": "SPY",
     "best_pnl": 1442.74,
     "worst_ticker": "ETH-USD",
-    "worst_pnl": -30.34,
-    "checked_at": "2026-05-01T16:46:28+00:00"
+    "worst_pnl": -48.85,
+    "checked_at": "2026-05-01T16:47:21+00:00"
   }
 }
