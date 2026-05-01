@@ -302,21 +302,6 @@
       if (unrSubEl) unrSubEl.textContent = openCount ? `${openCount} open position${openCount === 1 ? '' : 's'}` : "no open positions";
     }
 
-    // BEST TRADE — single best realized P&L from the ledger. Distinct from
-    // "TOP WINNER" in the attribution panel, which is a per-ticker AGGREGATE.
-    const bestEl = $("#stat-besttrade");
-    const bestSubEl = $("#stat-besttrade-sub");
-    if (bestEl && stats) {
-      if (stats.best_ticker && stats.best_pnl != null) {
-        bestEl.textContent = stats.best_ticker;
-        bestEl.classList.add("up");
-        if (bestSubEl) bestSubEl.textContent = fmtUSD(stats.best_pnl, 2);
-      } else {
-        bestEl.textContent = "—";
-        if (bestSubEl) bestSubEl.textContent = "no closes yet";
-      }
-    }
-
     // breaker chip
     const breakerEl = $("#breaker-val");
     const tripped = (S.nav.dd_pct ?? 0) <= -15;
