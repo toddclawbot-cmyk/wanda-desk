@@ -2,14 +2,14 @@
   "equity": [
     {
       "ticker": "NVDA",
-      "quantity": 5.0,
+      "quantity": 7.0,
       "side": "long",
-      "avg_cost": 198.59,
-      "cost_basis": 992.95,
-      "current_price": 199.789902,
+      "avg_cost": 198.91,
+      "cost_basis": 1392.37,
+      "current_price": 199.61,
       "unrealized_pnl": 5.999509,
       "pct_change": 0.604211,
-      "last_refresh": "2026-05-01T19:33:46.991521+00:00",
+      "last_refresh": "2026-05-01T19:50:17+00:00",
       "stale": false,
       "market_value": 998.949509
     },
@@ -25,6 +25,17 @@
       "last_refresh": "2026-05-01T19:33:47.136354+00:00",
       "stale": false,
       "market_value": 675.22998
+    },
+    {
+      "ticker": "SOXL",
+      "quantity": 5.0,
+      "side": "long",
+      "avg_cost": 130.376,
+      "cost_basis": 651.88,
+      "current_price": 130.31,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-01T19:50:12+00:00"
     }
   ],
   "options": [],
@@ -54,5 +65,5 @@
       "last_refresh": "2026-05-01T19:34:56+00:00"
     }
   ],
-  "last_updated": "2026-05-01T19:34:56+00:00"
+  "last_updated": "2026-05-01T19:50:17+00:00"
 }
