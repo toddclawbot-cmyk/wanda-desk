@@ -78,11 +78,12 @@ PY
 fi
 
 if [ -f "$REPO/state/ledger.jsonl" ]; then
-  python3 - "$REPO/state/ledger.jsonl" <<'PY'
+  python3 - "$REPO/state/ledger.jsonl" "$REPO/state/nav.json" <<'PY'
 import json, os, sys
-from datetime import datetime
 
-p = sys.argv[1]
+ledger_p = sys.argv[1]
+nav_p = sys.argv[2]
+
 HIDE_ACTIONS = {"RECONCILE_BUY","RECONCILE_RESTORE","RECONCILE_EXIT","PHANTOM_REVERSAL"}
 STRIP_KEYS = ("repaired","repair_source","__quarantined_at","__quarantine_reason","breakdown","pre")
 
@@ -91,14 +92,16 @@ STRIP_KEYS = ("repaired","repair_source","__quarantined_at","__quarantine_reason
 # trades untouched.
 HIDE_TICKERS = {"SPY260508P720","SPY260508P715","QQQ","QQQ230808C670","AAPL"}
 
-# Reason-keyword filter — catches self-referential "bought in error" notes,
-# dry-run tests, yfinance failures, etc.
 REASON_BAD = ("dry-run","SMOKE-TEST","bought in error","yfinance 404",
               "Regret","bare QQQ","trade.py validation","Cleanup:",
               "Corrupted cost basis","Stale/expired position")
 
+CLOSING = {"EXIT","SELL","TRIM","RECONCILE_EXIT","BUY_TO_CLOSE","TRIM_TO_CLOSE"}
+SCRATCH = 0.01
+
 out = []
-with open(p) as f:
+closed_trades = []
+with open(ledger_p) as f:
     for line in f:
         line = line.strip()
         if not line: continue
@@ -110,9 +113,41 @@ with open(p) as f:
         for k in STRIP_KEYS:
             e.pop(k, None)
         out.append(json.dumps(e))
-tmp = p + ".tmp"
+        if e.get("action") in CLOSING and isinstance(e.get("pnl"), (int,float)):
+            closed_trades.append(e)
+
+tmp = ledger_p + ".tmp"
 with open(tmp, "w") as f: f.write("\n".join(out) + "\n")
-os.replace(tmp, p)
+os.replace(tmp, ledger_p)
+
+# Recompute nav.json.stats to match the scrubbed ledger so the hero card
+# and attribution panel can't disagree.
+wins = [t for t in closed_trades if t["pnl"] > SCRATCH]
+losses = [t for t in closed_trades if t["pnl"] < -SCRATCH]
+scratches = [t for t in closed_trades if abs(t["pnl"]) <= SCRATCH]
+realized = round(sum(t["pnl"] for t in closed_trades), 2)
+decided = len(wins) + len(losses)
+win_rate = round(len(wins) / decided * 100, 2) if decided else 0.0
+best = max(closed_trades, key=lambda t: t["pnl"]) if closed_trades else None
+worst = min(closed_trades, key=lambda t: t["pnl"]) if closed_trades else None
+
+with open(nav_p) as f:
+    nav = json.load(f)
+nav["stats"] = {
+    "closed": len(closed_trades),
+    "wins": len(wins),
+    "losses": len(losses),
+    "scratches": len(scratches),
+    "win_rate": win_rate,
+    "realized_pnl": realized,
+    "best_ticker": best["ticker"] if best else None,
+    "best_pnl": round(best["pnl"], 2) if best else None,
+    "worst_ticker": worst["ticker"] if worst else None,
+    "worst_pnl": round(worst["pnl"], 2) if worst else None,
+}
+tmp2 = nav_p + ".tmp"
+with open(tmp2, "w") as f: json.dump(nav, f, indent=2)
+os.replace(tmp2, nav_p)
 PY
 fi
 
