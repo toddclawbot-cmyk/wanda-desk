@@ -2,3 +2,7 @@
 *.swp
 .vscode/
 node_modules/
+*.bak
+*.bak.*
+*.bak-*
+*.pre-*
