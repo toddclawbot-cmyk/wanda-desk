@@ -281,27 +281,6 @@
       }
     }
 
-    // Unrealized P&L — sum across all open positions. Shown next to realized
-    // so that REAL + UNR visually equals "vs INCEPTION" without any mental math.
-    const unrEl = $("#stat-unrealized");
-    const unrSubEl = $("#stat-unrealized-sub");
-    if (unrEl && S.positions) {
-      let totalUnr = 0;
-      let openCount = 0;
-      for (const cls of ["equity", "crypto", "options"]) {
-        const mult = cls === "options" ? 100 : 1;
-        for (const p of (S.positions[cls] || [])) {
-          const unr = p.unrealized_pnl ?? ((p.current_price ?? 0) * (p.quantity ?? 0) * mult - (p.cost_basis ?? 0));
-          totalUnr += unr;
-          openCount++;
-        }
-      }
-      unrEl.textContent = fmtUSD(totalUnr, 2);
-      unrEl.classList.toggle("up", totalUnr > 0);
-      unrEl.classList.toggle("down", totalUnr < 0);
-      if (unrSubEl) unrSubEl.textContent = openCount ? `${openCount} open position${openCount === 1 ? '' : 's'}` : "no open positions";
-    }
-
     // breaker chip
     const breakerEl = $("#breaker-val");
     const tripped = (S.nav.dd_pct ?? 0) <= -15;
