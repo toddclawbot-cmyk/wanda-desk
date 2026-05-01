@@ -4,53 +4,53 @@
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
-      "current_price": 52.14,
-      "market_value": 1042.8,
-      "unrealized_pnl": 6.2,
+      "current_price": 52.13,
+      "market_value": 1042.6,
+      "unrealized_pnl": 6.0,
       "cost_basis": 1036.6,
-      "pct_change": 0.6,
+      "pct_change": 0.58,
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-01T00:16:53+00:00"
+      "last_refresh": "2026-05-01T00:46:37.856331+00:00"
     },
     {
       "ticker": "NVDA",
       "quantity": 2,
       "avg_cost": 212.82,
-      "current_price": 199.53,
-      "market_value": 399.06,
-      "unrealized_pnl": -26.58,
+      "current_price": 199.57,
+      "market_value": 399.14,
+      "unrealized_pnl": -26.5,
       "cost_basis": 425.64,
-      "pct_change": -6.24,
+      "pct_change": -6.23,
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-01T00:16:53+00:00"
+      "last_refresh": "2026-05-01T00:46:37.856355+00:00"
     },
     {
       "ticker": "GOOGL",
       "quantity": 3,
       "avg_cost": 349.53,
-      "current_price": 385.12,
-      "market_value": 1155.36,
-      "unrealized_pnl": 106.77,
+      "current_price": 384.8,
+      "market_value": 1154.4,
+      "unrealized_pnl": 105.81,
       "cost_basis": 1048.59,
-      "pct_change": 10.18,
+      "pct_change": 10.09,
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-01T00:16:53+00:00"
+      "last_refresh": "2026-05-01T00:46:37.856362+00:00"
     },
     {
       "ticker": "XLE",
       "quantity": 15,
       "avg_cost": 57.81,
-      "current_price": 59.64,
-      "market_value": 894.6,
-      "unrealized_pnl": 27.45,
+      "current_price": 59.65,
+      "market_value": 894.75,
+      "unrealized_pnl": 27.6,
       "cost_basis": 867.15,
-      "pct_change": 3.17,
+      "pct_change": 3.18,
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-01T00:16:53+00:00"
+      "last_refresh": "2026-05-01T00:46:37.856367+00:00"
     },
     {
       "ticker": "MSFT",
@@ -63,7 +63,7 @@
       "pct_change": -0.21,
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-01T00:16:53+00:00"
+      "last_refresh": "2026-05-01T00:46:37.856372+00:00"
     }
   ],
   "options": [],
@@ -72,17 +72,17 @@
       "ticker": "SOL-USD",
       "quantity": 6,
       "avg_cost": 82.94,
-      "current_price": 83.28,
-      "market_value": 499.68,
-      "unrealized_pnl": 2.04,
+      "current_price": 83.36,
+      "market_value": 500.16,
+      "unrealized_pnl": 2.52,
       "cost_basis": 497.64,
-      "pct_change": 0.41,
+      "pct_change": 0.51,
       "entry_date": "2026-04-30T17:33:00+00:00",
       "stop_loss": 66.35,
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-01T00:16:53+00:00"
+      "last_refresh": "2026-05-01T00:46:37.856379+00:00"
     }
   ],
-  "last_updated": "2026-05-01T00:16:53+00:00"
+  "last_updated": "2026-05-01T00:46:37.856381+00:00"
 }
