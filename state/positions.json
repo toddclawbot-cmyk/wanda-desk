@@ -45,20 +45,6 @@
   ],
   "options": [
     {
-      "ticker": "SPY260504C729",
-      "quantity": 1.0,
-      "side": "long",
-      "avg_cost": 0.7608,
-      "cost_basis": 76.08,
-      "current_price": 0.05,
-      "unrealized_pnl": -71.08,
-      "pct_change": -93.43,
-      "last_refresh": "2026-05-01T21:50:00.000000+00:00",
-      "market_value": 5.0,
-      "multiplier": 100,
-      "stale": false
-    },
-    {
       "ticker": "QQQ260509P670",
       "quantity": 1.0,
       "side": "short",
@@ -131,5 +117,5 @@
       "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-01T22:02:29+00:00"
+  "last_updated": "2026-05-01T22:17:10+00:00"
 }
