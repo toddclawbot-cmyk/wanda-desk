@@ -212,6 +212,32 @@
     $("#stat-incept").classList.toggle("up", cur >= inception);
     $("#stat-incept").classList.toggle("down", cur < inception);
 
+    // vs YESTERDAY — compare current NAV to the nav_history value from ~24h ago.
+    // History is kept in ET-market-session cadence; find the last point at or
+    // before (now - 24h) so the number reflects a real yesterday-close, not
+    // a midnight interpolation.
+    const dodEl = $("#stat-dod");
+    const dodSubEl = $("#stat-dod-sub");
+    if (dodEl) {
+      const cutoff = Date.now() - 24 * 3600_000;
+      let ref = null;
+      for (let i = S.history.length - 1; i >= 0; i--) {
+        if (new Date(S.history[i].ts).getTime() <= cutoff) { ref = S.history[i]; break; }
+      }
+      if (!ref && S.history.length) ref = S.history[0];
+      if (ref && ref.nav) {
+        const dod$ = cur - ref.nav;
+        const dodPct = (dod$ / ref.nav) * 100;
+        dodEl.textContent = `${dod$ >= 0 ? '+' : '−'}${fmtUSD(Math.abs(dod$), 2).replace('$', '$')}`;
+        dodEl.classList.toggle("up", dod$ >= 0);
+        dodEl.classList.toggle("down", dod$ < 0);
+        if (dodSubEl) dodSubEl.textContent = `${dod$ >= 0 ? '▲' : '▼'} ${fmtPct(dodPct)}`;
+      } else {
+        dodEl.textContent = "—";
+        if (dodSubEl) dodSubEl.textContent = "no history yet";
+      }
+    }
+
     $("#stat-dd").textContent = `${fmtPct(S.nav.dd_pct ?? 0)}`;
     $("#stat-dd").classList.toggle("down", (S.nav.dd_pct ?? 0) < 0);
 
@@ -248,8 +274,25 @@
       realEl.classList.toggle("up", r > 0);
       realEl.classList.toggle("down", r < 0);
       if (realSubEl) {
-        const best = stats.best_ticker ? `${stats.best_ticker} ${fmtUSD(stats.best_pnl || 0)}` : "—";
-        realSubEl.textContent = `best ${best}`;
+        // Subtitle clarifies this is closed-only (no unrealized) so viewers
+        // don't try to reconcile it against hero total.
+        const closed = stats.closed ?? 0;
+        realSubEl.textContent = closed ? `closed trades only · ${closed}` : "no closes yet";
+      }
+    }
+
+    // BEST TRADE — single best realized P&L from the ledger. Distinct from
+    // "TOP WINNER" in the attribution panel, which is a per-ticker AGGREGATE.
+    const bestEl = $("#stat-besttrade");
+    const bestSubEl = $("#stat-besttrade-sub");
+    if (bestEl && stats) {
+      if (stats.best_ticker && stats.best_pnl != null) {
+        bestEl.textContent = stats.best_ticker;
+        bestEl.classList.add("up");
+        if (bestSubEl) bestSubEl.textContent = fmtUSD(stats.best_pnl, 2);
+      } else {
+        bestEl.textContent = "—";
+        if (bestSubEl) bestSubEl.textContent = "no closes yet";
       }
     }
 
@@ -491,26 +534,36 @@
     const losses = stats?.losses ?? 0;
     const wrPct = stats?.win_rate ?? 0;
 
+    // Ticker-level attribution (R + U, summed over every ticker that's ever
+    // touched the book) is NOT the same thing as (NAV − inception): cash-only
+    // reconciliation entries (PHANTOM_REVERSAL, dividends, fees) move NAV
+    // without landing on a ticker. Expose that delta as "ADJ" so the math
+    // R + U + ADJ = NAV − inception always balances, and nobody has to
+    // hunt for the missing dollars.
+    const inception = S.history.length ? S.history[0].nav : 10000;
+    const totalReturn = (S.nav?.nav ?? inception) - inception;
+    const adj = +(totalReturn - net).toFixed(2);
+
     summary.innerHTML = `
-      <div class="attr-kpi ${net >= 0 ? 'pos' : 'neg'}">
-        <div class="k-label">NET P&amp;L</div>
-        <div class="k-value">${fmtUSD(net)}</div>
-        <div class="k-sub">REAL ${fmtUSD(totalReal)} · UNR ${fmtUSD(totalUnr)}</div>
+      <div class="attr-kpi ${totalReturn >= 0 ? 'pos' : 'neg'}" title="NAV minus inception ($${inception.toLocaleString()}). Equals REAL + UNR + ADJ.">
+        <div class="k-label">TOTAL RETURN</div>
+        <div class="k-value">${fmtUSD(totalReturn)}</div>
+        <div class="k-sub">REAL ${fmtUSD(totalReal)} · UNR ${fmtUSD(totalUnr)}${Math.abs(adj) > 0.01 ? ` · ADJ ${fmtUSD(adj)}` : ''}</div>
       </div>
       <div class="attr-kpi">
         <div class="k-label">WIN RATE (CLOSED)</div>
         <div class="k-value">${closed ? wrPct.toFixed(0) + '%' : '—'}</div>
         <div class="k-sub">${wins}W · ${losses}L · ${closed} closed</div>
       </div>
-      <div class="attr-kpi pos">
-        <div class="k-label">TOP WINNER</div>
+      <div class="attr-kpi pos" title="Per-ticker aggregate of realized + unrealized P&L — different from the hero 'BEST TRADE' (single trade).">
+        <div class="k-label">TOP TICKER</div>
         <div class="k-value">${best ? best.ticker : '—'}</div>
-        <div class="k-sub">${best ? fmtUSD(best.total) : ''}</div>
+        <div class="k-sub">${best ? fmtUSD(best.total) + ' aggregate' : ''}</div>
       </div>
-      <div class="attr-kpi neg">
-        <div class="k-label">TOP LOSER</div>
+      <div class="attr-kpi neg" title="Per-ticker aggregate of realized + unrealized P&L.">
+        <div class="k-label">WORST TICKER</div>
         <div class="k-value">${worst ? worst.ticker : '—'}</div>
-        <div class="k-sub">${worst ? fmtUSD(worst.total) : ''}</div>
+        <div class="k-sub">${worst ? fmtUSD(worst.total) + ' aggregate' : ''}</div>
       </div>
     `;
 
