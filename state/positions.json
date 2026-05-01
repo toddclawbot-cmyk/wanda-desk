@@ -7,9 +7,9 @@
       "current_price": 52.13,
       "market_value": 1042.6000000000001,
       "unrealized_pnl": 6.000000000000227,
-      "pct_change": 0.5788153579008378,
+      "pct_change": 0.5788153579008516,
       "stale": false,
-      "last_refresh": "2026-05-01T01:46:49.000280+00:00",
+      "last_refresh": "2026-05-01T02:02:00.762931+00:00",
       "cost_basis": 1036.6,
       "multiplier": 1
     },
@@ -22,7 +22,7 @@
       "unrealized_pnl": -26.5,
       "pct_change": -6.225918616671366,
       "stale": false,
-      "last_refresh": "2026-05-01T01:46:49.000303+00:00",
+      "last_refresh": "2026-05-01T02:02:00.762931+00:00",
       "cost_basis": 425.64,
       "multiplier": 1
     },
@@ -33,9 +33,9 @@
       "current_price": 384.8,
       "market_value": 1154.4,
       "unrealized_pnl": 105.81000000000017,
-      "pct_change": 10.090693216605167,
+      "pct_change": 10.090693216605173,
       "stale": false,
-      "last_refresh": "2026-05-01T01:46:49.000308+00:00",
+      "last_refresh": "2026-05-01T02:02:00.762931+00:00",
       "cost_basis": 1048.59,
       "multiplier": 1
     },
@@ -46,9 +46,9 @@
       "current_price": 59.65,
       "market_value": 894.75,
       "unrealized_pnl": 27.600000000000023,
-      "pct_change": 3.1828403390416815,
+      "pct_change": 3.1828403390416913,
       "stale": false,
-      "last_refresh": "2026-05-01T01:46:49.000312+00:00",
+      "last_refresh": "2026-05-01T02:02:00.762931+00:00",
       "cost_basis": 867.15,
       "multiplier": 1
     },
@@ -61,7 +61,7 @@
       "unrealized_pnl": -1.7000000000000455,
       "pct_change": -0.2080121381200653,
       "stale": false,
-      "last_refresh": "2026-05-01T01:46:49.000315+00:00",
+      "last_refresh": "2026-05-01T02:02:00.762931+00:00",
       "cost_basis": 817.26,
       "multiplier": 1
     }
@@ -72,15 +72,15 @@
       "ticker": "SOL-USD",
       "quantity": 6,
       "avg_cost": 82.94,
-      "current_price": 83.47,
-      "market_value": 500.82,
-      "unrealized_pnl": 3.180000000000007,
-      "pct_change": 0.6390161562575369,
+      "current_price": 83.57,
+      "market_value": 501.41999999999996,
+      "unrealized_pnl": 3.7799999999999727,
+      "pct_change": 0.7595852423438576,
       "stale": false,
-      "last_refresh": "2026-05-01T01:46:49.000319+00:00",
+      "last_refresh": "2026-05-01T02:02:00.762931+00:00",
       "cost_basis": 497.64,
       "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-01T01:16:24+00:00"
+  "last_updated": "2026-05-01T02:02:00.762931+00:00"
 }
