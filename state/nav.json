@@ -4,12 +4,12 @@
   "peak": 10470.3,
   "dd_pct": 0.0,
   "inception": "2026-04-27T14:05:00Z",
-  "last_updated": "2026-05-01T15:41:09+00:00",
+  "last_updated": "2026-05-01T15:42:12.237670+00:00",
   "circuit_breaker": false,
   "reconcile": {
     "status": "ok",
     "cash_drift": 0.0,
     "nav_drift": 0.0,
-    "ledger_cash": 3199.44
+    "ledger_cash": 4137.0
   }
 }
