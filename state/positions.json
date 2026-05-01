@@ -38,7 +38,56 @@
       "last_refresh": "2026-05-01T19:50:12+00:00"
     }
   ],
-  "options": [],
+  "options": [
+    {
+      "ticker": "SPY260504C724",
+      "quantity": -1.0,
+      "side": "short",
+      "avg_cost": 1.1289,
+      "credit_received": 112.89,
+      "cost_basis": -112.89,
+      "max_loss": 463.0,
+      "current_price": 1.13,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-01T19:53:24+00:00"
+    },
+    {
+      "ticker": "SPY260504C729",
+      "quantity": 1.0,
+      "side": "long",
+      "avg_cost": 0.7608,
+      "cost_basis": 76.08,
+      "current_price": 0.76,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-01T19:53:31+00:00"
+    },
+    {
+      "ticker": "SPY260504P716",
+      "quantity": -1.0,
+      "side": "short",
+      "avg_cost": 0.6194,
+      "credit_received": 61.94,
+      "cost_basis": -61.94,
+      "max_loss": 438.0,
+      "current_price": 0.62,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-01T19:53:44+00:00"
+    },
+    {
+      "ticker": "SPY260504P711",
+      "quantity": 1.0,
+      "side": "long",
+      "avg_cost": 0.2703,
+      "cost_basis": 27.03,
+      "current_price": 0.27,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-01T19:53:53+00:00"
+    }
+  ],
   "crypto": [
     {
       "ticker": "BTC-USD",
@@ -65,5 +114,5 @@
       "last_refresh": "2026-05-01T19:34:56+00:00"
     }
   ],
-  "last_updated": "2026-05-01T19:50:17+00:00"
+  "last_updated": "2026-05-01T19:53:53+00:00"
 }
