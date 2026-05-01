@@ -54,6 +54,16 @@
       "pct_change": 1.46,
       "stale": false,
       "last_refresh": "2026-05-01T15:42:24.981069+00:00"
+    },
+    {
+      "ticker": "SPY",
+      "quantity": 2.0,
+      "avg_cost": 0.94,
+      "cost_basis": 1.88,
+      "current_price": 0.94,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-01T16:05:08+00:00"
     }
   ],
   "crypto": [
@@ -103,5 +113,5 @@
     }
   ],
   "options": [],
-  "last_updated": "2026-05-01T15:42:24.981069+00:00"
+  "last_updated": "2026-05-01T16:05:08+00:00"
 }
