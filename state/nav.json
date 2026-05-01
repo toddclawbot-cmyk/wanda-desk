@@ -13,15 +13,15 @@
     "checked_at": "2026-05-01T18:34:43+00:00"
   },
   "stats": {
-    "closed": 12,
-    "wins": 5,
-    "losses": 6,
+    "closed": 8,
+    "wins": 3,
+    "losses": 4,
     "scratches": 0,
-    "win_rate": 45.45,
+    "win_rate": 42.86,
     "realized_pnl": -170.85,
-    "best_ticker": "SPY260508P720",
-    "best_pnl": 30.63,
-    "worst_ticker": "SPY260508P720",
-    "worst_pnl": -127.28
+    "best_ticker": "GOOGL",
+    "best_pnl": 27.31,
+    "worst_ticker": "ETH-USD",
+    "worst_pnl": -30.34
   }
 }
