@@ -6,12 +6,13 @@
       "side": "long",
       "avg_cost": 198.91,
       "cost_basis": 1392.37,
-      "current_price": 198.45,
-      "unrealized_pnl": -3.22,
-      "pct_change": -0.2313,
-      "last_refresh": "2026-05-01T20:03:11.885468+00:00",
+      "current_price": 198.42,
+      "unrealized_pnl": -3.43,
+      "pct_change": -0.25,
+      "last_refresh": "2026-05-01T20:16:53+00:00",
       "stale": false,
-      "market_value": 1389.15
+      "market_value": 1388.94,
+      "multiplier": 1
     },
     {
       "ticker": "QQQ",
@@ -19,12 +20,13 @@
       "side": "long",
       "avg_cost": 675.27,
       "cost_basis": 675.27,
-      "current_price": 674.18,
-      "unrealized_pnl": -1.09,
-      "pct_change": -0.1614,
-      "last_refresh": "2026-05-01T20:03:11.885468+00:00",
+      "current_price": 674.16,
+      "unrealized_pnl": -1.11,
+      "pct_change": -0.16,
+      "last_refresh": "2026-05-01T20:16:53+00:00",
       "stale": false,
-      "market_value": 674.18
+      "market_value": 674.16,
+      "multiplier": 1
     },
     {
       "ticker": "SOXL",
@@ -34,10 +36,11 @@
       "cost_basis": 651.88,
       "current_price": 130.33,
       "unrealized_pnl": -0.23,
-      "pct_change": -0.0353,
-      "last_refresh": "2026-05-01T20:03:11.885468+00:00",
+      "pct_change": -0.04,
+      "last_refresh": "2026-05-01T20:16:53+00:00",
       "stale": false,
-      "market_value": 651.65
+      "market_value": 651.65,
+      "multiplier": 1
     }
   ],
   "options": [
@@ -49,10 +52,13 @@
       "credit_received": 112.89,
       "cost_basis": -112.89,
       "max_loss": 463.0,
-      "current_price": 1.13,
-      "unrealized_pnl": 0.0,
-      "pct_change": 0.0,
-      "last_refresh": "2026-05-01T20:03:11.885468+00:00"
+      "current_price": 1.165,
+      "unrealized_pnl": -3.61,
+      "pct_change": -3.1978,
+      "last_refresh": "2026-05-01T20:17:45.558931+00:00",
+      "market_value": -113.0,
+      "multiplier": 100,
+      "stale": false
     },
     {
       "ticker": "SPY260504C729",
@@ -60,10 +66,13 @@
       "side": "long",
       "avg_cost": 0.7608,
       "cost_basis": 76.08,
-      "current_price": 0.76,
-      "unrealized_pnl": 0.0,
-      "pct_change": 0.0,
-      "last_refresh": "2026-05-01T20:03:11.885468+00:00"
+      "current_price": 0.08499999999999999,
+      "unrealized_pnl": -67.58,
+      "pct_change": -88.8275,
+      "last_refresh": "2026-05-01T20:17:45.558951+00:00",
+      "market_value": 76.0,
+      "multiplier": 100,
+      "stale": false
     },
     {
       "ticker": "SPY260504P716",
@@ -73,10 +82,13 @@
       "credit_received": 61.94,
       "cost_basis": -61.94,
       "max_loss": 438.0,
-      "current_price": 0.62,
-      "unrealized_pnl": 0.0,
-      "pct_change": 0.0,
-      "last_refresh": "2026-05-01T20:03:11.885468+00:00"
+      "current_price": 0.7,
+      "unrealized_pnl": -8.06,
+      "pct_change": -13.0126,
+      "last_refresh": "2026-05-01T20:17:45.558957+00:00",
+      "market_value": -62.0,
+      "multiplier": 100,
+      "stale": false
     },
     {
       "ticker": "SPY260504P711",
@@ -84,10 +96,13 @@
       "side": "long",
       "avg_cost": 0.2703,
       "cost_basis": 27.03,
-      "current_price": 0.27,
-      "unrealized_pnl": 0.0,
-      "pct_change": 0.0,
-      "last_refresh": "2026-05-01T20:03:11.885468+00:00"
+      "current_price": 0.265,
+      "unrealized_pnl": -0.53,
+      "pct_change": -1.9608,
+      "last_refresh": "2026-05-01T20:17:45.558961+00:00",
+      "market_value": 27.0,
+      "multiplier": 100,
+      "stale": false
     }
   ],
   "crypto": [
@@ -97,12 +112,13 @@
       "side": "long",
       "avg_cost": 78503.333333,
       "cost_basis": 706.53,
-      "current_price": 78372.47,
-      "unrealized_pnl": -1.1778,
-      "pct_change": -0.1667,
-      "last_refresh": "2026-05-01T20:03:11.885468+00:00",
+      "current_price": 78279.0312,
+      "unrealized_pnl": -2.02,
+      "pct_change": -0.29,
+      "last_refresh": "2026-05-01T20:16:53+00:00",
       "stale": false,
-      "market_value": 705.3522
+      "market_value": 704.51,
+      "multiplier": 1
     },
     {
       "ticker": "ETH-USD",
@@ -110,13 +126,14 @@
       "side": "long",
       "avg_cost": 2308.72093,
       "cost_basis": 992.75,
-      "current_price": 2304.68,
-      "unrealized_pnl": -1.7376,
-      "pct_change": -0.175,
-      "last_refresh": "2026-05-01T20:03:11.885468+00:00",
+      "current_price": 2303.3799,
+      "unrealized_pnl": -2.3,
+      "pct_change": -0.23,
+      "last_refresh": "2026-05-01T20:16:53+00:00",
       "stale": false,
-      "market_value": 991.0124
+      "market_value": 990.45,
+      "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-01T20:03:11.885468+00:00"
+  "last_updated": "2026-05-01T20:16:53+00:00"
 }
