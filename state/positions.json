@@ -103,7 +103,20 @@
       "unrealized_pnl": 0.0,
       "pct_change": 0.0,
       "last_refresh": "2026-05-01T06:48:28+00:00"
+    },
+    {
+      "ticker": "ETH-USD",
+      "quantity": 0.22,
+      "avg_cost": 2278.929931640625,
+      "current_price": 2278.929931640625,
+      "market_value": 502.12,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "stale": false,
+      "last_refresh": "2026-05-01T06:46:30.000000+00:00",
+      "cost_basis": 502.12,
+      "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-01T06:48:28+00:00"
+  "last_updated": "2026-05-01T06:46:30.000000+00:00"
 }
