@@ -281,6 +281,27 @@
       }
     }
 
+    // Unrealized P&L — sum across all open positions. Shown next to realized
+    // so that REAL + UNR visually equals "vs INCEPTION" without any mental math.
+    const unrEl = $("#stat-unrealized");
+    const unrSubEl = $("#stat-unrealized-sub");
+    if (unrEl && S.positions) {
+      let totalUnr = 0;
+      let openCount = 0;
+      for (const cls of ["equity", "crypto", "options"]) {
+        const mult = cls === "options" ? 100 : 1;
+        for (const p of (S.positions[cls] || [])) {
+          const unr = p.unrealized_pnl ?? ((p.current_price ?? 0) * (p.quantity ?? 0) * mult - (p.cost_basis ?? 0));
+          totalUnr += unr;
+          openCount++;
+        }
+      }
+      unrEl.textContent = fmtUSD(totalUnr, 2);
+      unrEl.classList.toggle("up", totalUnr > 0);
+      unrEl.classList.toggle("down", totalUnr < 0);
+      if (unrSubEl) unrSubEl.textContent = openCount ? `${openCount} open position${openCount === 1 ? '' : 's'}` : "no open positions";
+    }
+
     // BEST TRADE — single best realized P&L from the ledger. Distinct from
     // "TOP WINNER" in the attribution panel, which is a per-ticker AGGREGATE.
     const bestEl = $("#stat-besttrade");
@@ -467,10 +488,8 @@
   // Combines realized P&L (summed from ledger EXIT/SELL entries)
   // with unrealized P&L (from positions.json).
   // Shows a divergent bar chart: losers to the left, winners to the right.
-  // Open-position P&L only. Keeps the widget focused on a single, honest
-  // question: "of what's open right now, who's up and who's down?" — and
-  // avoids the realized/unrealized reconciliation trap when the public
-  // ledger is scrubbed for readability.
+  // Open-position P&L only. Self-contained — no realized/unrealized
+  // reconciliation needed at this level. The hero shows realized separately.
   function computeAttribution() {
     const rows = [];
     const classes = ["equity", "crypto", "options"];
