@@ -1,5 +1,30 @@
 {
-  "equity": [],
+  "equity": [
+    {
+      "ticker": "NVDA",
+      "quantity": 5.0,
+      "side": "long",
+      "avg_cost": 198.59,
+      "cost_basis": 992.95,
+      "current_price": 198.49,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-01T19:05:41+00:00"
+    }
+  ],
   "options": [],
-  "crypto": []
+  "crypto": [
+    {
+      "ticker": "BTC-USD",
+      "quantity": 0.001,
+      "side": "long",
+      "avg_cost": 78610.0,
+      "cost_basis": 78.61,
+      "current_price": 78490.1,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-01T19:05:42+00:00"
+    }
+  ],
+  "last_updated": "2026-05-01T19:05:42+00:00"
 }
