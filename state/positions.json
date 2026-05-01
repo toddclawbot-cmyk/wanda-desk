@@ -4,56 +4,56 @@
       "ticker": "XLF",
       "quantity": 20,
       "avg_cost": 51.83,
-      "current_price": 52.455,
-      "market_value": 1049.1,
-      "unrealized_pnl": 12.5,
-      "pct_change": 1.206,
+      "current_price": 52.53,
+      "market_value": 1050.6,
+      "unrealized_pnl": 14.0,
+      "pct_change": 0.14,
       "stale": false,
-      "last_refresh": "2026-05-01T14:18:22.763711+00:00"
+      "last_refresh": "2026-05-01T14:30:32+00:00"
     },
     {
       "ticker": "NVDA",
       "quantity": 2,
       "avg_cost": 212.82,
-      "current_price": 199.81,
-      "market_value": 399.62,
-      "unrealized_pnl": -26.02,
-      "pct_change": -6.113,
+      "current_price": 198.8,
+      "market_value": 397.6,
+      "unrealized_pnl": -28.04,
+      "pct_change": -0.51,
       "stale": false,
-      "last_refresh": "2026-05-01T14:18:22.763711+00:00"
+      "last_refresh": "2026-05-01T14:30:32+00:00"
     },
     {
       "ticker": "GOOGL",
       "quantity": 3,
       "avg_cost": 349.53,
-      "current_price": 384.035,
-      "market_value": 1152.11,
-      "unrealized_pnl": 103.52,
-      "pct_change": 9.872,
+      "current_price": 384.17,
+      "market_value": 1152.51,
+      "unrealized_pnl": 103.92,
+      "pct_change": 0.04,
       "stale": false,
-      "last_refresh": "2026-05-01T14:18:22.763711+00:00"
+      "last_refresh": "2026-05-01T14:30:32+00:00"
     },
     {
       "ticker": "XLE",
       "quantity": 15,
       "avg_cost": 57.81,
-      "current_price": 58.64,
-      "market_value": 879.6,
-      "unrealized_pnl": 12.45,
-      "pct_change": 1.436,
+      "current_price": 58.79,
+      "market_value": 881.85,
+      "unrealized_pnl": 14.7,
+      "pct_change": 0.26,
       "stale": false,
-      "last_refresh": "2026-05-01T14:18:22.763711+00:00"
+      "last_refresh": "2026-05-01T14:30:32+00:00"
     },
     {
       "ticker": "MSFT",
       "quantity": 2,
       "avg_cost": 408.63,
-      "current_price": 411.66,
-      "market_value": 823.32,
-      "unrealized_pnl": 6.06,
-      "pct_change": 0.742,
+      "current_price": 412.3,
+      "market_value": 824.6,
+      "unrealized_pnl": 7.34,
+      "pct_change": 0.16,
       "stale": false,
-      "last_refresh": "2026-05-01T14:18:22.763711+00:00"
+      "last_refresh": "2026-05-01T14:30:32+00:00"
     }
   ],
   "crypto": [
@@ -61,46 +61,45 @@
       "ticker": "SOL-USD",
       "quantity": 5.88,
       "avg_cost": 82.94,
-      "current_price": 84.43,
-      "market_value": 496.45,
-      "unrealized_pnl": 8.76,
-      "pct_change": 1.796,
+      "current_price": 84.08,
+      "market_value": 494.39,
+      "unrealized_pnl": 6.7,
+      "pct_change": -0.41,
       "stale": false,
-      "last_refresh": "2026-05-01T14:18:22.763711+00:00"
+      "last_refresh": "2026-05-01T14:30:32+00:00"
     },
     {
       "ticker": "BTC-USD",
       "quantity": 0.01047,
       "avg_cost": 77123.209,
-      "current_price": 78670.008,
-      "market_value": 823.67,
-      "unrealized_pnl": 16.19,
-      "pct_change": 2.006,
+      "current_price": 78186.0,
+      "market_value": 818.61,
+      "unrealized_pnl": 11.13,
+      "pct_change": -0.62,
       "stale": false,
-      "last_refresh": "2026-05-01T14:18:22.763711+00:00"
+      "last_refresh": "2026-05-01T14:30:32+00:00"
     },
     {
       "ticker": "ETH-USD",
       "quantity": 0.22,
       "avg_cost": 2278.909,
-      "current_price": 2319.3,
-      "market_value": 510.25,
-      "unrealized_pnl": 8.89,
-      "pct_change": 1.772,
+      "current_price": 2306.66,
+      "market_value": 507.47,
+      "unrealized_pnl": 6.11,
+      "pct_change": -0.54,
       "stale": false,
-      "last_refresh": "2026-05-01T14:18:22.763711+00:00"
+      "last_refresh": "2026-05-01T14:30:32+00:00"
     },
     {
       "ticker": "AVAX-USD",
       "quantity": 21.81,
       "avg_cost": 9.184,
-      "current_price": 9.24,
-      "market_value": 201.52,
-      "unrealized_pnl": 1.22,
-      "pct_change": 0.61,
+      "current_price": 9.22,
+      "market_value": 201.09,
+      "unrealized_pnl": 0.79,
+      "pct_change": -0.22,
       "stale": false,
-      "last_refresh": "2026-05-01T14:18:22.763711+00:00"
+      "last_refresh": "2026-05-01T14:30:32+00:00"
     }
-  ],
-  "last_updated": "2026-05-01T14:18:22.763711+00:00"
+  ]
 }
