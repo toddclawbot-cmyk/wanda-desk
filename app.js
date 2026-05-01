@@ -562,8 +562,11 @@
         rows.push({ ticker: p.ticker, cls, unrealized, total: unrealized });
       }
     }
+    // Show EVERY open position, even ones at exactly $0 unrealized P&L,
+    // so the attribution panel is a complete snapshot of the book.
+    // Sort winners-to-losers; zero-pnl rows fall naturally in the middle.
     rows.sort((a, b) => b.total - a.total);
-    return rows.filter(r => Math.abs(r.total) > 0.005);
+    return rows;
   }
 
   function renderAttribution() {
@@ -612,21 +615,30 @@
     const maxAbs = rows.reduce((m, r) => Math.max(m, Math.abs(r.total)), 0) || 1;
 
     for (const r of rows) {
-      const isWin = r.total >= 0;
+      const isFlat = Math.abs(r.total) < 0.005;
+      const isWin = !isFlat && r.total > 0;
+      const isLoss = !isFlat && r.total < 0;
       const totalPct = Math.min(100, (Math.abs(r.total) / maxAbs) * 100);
 
-      const posBar = isWin ? `<div class="attr-pos-fill" style="width:${totalPct}%"><span class="attr-seg-unr" style="width:100%"></span></div>` : "";
-      const negBar = !isWin ? `<div class="attr-neg-fill" style="width:${totalPct}%"><span class="attr-seg-unr" style="width:100%"></span></div>` : "";
+      // Tiny marker at center for exactly-flat rows so the row has presence
+      // without a directional bar.
+      const posBar = isWin
+        ? `<div class="attr-pos-fill" style="width:${totalPct}%"><span class="attr-seg-unr" style="width:100%"></span></div>`
+        : "";
+      const negBar = isLoss
+        ? `<div class="attr-neg-fill" style="width:${totalPct}%"><span class="attr-seg-unr" style="width:100%"></span></div>`
+        : "";
 
+      const stateCls = isWin ? "pos" : (isLoss ? "neg" : "flat");
       const row = document.createElement("div");
-      row.className = "attr-row " + (isWin ? "pos" : "neg");
+      row.className = "attr-row " + stateCls;
       row.innerHTML = `
         <span class="tk">${r.ticker}</span>
         <span class="cls">${(r.cls || "").toUpperCase().slice(0,3) || "—"}</span>
         <div class="attr-neg-track">${negBar}</div>
         <div class="attr-pos-track">${posBar}</div>
         <div class="attr-mobile-bar"><div class="attr-mobile-fill" style="width:${totalPct}%"></div></div>
-        <div class="attr-amt ${isWin ? 'pos' : 'neg'}">
+        <div class="attr-amt ${stateCls}">
           ${fmtUSD(r.total)}
         </div>
       `;

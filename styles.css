@@ -350,6 +350,7 @@ body {
 }
 .attr-amt.pos { color: var(--green); }
 .attr-amt.neg { color: var(--red); }
+.attr-amt.flat { color: var(--ink-mute); }
 .attr-amt small {
   display: block; font-family: var(--mono); font-size: 10px;
   font-weight: 500; color: var(--ink-mute); letter-spacing: .14em;
