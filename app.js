@@ -327,6 +327,51 @@
     const sliced = S.history.filter(p => new Date(p.ts).getTime() >= cut);
     return sliced.length ? sliced : S.history.slice(-40);
   }
+  // Map a trade timestamp onto the NAV-line y-value by searching the
+  // history for the nearest point at or before the trade. Returns null
+  // if the trade falls outside the currently-rendered window.
+  function navAtTrade(tradeTs, historyPts) {
+    const t = new Date(tradeTs).getTime();
+    if (!historyPts.length) return null;
+    const firstT = new Date(historyPts[0].ts).getTime();
+    const lastT = new Date(historyPts[historyPts.length - 1].ts).getTime();
+    if (t < firstT || t > lastT) return null;
+    // Nearest history point at or before trade
+    let best = historyPts[0];
+    for (const p of historyPts) {
+      if (new Date(p.ts).getTime() <= t) best = p;
+      else break;
+    }
+    return best.nav;
+  }
+
+  // Classify ledger actions into open/close for marker color.
+  const OPEN_ACTIONS = new Set(["BUY", "SELL_TO_OPEN"]);
+  const CLOSE_ACTIONS = new Set(["EXIT", "TRIM", "BUY_TO_CLOSE", "TRIM_TO_CLOSE", "SELL"]);
+
+  function tradeMarkers(historyPts) {
+    if (!S.ledger || !S.ledger.length) return [];
+    const markers = [];
+    for (const t of S.ledger) {
+      const ts = t.timestamp;
+      const action = (t.action || "").toUpperCase();
+      // Skip synthetic / non-trade rows
+      if (action === "ADJUSTMENT") continue;
+      if (!OPEN_ACTIONS.has(action) && !CLOSE_ACTIONS.has(action)) continue;
+      const y = navAtTrade(ts, historyPts);
+      if (y == null) continue;
+      const isOpen = OPEN_ACTIONS.has(action);
+      markers.push({
+        x: new Date(ts),
+        y,
+        trade: t,
+        isOpen,
+        action,
+      });
+    }
+    return markers;
+  }
+
   function renderChart() {
     const ctx = $("#nav-chart");
     if (!ctx) return;
@@ -340,11 +385,19 @@
     const stroke = up ? "#00f0ff" : "#ff2bd6";
     const glow = up ? "rgba(0,240,255,.25)" : "rgba(255,43,214,.25)";
 
+    const markers = tradeMarkers(pts);
+    const markerData = markers.map(m => ({ x: m.x, y: m.y, _m: m }));
+    const markerBg = markers.map(m => m.isOpen ? "rgba(0,240,160,.95)" : "rgba(255,64,140,.95)");
+    const markerBorder = markers.map(m => m.isOpen ? "#00f0a0" : "#ff408c");
+
     if (S.chart) {
       S.chart.data.labels = labels;
       S.chart.data.datasets[0].data = data;
       S.chart.data.datasets[0].borderColor = stroke;
       S.chart.data.datasets[0].backgroundColor = glow;
+      S.chart.data.datasets[1].data = markerData;
+      S.chart.data.datasets[1].backgroundColor = markerBg;
+      S.chart.data.datasets[1].borderColor = markerBorder;
       S.chart.update("none");
       return;
     }
@@ -353,22 +406,43 @@
       type: "line",
       data: {
         labels,
-        datasets: [{
-          data,
-          borderColor: stroke,
-          backgroundColor: glow,
-          fill: true,
-          tension: 0.25,
-          pointRadius: 0,
-          pointHoverRadius: 4,
-          borderWidth: 2,
-        }],
+        datasets: [
+          {
+            // NAV line (dataset 0)
+            label: "NAV",
+            data,
+            borderColor: stroke,
+            backgroundColor: glow,
+            fill: true,
+            tension: 0.25,
+            pointRadius: 0,
+            pointHoverRadius: 4,
+            borderWidth: 2,
+            order: 2,
+          },
+          {
+            // Trade markers (dataset 1) — scatter overlay
+            label: "Trades",
+            type: "scatter",
+            data: markerData,
+            backgroundColor: markerBg,
+            borderColor: markerBorder,
+            borderWidth: 1.5,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointStyle: "circle",
+            showLine: false,
+            order: 1,
+          },
+        ],
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
         animation: { duration: 400 },
-        interaction: { mode: "index", intersect: false },
+        // Per-point intersection for marker hover; nearest mode prioritizes
+        // the closest point under the cursor (usually the marker when aimed).
+        interaction: { mode: "nearest", intersect: true, axis: "xy" },
         plugins: {
           legend: { display: false },
           tooltip: {
@@ -378,7 +452,7 @@
             titleColor: "#7da7b8",
             bodyColor: "#e9f7ff",
             titleFont: { family: "JetBrains Mono", size: 10 },
-            bodyFont: { family: "Space Grotesk", size: 13, weight: "700" },
+            bodyFont: { family: "Space Grotesk", size: 12, weight: "700" },
             padding: 10,
             displayColors: false,
             callbacks: {
@@ -391,7 +465,31 @@
                   timeZoneName: "short",
                 });
               },
-              label: (item) => fmtUSD(item.parsed.y),
+              label: (item) => {
+                // Trade marker hover → trade details
+                if (item.datasetIndex === 1) {
+                  const m = item.raw && item.raw._m;
+                  if (!m) return "";
+                  const t = m.trade;
+                  const qty = t.quantity ?? "";
+                  const price = t.price ?? t.exit_price ?? t.effective_price ?? "";
+                  const priceStr = price !== "" ? `@ $${Number(price).toLocaleString()}` : "";
+                  const head = `${m.action} ${t.ticker || ""} ${qty} ${priceStr}`.trim();
+                  const lines = [head];
+                  if (typeof t.pnl === "number") {
+                    const sign = t.pnl >= 0 ? "+" : "";
+                    lines.push(`P&L ${sign}$${t.pnl.toFixed(2)}`);
+                  }
+                  if (t.strategy) lines.push(`strategy: ${t.strategy}`);
+                  if (t.reason) {
+                    const r = t.reason.length > 120 ? t.reason.slice(0, 117) + "..." : t.reason;
+                    lines.push(r);
+                  }
+                  return lines;
+                }
+                // NAV line hover
+                return fmtUSD(item.parsed.y);
+              },
             },
           },
         },
