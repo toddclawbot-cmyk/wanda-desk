@@ -70,15 +70,15 @@
   "crypto": [
     {
       "ticker": "SOL-USD",
-      "quantity": 6,
+      "quantity": 5.88,
       "avg_cost": 82.94,
-      "current_price": 84.33000183105469,
+      "current_price": 84.33,
       "market_value": 505.98,
       "unrealized_pnl": 8.34,
       "pct_change": 1.76,
       "stale": false,
-      "last_refresh": "2026-05-01T12:46:28.473078+00:00",
-      "cost_basis": 497.64,
+      "last_refresh": "2026-05-01T12:48:21+00:00",
+      "cost_basis": 487.69,
       "multiplier": 1
     },
     {
@@ -106,7 +106,17 @@
       "last_refresh": "2026-05-01T12:46:28.473107+00:00",
       "cost_basis": 501.36,
       "multiplier": 1
+    },
+    {
+      "ticker": "AVAX-USD",
+      "quantity": 21.81,
+      "avg_cost": 9.183861,
+      "cost_basis": 200.3,
+      "current_price": 9.17,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-01T12:48:26+00:00"
     }
   ],
-  "last_updated": "2026-05-01T12:33:23+00:00"
+  "last_updated": "2026-05-01T12:48:26+00:00"
 }
