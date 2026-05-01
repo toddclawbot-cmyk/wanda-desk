@@ -43,36 +43,7 @@
       "multiplier": 1
     }
   ],
-  "options": [
-    {
-      "ticker": "QQQ260509P670",
-      "quantity": 1,
-      "side": "short",
-      "avg_cost": -0.5,
-      "cost_basis": -50.0,
-      "current_price": 0.5,
-      "unrealized_pnl": 100.0,
-      "pct_change": -200.0,
-      "last_refresh": "2026-05-01T23:17:51.183135+00:00",
-      "market_value": 50.0,
-      "multiplier": 100,
-      "stale": false
-    },
-    {
-      "ticker": "QQQ260509P667",
-      "quantity": 1,
-      "side": "long",
-      "avg_cost": 0.45,
-      "cost_basis": 45.0,
-      "current_price": 0.45,
-      "unrealized_pnl": 0.0,
-      "pct_change": 0.0,
-      "last_refresh": "2026-05-01T23:17:51.183135+00:00",
-      "market_value": 45.0,
-      "multiplier": 100,
-      "stale": false
-    }
-  ],
+  "options": [],
   "crypto": [
     {
       "ticker": "BTC-USD",

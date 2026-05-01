@@ -4,7 +4,7 @@
   "peak": 10044.57,
   "dd_pct": -1.95,
   "inception": "2026-05-01T19:03:21+00:00",
-  "last_updated": "2026-05-01T23:32:15+00:00",
+  "last_updated": "2026-05-01T23:33:02+00:00",
   "circuit_breaker": false,
   "stats": {
     "closed": 11,
@@ -12,7 +12,7 @@
     "losses": 6,
     "scratches": 0,
     "win_rate": 40.0,
-    "realized_pnl": -232.75,
+    "realized_pnl": -132.75,
     "best_ticker": "SPY260504C724",
     "best_pnl": 50.33,
     "worst_ticker": "SPY260504C729",
