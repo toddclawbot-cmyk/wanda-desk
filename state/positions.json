@@ -9,7 +9,7 @@
       "unrealized_pnl": 6.2,
       "pct_change": 0.6,
       "stale": false,
-      "last_refresh": "2026-05-01T08:16:52+00:00",
+      "last_refresh": "2026-05-01T08:31:30+00:00",
       "cost_basis": 1036.6,
       "multiplier": 1
     },
@@ -22,7 +22,7 @@
       "unrealized_pnl": -26.58,
       "pct_change": -6.24,
       "stale": false,
-      "last_refresh": "2026-05-01T08:16:52+00:00",
+      "last_refresh": "2026-05-01T08:31:30+00:00",
       "cost_basis": 425.64,
       "multiplier": 1
     },
@@ -35,7 +35,7 @@
       "unrealized_pnl": 106.77,
       "pct_change": 10.18,
       "stale": false,
-      "last_refresh": "2026-05-01T08:16:52+00:00",
+      "last_refresh": "2026-05-01T08:31:30+00:00",
       "cost_basis": 1048.59,
       "multiplier": 1
     },
@@ -48,7 +48,7 @@
       "unrealized_pnl": 27.45,
       "pct_change": 3.17,
       "stale": false,
-      "last_refresh": "2026-05-01T08:16:52+00:00",
+      "last_refresh": "2026-05-01T08:31:30+00:00",
       "cost_basis": 867.15,
       "multiplier": 1
     },
@@ -61,7 +61,7 @@
       "unrealized_pnl": -1.7,
       "pct_change": -0.21,
       "stale": false,
-      "last_refresh": "2026-05-01T08:16:52+00:00",
+      "last_refresh": "2026-05-01T08:31:30+00:00",
       "cost_basis": 817.26,
       "multiplier": 1
     }
@@ -72,12 +72,12 @@
       "ticker": "SOL-USD",
       "quantity": 6,
       "avg_cost": 82.94,
-      "current_price": 84.18,
-      "market_value": 505.08,
-      "unrealized_pnl": 7.44,
-      "pct_change": 1.5,
+      "current_price": 84.16,
+      "market_value": 504.96,
+      "unrealized_pnl": 7.32,
+      "pct_change": 1.47,
       "stale": false,
-      "last_refresh": "2026-05-01T08:16:52+00:00",
+      "last_refresh": "2026-05-01T08:31:30+00:00",
       "cost_basis": 497.64,
       "multiplier": 1
     },
@@ -85,12 +85,12 @@
       "ticker": "BTC-USD",
       "quantity": 0.01047,
       "avg_cost": 77123.21,
-      "current_price": 77333.7969,
-      "market_value": 809.68,
-      "unrealized_pnl": 2.2,
-      "pct_change": 0.27,
+      "current_price": 77428.8984,
+      "market_value": 810.68,
+      "unrealized_pnl": 3.2,
+      "pct_change": 0.4,
       "stale": false,
-      "last_refresh": "2026-05-01T08:16:52+00:00",
+      "last_refresh": "2026-05-01T08:31:30+00:00",
       "cost_basis": 807.48,
       "multiplier": 1
     },
@@ -98,15 +98,15 @@
       "ticker": "ETH-USD",
       "quantity": 0.22,
       "avg_cost": 2278.93,
-      "current_price": 2285.45,
-      "market_value": 502.8,
-      "unrealized_pnl": 1.44,
-      "pct_change": 0.29,
+      "current_price": 2286.25,
+      "market_value": 502.98,
+      "unrealized_pnl": 1.62,
+      "pct_change": 0.32,
       "stale": false,
-      "last_refresh": "2026-05-01T08:16:52+00:00",
+      "last_refresh": "2026-05-01T08:31:30+00:00",
       "cost_basis": 501.36,
       "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-01T08:16:52+00:00"
+  "last_updated": "2026-05-01T08:31:30+00:00"
 }
