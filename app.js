@@ -467,48 +467,22 @@
   // Combines realized P&L (summed from ledger EXIT/SELL entries)
   // with unrealized P&L (from positions.json).
   // Shows a divergent bar chart: losers to the left, winners to the right.
+  // Open-position P&L only. Keeps the widget focused on a single, honest
+  // question: "of what's open right now, who's up and who's down?" — and
+  // avoids the realized/unrealized reconciliation trap when the public
+  // ledger is scrubbed for readability.
   function computeAttribution() {
-    const byTicker = new Map();
-    const ensure = (tk, cls) => {
-      if (!byTicker.has(tk)) byTicker.set(tk, { ticker: tk, cls: cls || "equity", realized: 0, unrealized: 0 });
-      const row = byTicker.get(tk);
-      if (cls && row.cls !== cls) row.cls = cls;
-      return row;
-    };
-
-    // realized: walk the ledger
-    for (const t of S.ledger) {
-      const tk = t.ticker;
-      if (!tk) continue;
-      const act = (t.action || "").toUpperCase();
-      const cls = t.asset_class || null;
-      const row = ensure(tk, cls);
-      // prefer explicit pnl field; otherwise derive from proceeds - cost
-      if (typeof t.pnl === "number") {
-        row.realized += t.pnl;
-      } else if (act === "EXIT" || act === "SELL") {
-        const proceeds = t.proceeds ?? ((t.exit_price ?? t.price ?? 0) * (t.quantity ?? 0));
-        const cost = t.cost_basis ?? 0;
-        if (proceeds && cost) row.realized += (proceeds - cost);
-      }
-    }
-
-    // unrealized: current positions
+    const rows = [];
     const classes = ["equity", "crypto", "options"];
     for (const cls of classes) {
-      const arr = S.positions?.[cls] || [];
-      for (const p of arr) {
-        const row = ensure(p.ticker, cls);
-        const pnl = p.unrealized_pnl ?? ((p.current_price ?? 0) * (p.quantity ?? 0) - (p.cost_basis ?? 0));
-        row.unrealized += pnl;
+      for (const p of (S.positions?.[cls] || [])) {
+        const mult = cls === "options" ? 100 : 1;
+        const unrealized = p.unrealized_pnl ?? ((p.current_price ?? 0) * (p.quantity ?? 0) * mult - (p.cost_basis ?? 0));
+        rows.push({ ticker: p.ticker, cls, unrealized, total: unrealized });
       }
     }
-
-    const rows = [...byTicker.values()]
-      .map(r => ({ ...r, total: r.realized + r.unrealized }))
-      .filter(r => Math.abs(r.total) > 0.005);
     rows.sort((a, b) => b.total - a.total);
-    return rows;
+    return rows.filter(r => Math.abs(r.total) > 0.005);
   }
 
   function renderAttribution() {
@@ -516,47 +490,34 @@
     const summary = $("#attr-summary");
     const rows = computeAttribution();
 
-    // summary KPIs
-    // NET P&L + TOP WINNER/LOSER are attribution-level (include unrealized).
-    // WIN RATE is ledger-truth ONLY — same source as the hero "CLOSED TRADES"
-    // card, so the two can never disagree.
+    // Open-position attribution only. Self-contained: "of what's open right
+    // now, who's up and who's down?" — no reconciliation with realized P&L.
     const winners = rows.filter(r => r.total > 0);
     const losers  = rows.filter(r => r.total < 0);
-    const totalReal = rows.reduce((a, r) => a + r.realized, 0);
-    const totalUnr  = rows.reduce((a, r) => a + r.unrealized, 0);
-    const net = totalReal + totalUnr;
-    const best = winners[0];
+    const openUnr = rows.reduce((a, r) => a + r.unrealized, 0);
+    const best  = winners[0];
     const worst = losers[losers.length - 1];
 
-    const stats = S.nav?.stats || statsFromLedger(S.ledger);
-    const closed = stats?.closed ?? 0;
-    const wins = stats?.wins ?? 0;
-    const losses = stats?.losses ?? 0;
-    const wrPct = stats?.win_rate ?? 0;
-
-    const inception = S.history.length ? S.history[0].nav : 10000;
-    const totalReturn = (S.nav?.nav ?? inception) - inception;
-
     summary.innerHTML = `
-      <div class="attr-kpi ${totalReturn >= 0 ? 'pos' : 'neg'}" title="NAV minus inception ($${inception.toLocaleString()}).">
-        <div class="k-label">TOTAL RETURN</div>
-        <div class="k-value">${fmtUSD(totalReturn)}</div>
-        <div class="k-sub">REAL ${fmtUSD(totalReal)} · UNR ${fmtUSD(totalUnr)}</div>
+      <div class="attr-kpi ${openUnr >= 0 ? 'pos' : 'neg'}" title="Unrealized P&L across all currently open positions.">
+        <div class="k-label">OPEN&nbsp;P&amp;L</div>
+        <div class="k-value">${fmtUSD(openUnr)}</div>
+        <div class="k-sub">${rows.length} open position${rows.length === 1 ? '' : 's'}</div>
       </div>
       <div class="attr-kpi">
-        <div class="k-label">WIN RATE (CLOSED)</div>
-        <div class="k-value">${closed ? wrPct.toFixed(0) + '%' : '—'}</div>
-        <div class="k-sub">${wins}W · ${losses}L · ${closed} closed</div>
+        <div class="k-label">WINNERS&nbsp;/&nbsp;LOSERS</div>
+        <div class="k-value"><span class="pnl up">${winners.length}</span> · <span class="pnl down">${losers.length}</span></div>
+        <div class="k-sub">open positions</div>
       </div>
-      <div class="attr-kpi pos" title="Per-ticker aggregate of realized + unrealized P&L — different from the hero 'BEST TRADE' (single trade).">
-        <div class="k-label">TOP TICKER</div>
+      <div class="attr-kpi pos" title="Best-performing open position right now.">
+        <div class="k-label">TOP&nbsp;WINNER</div>
         <div class="k-value">${best ? best.ticker : '—'}</div>
-        <div class="k-sub">${best ? fmtUSD(best.total) + ' aggregate' : ''}</div>
+        <div class="k-sub">${best ? fmtUSD(best.total) : ''}</div>
       </div>
-      <div class="attr-kpi neg" title="Per-ticker aggregate of realized + unrealized P&L.">
-        <div class="k-label">WORST TICKER</div>
+      <div class="attr-kpi neg" title="Worst-performing open position right now.">
+        <div class="k-label">TOP&nbsp;LOSER</div>
         <div class="k-value">${worst ? worst.ticker : '—'}</div>
-        <div class="k-sub">${worst ? fmtUSD(worst.total) + ' aggregate' : ''}</div>
+        <div class="k-sub">${worst ? fmtUSD(worst.total) : ''}</div>
       </div>
     `;
 
@@ -567,26 +528,14 @@
     }
 
     // scale bars against the largest absolute move so relative magnitude is readable
-    const maxAbs = rows.reduce((m, r) => Math.max(m, Math.abs(r.total), Math.abs(r.realized) + Math.abs(r.unrealized)), 0) || 1;
+    const maxAbs = rows.reduce((m, r) => Math.max(m, Math.abs(r.total)), 0) || 1;
 
     for (const r of rows) {
       const isWin = r.total >= 0;
       const totalPct = Math.min(100, (Math.abs(r.total) / maxAbs) * 100);
-      // segment the bar: realized vs unrealized share of the |total|
-      const denom = Math.abs(r.realized) + Math.abs(r.unrealized) || 1;
-      const realPct = (Math.abs(r.realized) / denom) * totalPct;
-      const unrPct  = (Math.abs(r.unrealized) / denom) * totalPct;
 
-      const posBar = isWin ? `
-        <div class="attr-pos-fill" style="width:${totalPct}%">
-          <span class="attr-seg-unr"  style="width:${totalPct ? (unrPct / totalPct) * 100 : 0}%"></span>
-          <span class="attr-seg-real" style="width:${totalPct ? (realPct / totalPct) * 100 : 0}%"></span>
-        </div>` : "";
-      const negBar = !isWin ? `
-        <div class="attr-neg-fill" style="width:${totalPct}%">
-          <span class="attr-seg-unr"  style="width:${totalPct ? (unrPct / totalPct) * 100 : 0}%"></span>
-          <span class="attr-seg-real" style="width:${totalPct ? (realPct / totalPct) * 100 : 0}%"></span>
-        </div>` : "";
+      const posBar = isWin ? `<div class="attr-pos-fill" style="width:${totalPct}%"><span class="attr-seg-unr" style="width:100%"></span></div>` : "";
+      const negBar = !isWin ? `<div class="attr-neg-fill" style="width:${totalPct}%"><span class="attr-seg-unr" style="width:100%"></span></div>` : "";
 
       const row = document.createElement("div");
       row.className = "attr-row " + (isWin ? "pos" : "neg");
@@ -598,10 +547,9 @@
         <div class="attr-mobile-bar"><div class="attr-mobile-fill" style="width:${totalPct}%"></div></div>
         <div class="attr-amt ${isWin ? 'pos' : 'neg'}">
           ${fmtUSD(r.total)}
-          <small>R ${fmtUSD(r.realized, 2)} · U ${fmtUSD(r.unrealized, 2)}</small>
         </div>
       `;
-      row.title = `${r.ticker} · realized ${fmtUSD(r.realized)} · unrealized ${fmtUSD(r.unrealized)}`;
+      row.title = `${r.ticker} · unrealized ${fmtUSD(r.unrealized)}`;
       host.appendChild(row);
     }
   }
