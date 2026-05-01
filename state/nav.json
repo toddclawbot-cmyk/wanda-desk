@@ -1,30 +1,30 @@
 {
-  "nav": 11786.4,
+  "nav": 11785.94,
   "cash": 4727.01,
   "peak": 11960.14,
-  "dd_pct": -1.45,
+  "dd_pct": -1.46,
   "inception": "2026-04-27T14:05:00Z",
-  "last_updated": "2026-05-01T17:45:59+00:00",
+  "last_updated": "2026-05-01T17:47:25+00:00",
   "circuit_breaker": false,
   "reconcile": {
     "status": "ok",
     "cash_drift": 0.0,
     "nav_drift": 0.0,
-    "ledger_cash": 4135.12,
-    "stats_rebuilt_at": "2026-05-01T17:46:16+00:00",
+    "ledger_cash": 4727.01,
+    "stats_rebuilt_at": "2026-05-01T17:44:32+00:00",
     "stats_rebuild_source": "ledger.jsonl (post-quarantine)"
   },
   "stats": {
-    "closed": 14,
+    "closed": 13,
     "wins": 6,
-    "losses": 8,
+    "losses": 7,
     "scratches": 0,
-    "win_rate": 42.86,
-    "realized_pnl": -135.89,
+    "win_rate": 46.15,
+    "realized_pnl": -135.77,
     "best_ticker": "SPY260508P720",
     "best_pnl": 30.63,
     "worst_ticker": "SPY260508P720",
     "worst_pnl": -127.28,
-    "checked_at": "2026-05-01T17:46:16+00:00"
+    "checked_at": "2026-05-01T17:44:32+00:00"
   }
 }
