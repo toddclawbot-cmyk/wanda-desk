@@ -132,28 +132,6 @@
       "multiplier": 1
     }
   ],
-  "options": [
-    {
-      "ticker": "QQQ",
-      "asset_class": "options",
-      "strategy": "put_credit_spread",
-      "short_put": "665P May 5",
-      "long_put": "660P May 5",
-      "quantity": 4,
-      "avg_cost": 0.31,
-      "current_price": 0.31,
-      "market_value": 124.0,
-      "unrealized_pnl": 0,
-      "pct_change": 0,
-      "multiplier": 100,
-      "expiry": "2026-05-05",
-      "delta": 0.15,
-      "net_credit": 496.0,
-      "max_risk": 2000.0,
-      "last_refresh": "2026-05-01T17:39:52+00:00",
-      "stale": true,
-      "last_refresh_attempt": "2026-05-01T17:43:34.468873+00:00"
-    }
-  ],
-  "last_updated": "2026-05-01T17:43:34.468982+00:00"
+  "options": [],
+  "last_updated": "2026-05-01T17:45:59+00:00"
 }
