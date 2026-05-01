@@ -1,16 +1,16 @@
 {
-  "nav": 10092.46,
+  "nav": 10095.89,
   "cash": 3765.0,
   "peak": 10092.46,
-  "dd_pct": 0.0,
+  "dd_pct": 0.034,
   "inception": "2026-04-27T14:05:00Z",
-  "last_updated": "2026-05-01T13:01:28+00:00",
+  "last_updated": "2026-05-01T13:24:56.725365+00:00",
   "circuit_breaker": false,
   "reconcile": {
     "status": "ok",
     "cash_drift": 0.0,
     "nav_drift": 0.0,
-    "ledger_cash": 3955.2
+    "ledger_cash": 3765.0
   },
   "stats": {
     "closed": 9,
