@@ -9,10 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&family=VT323&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=tz3" />
+  <link rel="stylesheet" href="./styles.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
-  <script defer src="./app.js?v=tz3"></script>
+  <script defer src="./app.js"></script>
 </head>
 <body>
   <div class="scanlines" aria-hidden="true"></div>
@@ -29,7 +29,7 @@
       <span class="chip" id="regime-chip">REGIME&nbsp;// <em id="regime-val">—</em></span>
       <span class="chip" id="breaker-chip">BREAKER&nbsp;// <em id="breaker-val">ARMED</em></span>
       <span class="chip" id="recon-chip" title="Bookkeeping invariant — should be OK">BOOKS&nbsp;// <em id="recon-val">—</em></span>
-      <span class="chip" id="clock-chip"><em id="clock-val">--:--:--</em> <span class="clock-zone">ET</span></span>
+      <span class="chip" id="clock-chip"><em id="clock-val">--:--:--</em> UTC</span>
     </nav>
   </header>
 
@@ -45,13 +45,9 @@
         </div>
         <div class="hero-stats">
           <div class="stat"><div class="stat-label">vs INCEPTION</div><div class="stat-value" id="stat-incept">—</div></div>
-          <div class="stat"><div class="stat-label">vs YESTERDAY</div><div class="stat-value" id="stat-dod">—</div><div class="stat-sub" id="stat-dod-sub">—</div></div>
           <div class="stat"><div class="stat-label">vs PEAK (DD)</div><div class="stat-value" id="stat-dd">—</div></div>
           <div class="stat"><div class="stat-label">CASH</div><div class="stat-value" id="stat-cash">—</div></div>
           <div class="stat"><div class="stat-label">POSITIONS</div><div class="stat-value" id="stat-positions">—</div></div>
-          <div class="stat"><div class="stat-label">CLOSED&nbsp;TRADES</div><div class="stat-value" id="stat-record">—</div><div class="stat-sub" id="stat-record-sub">—</div></div>
-          <div class="stat"><div class="stat-label">REALIZED&nbsp;P&amp;L</div><div class="stat-value" id="stat-realized">—</div><div class="stat-sub" id="stat-realized-sub">—</div></div>
-          <div class="stat"><div class="stat-label">BEST&nbsp;TRADE</div><div class="stat-value" id="stat-besttrade">—</div><div class="stat-sub" id="stat-besttrade-sub">—</div></div>
         </div>
       </div>
     </section>
@@ -66,7 +62,7 @@
 
     <!-- ALLOCATIONS -->
     <section class="panel alloc-panel" aria-label="Allocations">
-      <div class="panel-label"><span>ALLOCATION&nbsp;//&nbsp;CAPS</span></div>
+      <div class="panel-label"><span>ALLOCATION&nbsp;//&nbsp;CAPS</span><span class="panel-meta">per-class 33% · cash floor 5%</span></div>
       <div class="alloc-grid" id="alloc-grid"></div>
     </section>
 

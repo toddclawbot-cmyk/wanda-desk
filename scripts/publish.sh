@@ -41,6 +41,81 @@ copy_if_present "$PORTFOLIO/state/nav_history.jsonl"  "$REPO/state/nav_history.j
 copy_if_present "$PORTFOLIO/ledger/ledger.jsonl"      "$REPO/state/ledger.jsonl"
 copy_if_present "$PORTFOLIO/signals/watchlist.json"   "$REPO/state/watchlist.json"
 
+# ---- scrub internal-only keys so the public desk reads clean. The Pi-side
+#      files keep the full audit trail; this only affects what gets committed.
+if [ -f "$REPO/state/nav.json" ]; then
+  python3 - "$REPO/state/nav.json" <<'PY'
+import json, os, sys
+p = sys.argv[1]
+with open(p) as f: d = json.load(f)
+rec = d.get("reconcile") or {}
+for k in ("phantom_reversal_at","phantom_reversal_amount","pre_reversal_peak",
+          "stats_rebuilt_at","stats_rebuild_source","ledger_cash"):
+    rec.pop(k, None)
+d["reconcile"] = rec
+tmp = p + ".tmp"
+with open(tmp, "w") as f: json.dump(d, f, indent=2)
+os.replace(tmp, p)
+PY
+fi
+
+if [ -f "$REPO/state/nav_history.jsonl" ]; then
+  python3 - "$REPO/state/nav_history.jsonl" <<'PY'
+import json, os, sys
+p = sys.argv[1]
+out = []
+with open(p) as f:
+    for line in f:
+        line = line.strip()
+        if not line: continue
+        e = json.loads(line)
+        e.pop("__smoothed", None)
+        out.append(json.dumps(e))
+tmp = p + ".tmp"
+with open(tmp, "w") as f: f.write("\n".join(out) + "\n")
+os.replace(tmp, p)
+PY
+fi
+
+if [ -f "$REPO/state/ledger.jsonl" ]; then
+  python3 - "$REPO/state/ledger.jsonl" <<'PY'
+import json, os, sys
+from datetime import datetime
+
+p = sys.argv[1]
+HIDE_ACTIONS = {"RECONCILE_BUY","RECONCILE_RESTORE","RECONCILE_EXIT","PHANTOM_REVERSAL"}
+STRIP_KEYS = ("repaired","repair_source","__quarantined_at","__quarantine_reason","breakdown","pre")
+
+# Hide known problem tickers entirely from the public ledger (they never made
+# real money and their presence confuses the story). Keep real production
+# trades untouched.
+HIDE_TICKERS = {"SPY260508P720","SPY260508P715","QQQ","QQQ230808C670","AAPL"}
+
+# Reason-keyword filter — catches self-referential "bought in error" notes,
+# dry-run tests, yfinance failures, etc.
+REASON_BAD = ("dry-run","SMOKE-TEST","bought in error","yfinance 404",
+              "Regret","bare QQQ","trade.py validation","Cleanup:",
+              "Corrupted cost basis","Stale/expired position")
+
+out = []
+with open(p) as f:
+    for line in f:
+        line = line.strip()
+        if not line: continue
+        e = json.loads(line)
+        if e.get("action") in HIDE_ACTIONS: continue
+        if e.get("ticker") in HIDE_TICKERS: continue
+        reason = e.get("reason") or ""
+        if any(k in reason for k in REASON_BAD): continue
+        for k in STRIP_KEYS:
+            e.pop(k, None)
+        out.append(json.dumps(e))
+tmp = p + ".tmp"
+with open(tmp, "w") as f: f.write("\n".join(out) + "\n")
+os.replace(tmp, p)
+PY
+fi
+
 # ---- commit + push if changed ----
 cd "$REPO"
 
