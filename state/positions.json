@@ -80,7 +80,17 @@
       "last_refresh": "2026-05-01T04:03:19.628114+00:00",
       "cost_basis": 497.64,
       "multiplier": 1
+    },
+    {
+      "ticker": "BTC-USD",
+      "quantity": 0.01047,
+      "avg_cost": 77123.209169,
+      "cost_basis": 807.48,
+      "current_price": 77008.12,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-01T04:35:32+00:00"
     }
   ],
-  "last_updated": "2026-05-01T04:03:19.628114+00:00"
+  "last_updated": "2026-05-01T04:35:32+00:00"
 }
