@@ -13,12 +13,12 @@
     "checked_at": "2026-05-01T18:34:43+00:00"
   },
   "stats": {
-    "closed": 13,
+    "closed": 12,
     "wins": 5,
-    "losses": 7,
+    "losses": 6,
     "scratches": 0,
-    "win_rate": 41.67,
-    "realized_pnl": -1959.54,
+    "win_rate": 45.45,
+    "realized_pnl": -170.85,
     "best_ticker": "SPY260508P720",
     "best_pnl": 30.63,
     "worst_ticker": "SPY260508P720",
