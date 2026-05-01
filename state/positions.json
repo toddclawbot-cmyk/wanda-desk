@@ -45,22 +45,6 @@
   ],
   "options": [
     {
-      "ticker": "SPY260504C724",
-      "quantity": -1.0,
-      "side": "short",
-      "avg_cost": 1.1289,
-      "credit_received": 112.89,
-      "cost_basis": -112.89,
-      "max_loss": 463.0,
-      "current_price": 1.165,
-      "unrealized_pnl": -3.61,
-      "pct_change": -3.1978,
-      "last_refresh": "2026-05-01T20:17:45.558931+00:00",
-      "market_value": -113.0,
-      "multiplier": 100,
-      "stale": false
-    },
-    {
       "ticker": "SPY260504C729",
       "quantity": 1.0,
       "side": "long",
@@ -71,22 +55,6 @@
       "pct_change": -88.8275,
       "last_refresh": "2026-05-01T20:17:45.558951+00:00",
       "market_value": 76.0,
-      "multiplier": 100,
-      "stale": false
-    },
-    {
-      "ticker": "SPY260504P716",
-      "quantity": -1.0,
-      "side": "short",
-      "avg_cost": 0.6194,
-      "credit_received": 61.94,
-      "cost_basis": -61.94,
-      "max_loss": 438.0,
-      "current_price": 0.7,
-      "unrealized_pnl": -8.06,
-      "pct_change": -13.0126,
-      "last_refresh": "2026-05-01T20:17:45.558957+00:00",
-      "market_value": -62.0,
       "multiplier": 100,
       "stale": false
     },
@@ -135,5 +103,5 @@
       "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-01T20:16:53+00:00"
+  "last_updated": "2026-05-01T20:39:49+00:00"
 }
