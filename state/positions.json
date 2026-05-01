@@ -6,10 +6,12 @@
       "side": "long",
       "avg_cost": 198.59,
       "cost_basis": 992.95,
-      "current_price": 198.49,
-      "unrealized_pnl": 0.0,
-      "pct_change": 0.0,
-      "last_refresh": "2026-05-01T19:05:41+00:00"
+      "current_price": 199.789902,
+      "unrealized_pnl": 5.999509,
+      "pct_change": 0.604211,
+      "last_refresh": "2026-05-01T19:33:46.991521+00:00",
+      "stale": false,
+      "market_value": 998.949509
     },
     {
       "ticker": "QQQ",
@@ -17,25 +19,40 @@
       "side": "long",
       "avg_cost": 675.27,
       "cost_basis": 675.27,
-      "current_price": 674.93,
-      "unrealized_pnl": 0.0,
-      "pct_change": 0.0,
-      "last_refresh": "2026-05-01T19:17:26+00:00"
+      "current_price": 675.22998,
+      "unrealized_pnl": -0.04002,
+      "pct_change": -0.005926,
+      "last_refresh": "2026-05-01T19:33:47.136354+00:00",
+      "stale": false,
+      "market_value": 675.22998
     }
   ],
   "options": [],
   "crypto": [
     {
       "ticker": "BTC-USD",
-      "quantity": 0.001,
+      "quantity": 0.009000000000000001,
       "side": "long",
-      "avg_cost": 78610.0,
-      "cost_basis": 78.61,
-      "current_price": 78490.1,
+      "avg_cost": 78503.333333,
+      "cost_basis": 706.53,
+      "current_price": 78372.75,
+      "unrealized_pnl": -0.257953,
+      "pct_change": -0.328143,
+      "last_refresh": "2026-05-01T19:34:43+00:00",
+      "stale": false,
+      "market_value": 78.352047
+    },
+    {
+      "ticker": "ETH-USD",
+      "quantity": 0.43,
+      "side": "long",
+      "avg_cost": 2308.72093,
+      "cost_basis": 992.75,
+      "current_price": 2305.27,
       "unrealized_pnl": 0.0,
       "pct_change": 0.0,
-      "last_refresh": "2026-05-01T19:05:42+00:00"
+      "last_refresh": "2026-05-01T19:34:56+00:00"
     }
   ],
-  "last_updated": "2026-05-01T19:17:26+00:00"
+  "last_updated": "2026-05-01T19:34:56+00:00"
 }
