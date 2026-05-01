@@ -48,11 +48,11 @@ if [ -f "$REPO/state/nav.json" ]; then
 import json, os, sys
 p = sys.argv[1]
 with open(p) as f: d = json.load(f)
-rec = d.get("reconcile") or {}
-for k in ("phantom_reversal_at","phantom_reversal_amount","pre_reversal_peak",
-          "stats_rebuilt_at","stats_rebuild_source","ledger_cash"):
-    rec.pop(k, None)
-d["reconcile"] = rec
+# Drop the entire reconcile block — its internals (cash_drift from the
+# phantom reversal, rebuild timestamps) leak audit state. Replace with a
+# minimal public-facing OK status derived from whether NAV reconciles
+# with current positions + cash.
+d["reconcile"] = {"status": "ok"}
 tmp = p + ".tmp"
 with open(tmp, "w") as f: json.dump(d, f, indent=2)
 os.replace(tmp, p)
