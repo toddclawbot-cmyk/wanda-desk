@@ -356,7 +356,12 @@
             callbacks: {
               title: (items) => {
                 const d = new Date(items[0].parsed.x);
-                return d.toUTCString().replace(" GMT", " UTC");
+                return d.toLocaleString("en-US", {
+                  timeZone: "America/New_York",
+                  weekday: "short", month: "short", day: "2-digit",
+                  hour: "2-digit", minute: "2-digit", hour12: false,
+                  timeZoneName: "short",
+                });
               },
               label: (item) => fmtUSD(item.parsed.y),
             },
@@ -714,12 +719,23 @@
     tickClock();
   }
   function truncate(s, n) { return s.length > n ? s.slice(0, n - 1) + "…" : s; }
+  const CLOCK_FMT = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false,
+  });
+  const CLOCK_ZONE_FMT = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York", timeZoneName: "short",
+  });
   function tickClock() {
     const d = new Date();
-    const hh = String(d.getUTCHours()).padStart(2, "0");
-    const mm = String(d.getUTCMinutes()).padStart(2, "0");
-    const ss = String(d.getUTCSeconds()).padStart(2, "0");
-    $("#clock-val").textContent = `${hh}:${mm}:${ss}`;
+    const parts = Object.fromEntries(CLOCK_FMT.formatToParts(d).map(p => [p.type, p.value]));
+    const hh = parts.hour === "24" ? "00" : parts.hour;
+    $("#clock-val").textContent = `${hh}:${parts.minute}:${parts.second}`;
+    const zoneLabel = document.querySelector("#clock-chip .clock-zone");
+    if (zoneLabel) {
+      const zp = CLOCK_ZONE_FMT.formatToParts(d).find(p => p.type === "timeZoneName");
+      zoneLabel.textContent = zp ? zp.value : "ET";
+    }
   }
 
   // ---------- data load ----------
