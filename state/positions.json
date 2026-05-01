@@ -101,5 +101,18 @@
       "stale": false,
       "last_refresh": "2026-05-01T14:30:32+00:00"
     }
-  ]
+  ],
+  "options": [
+    {
+      "ticker": "QQQ230808C670",
+      "quantity": 1.0,
+      "avg_cost": 5.6556,
+      "cost_basis": 565.56,
+      "current_price": 5.65,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-01T14:56:24+00:00"
+    }
+  ],
+  "last_updated": "2026-05-01T14:56:24+00:00"
 }
