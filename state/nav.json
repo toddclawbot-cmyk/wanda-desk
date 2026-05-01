@@ -1,10 +1,10 @@
 {
-  "nav": 11785.94,
-  "cash": 4727.01,
-  "peak": 11960.14,
-  "dd_pct": -1.46,
+  "nav": 9972.6,
+  "cash": 2913.67,
+  "peak": 9972.6,
+  "dd_pct": 0.0,
   "inception": "2026-04-27T14:05:00Z",
-  "last_updated": "2026-05-01T17:47:25+00:00",
+  "last_updated": "2026-05-01T17:50:07+00:00",
   "circuit_breaker": false,
   "reconcile": {
     "status": "ok",
@@ -12,7 +12,10 @@
     "nav_drift": 0.0,
     "ledger_cash": 4727.01,
     "stats_rebuilt_at": "2026-05-01T17:44:32+00:00",
-    "stats_rebuild_source": "ledger.jsonl (post-quarantine)"
+    "stats_rebuild_source": "ledger.jsonl (post-quarantine)",
+    "phantom_reversal_at": "2026-05-01T17:50:07+00:00",
+    "phantom_reversal_amount": -1813.34,
+    "pre_reversal_peak": 11960.14
   },
   "stats": {
     "closed": 13,
