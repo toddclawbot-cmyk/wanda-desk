@@ -9,7 +9,7 @@
       "unrealized_pnl": 6.2,
       "pct_change": 0.6,
       "stale": false,
-      "last_refresh": "2026-05-01T04:01:17+00:00",
+      "last_refresh": "2026-05-01T04:03:19.628114+00:00",
       "cost_basis": 1036.6,
       "multiplier": 1
     },
@@ -17,12 +17,12 @@
       "ticker": "NVDA",
       "quantity": 2,
       "avg_cost": 212.82,
-      "current_price": 199.53,
-      "market_value": 399.06,
-      "unrealized_pnl": -26.58,
-      "pct_change": -6.24,
+      "current_price": 199.57,
+      "market_value": 399.14,
+      "unrealized_pnl": -26.5,
+      "pct_change": -6.23,
       "stale": false,
-      "last_refresh": "2026-05-01T04:01:17+00:00",
+      "last_refresh": "2026-05-01T04:03:19.628114+00:00",
       "cost_basis": 425.64,
       "multiplier": 1
     },
@@ -30,12 +30,12 @@
       "ticker": "GOOGL",
       "quantity": 3,
       "avg_cost": 349.53,
-      "current_price": 385.12,
-      "market_value": 1155.36,
-      "unrealized_pnl": 106.77,
-      "pct_change": 10.18,
+      "current_price": 384.8,
+      "market_value": 1154.4,
+      "unrealized_pnl": 105.81,
+      "pct_change": 10.09,
       "stale": false,
-      "last_refresh": "2026-05-01T04:01:17+00:00",
+      "last_refresh": "2026-05-01T04:03:19.628114+00:00",
       "cost_basis": 1048.59,
       "multiplier": 1
     },
@@ -43,12 +43,12 @@
       "ticker": "XLE",
       "quantity": 15,
       "avg_cost": 57.81,
-      "current_price": 59.64,
-      "market_value": 894.6,
-      "unrealized_pnl": 27.45,
-      "pct_change": 3.17,
+      "current_price": 59.65,
+      "market_value": 894.75,
+      "unrealized_pnl": 27.6,
+      "pct_change": 3.18,
       "stale": false,
-      "last_refresh": "2026-05-01T04:01:17+00:00",
+      "last_refresh": "2026-05-01T04:03:19.628114+00:00",
       "cost_basis": 867.15,
       "multiplier": 1
     },
@@ -61,7 +61,7 @@
       "unrealized_pnl": -1.7,
       "pct_change": -0.21,
       "stale": false,
-      "last_refresh": "2026-05-01T04:01:17+00:00",
+      "last_refresh": "2026-05-01T04:03:19.628114+00:00",
       "cost_basis": 817.26,
       "multiplier": 1
     }
@@ -77,10 +77,10 @@
       "unrealized_pnl": 6.0,
       "pct_change": 1.21,
       "stale": false,
-      "last_refresh": "2026-05-01T04:01:17+00:00",
+      "last_refresh": "2026-05-01T04:03:19.628114+00:00",
       "cost_basis": 497.64,
       "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-01T04:01:17+00:00"
+  "last_updated": "2026-05-01T04:03:19.628114+00:00"
 }
