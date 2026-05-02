@@ -1,10 +1,10 @@
 {
-  "nav": 12940.32,
+  "nav": 12942.24,
   "cash": 2036.26,
-  "peak": 12942.19,
-  "dd_pct": 0.01,
+  "peak": 12942.24,
+  "dd_pct": 0.0,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T15:32:58.482830+00:00",
+  "last_updated": "2026-05-02T15:34:59+00:00",
   "circuit_breaker": false,
   "notes": "Sat tick 15:32 UTC: NAV $12940.32 (DD -0.01% from peak $12942.19). US equities closed for weekend. Crypto essentially flat.",
   "stats": {
