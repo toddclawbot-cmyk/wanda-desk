@@ -5,7 +5,7 @@
   "dd_pct": -0.0,
   "circuit_breaker": false,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T19:46:24.374633+00:00",
+  "last_updated": "2026-05-02T20:01:11.893548+00:00",
   "notes": "Saturday tick \u2014 US equities closed. Crypto marginal drift. All positions within caps.",
   "stats": {
     "closed": 15,
