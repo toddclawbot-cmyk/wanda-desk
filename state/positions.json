@@ -9,7 +9,7 @@
       "current_price": 58.84,
       "unrealized_pnl": -36.69,
       "pct_change": -1.91,
-      "last_refresh": "2026-05-02T11:33:10+00:00",
+      "last_refresh": "2026-05-02T12:01:40+00:00",
       "stale": false,
       "market_value": 1882.88,
       "multiplier": 1
@@ -23,7 +23,7 @@
       "current_price": 51.94,
       "unrealized_pnl": 2.2,
       "pct_change": 0.21,
-      "last_refresh": "2026-05-02T11:33:10+00:00",
+      "last_refresh": "2026-05-02T12:01:40+00:00",
       "stale": false,
       "market_value": 1038.8,
       "multiplier": 1
@@ -37,7 +37,7 @@
       "current_price": 414.51,
       "unrealized_pnl": 11.35,
       "pct_change": 1.39,
-      "last_refresh": "2026-05-02T11:33:10+00:00",
+      "last_refresh": "2026-05-02T12:01:40+00:00",
       "stale": false,
       "market_value": 829.02,
       "multiplier": 1
@@ -51,7 +51,7 @@
       "current_price": 720.67,
       "unrealized_pnl": -2.74,
       "pct_change": -0.38,
-      "last_refresh": "2026-05-02T11:33:10+00:00",
+      "last_refresh": "2026-05-02T12:01:40+00:00",
       "stale": false,
       "market_value": 720.67,
       "multiplier": 1
@@ -65,7 +65,7 @@
       "current_price": 198.42,
       "unrealized_pnl": -3.43,
       "pct_change": -0.25,
-      "last_refresh": "2026-05-02T11:33:10+00:00",
+      "last_refresh": "2026-05-02T12:01:40+00:00",
       "stale": false,
       "market_value": 1388.94,
       "multiplier": 1
@@ -79,7 +79,7 @@
       "current_price": 674.16,
       "unrealized_pnl": -1.11,
       "pct_change": -0.16,
-      "last_refresh": "2026-05-02T11:33:10+00:00",
+      "last_refresh": "2026-05-02T12:01:40+00:00",
       "stale": false,
       "market_value": 674.16,
       "multiplier": 1
@@ -93,7 +93,7 @@
       "current_price": 130.33,
       "unrealized_pnl": -0.23,
       "pct_change": -0.04,
-      "last_refresh": "2026-05-02T11:33:10+00:00",
+      "last_refresh": "2026-05-02T12:01:40+00:00",
       "stale": false,
       "market_value": 651.65,
       "multiplier": 1
@@ -107,12 +107,12 @@
       "side": "long",
       "avg_cost": 82.940476,
       "cost_basis": 487.69,
-      "current_price": 83.74,
-      "unrealized_pnl": 4.7,
-      "pct_change": 0.96,
-      "last_refresh": "2026-05-02T11:33:10+00:00",
+      "current_price": 83.69,
+      "unrealized_pnl": 4.41,
+      "pct_change": 0.9,
+      "last_refresh": "2026-05-02T12:01:40+00:00",
       "stale": false,
-      "market_value": 492.39,
+      "market_value": 492.1,
       "multiplier": 1
     },
     {
@@ -121,12 +121,12 @@
       "side": "long",
       "avg_cost": 77761.171032,
       "cost_basis": 1514.01,
-      "current_price": 78216.7578,
-      "unrealized_pnl": 8.87,
-      "pct_change": 0.59,
-      "last_refresh": "2026-05-02T11:33:10+00:00",
+      "current_price": 78147.2188,
+      "unrealized_pnl": 7.52,
+      "pct_change": 0.5,
+      "last_refresh": "2026-05-02T12:01:40+00:00",
       "stale": false,
-      "market_value": 1522.88,
+      "market_value": 1521.53,
       "multiplier": 1
     },
     {
@@ -135,12 +135,12 @@
       "side": "long",
       "avg_cost": 2299.8,
       "cost_basis": 1494.87,
-      "current_price": 2304.29,
-      "unrealized_pnl": 2.92,
-      "pct_change": 0.2,
-      "last_refresh": "2026-05-02T11:33:10+00:00",
+      "current_price": 2301.8101,
+      "unrealized_pnl": 1.31,
+      "pct_change": 0.09,
+      "last_refresh": "2026-05-02T12:01:40+00:00",
       "stale": false,
-      "market_value": 1497.79,
+      "market_value": 1496.18,
       "multiplier": 1
     },
     {
@@ -149,14 +149,14 @@
       "side": "long",
       "avg_cost": 9.183861,
       "cost_basis": 200.3,
-      "current_price": 9.11,
-      "unrealized_pnl": -1.61,
-      "pct_change": -0.8,
-      "last_refresh": "2026-05-02T11:33:10+00:00",
+      "current_price": 9.09,
+      "unrealized_pnl": -2.05,
+      "pct_change": -1.02,
+      "last_refresh": "2026-05-02T12:01:40+00:00",
       "stale": false,
-      "market_value": 198.69,
+      "market_value": 198.25,
       "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-02T11:33:10+00:00"
+  "last_updated": "2026-05-02T12:01:40+00:00"
 }
