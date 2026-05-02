@@ -107,12 +107,12 @@
       "side": "long",
       "avg_cost": 82.940476,
       "cost_basis": 487.69,
-      "current_price": 83.9,
-      "unrealized_pnl": 5.64,
-      "pct_change": 1.16,
-      "last_refresh": "2026-05-02T09:31:25+00:00",
+      "current_price": 83.88,
+      "unrealized_pnl": 5.524399999999957,
+      "pct_change": 1.132768999300171,
+      "last_refresh": "2026-05-02T10:32:51.065742+00:00",
       "stale": false,
-      "market_value": 493.33,
+      "market_value": 493.21439999999996,
       "multiplier": 1
     },
     {
@@ -121,12 +121,12 @@
       "side": "long",
       "avg_cost": 77761.171032,
       "cost_basis": 1514.01,
-      "current_price": 78252.9609,
-      "unrealized_pnl": 9.58,
-      "pct_change": 0.63,
-      "last_refresh": "2026-05-02T09:31:25+00:00",
+      "current_price": 78251.3594,
+      "unrealized_pnl": 9.543967518000045,
+      "pct_change": 0.630376782518205,
+      "last_refresh": "2026-05-02T10:32:51.065742+00:00",
       "stale": false,
-      "market_value": 1523.59,
+      "market_value": 1523.553967518,
       "multiplier": 1
     },
     {
@@ -135,12 +135,12 @@
       "side": "long",
       "avg_cost": 2299.8,
       "cost_basis": 1494.87,
-      "current_price": 2303.7,
-      "unrealized_pnl": 2.53,
-      "pct_change": 0.17,
-      "last_refresh": "2026-05-02T09:31:25+00:00",
+      "current_price": 2303.6201,
+      "unrealized_pnl": 2.483065000000124,
+      "pct_change": 0.16610574832593983,
+      "last_refresh": "2026-05-02T10:32:51.065742+00:00",
       "stale": false,
-      "market_value": 1497.4,
+      "market_value": 1497.353065,
       "multiplier": 1
     },
     {
@@ -149,14 +149,14 @@
       "side": "long",
       "avg_cost": 9.183861,
       "cost_basis": 200.3,
-      "current_price": 9.1,
-      "unrealized_pnl": -1.83,
-      "pct_change": -0.91,
-      "last_refresh": "2026-05-02T09:31:25+00:00",
+      "current_price": 9.11,
+      "unrealized_pnl": -1.6109000000000435,
+      "pct_change": -0.8042477994821606,
+      "last_refresh": "2026-05-02T10:32:51.065742+00:00",
       "stale": false,
-      "market_value": 198.47,
+      "market_value": 198.68909999999997,
       "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-02T09:31:25+00:00"
+  "last_updated": "2026-05-02T10:32:51.065742+00:00"
 }
