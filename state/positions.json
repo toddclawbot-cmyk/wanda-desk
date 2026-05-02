@@ -51,12 +51,12 @@
       "side": "long",
       "avg_cost": 78503.33,
       "cost_basis": 706.53,
-      "current_price": 78185.3125,
-      "unrealized_pnl": -2.8621575000000155,
-      "pct_change": -0.40510064987052674,
-      "last_refresh": "2026-05-02T04:45:00+00:00",
+      "current_price": 78159.1875,
+      "unrealized_pnl": -3.0973125000000437,
+      "pct_change": -0.004383794929463524,
+      "last_refresh": "2026-05-02T05:00:00+00:00",
       "stale": false,
-      "market_value": 703.6678125,
+      "market_value": 703.4326874999999,
       "multiplier": 1
     },
     {
@@ -65,12 +65,12 @@
       "side": "long",
       "avg_cost": 2308.72,
       "cost_basis": 992.75,
-      "current_price": 2300.719970703125,
-      "unrealized_pnl": -3.440012597656164,
-      "pct_change": -0.3465136221315168,
-      "last_refresh": "2026-05-02T04:45:00+00:00",
+      "current_price": 2300.2099609375,
+      "unrealized_pnl": -3.6597167968750455,
+      "pct_change": -0.003686042076345248,
+      "last_refresh": "2026-05-02T05:00:00+00:00",
       "stale": false,
-      "market_value": 989.3095874023437,
+      "market_value": 989.090283203125,
       "multiplier": 1
     },
     {
@@ -88,5 +88,5 @@
       "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-02T04:45:00+00:00"
+  "last_updated": "2026-05-02T05:00:00+00:00"
 }

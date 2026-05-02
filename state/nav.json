@@ -1,12 +1,12 @@
 {
-  "nav": 9759.42,
+  "nav": 9758.97,
   "cash": 5153.44,
   "peak": 10044.57,
   "dd_pct": -2.84,
   "inception": "2026-05-01T19:03:21+00:00",
-  "last_updated": "2026-05-02T04:45:00+00:00",
+  "last_updated": "2026-05-02T05:00:34+00:00",
   "circuit_breaker": false,
-  "notes": "Sat 04:45 UTC. US markets closed (weekend). Crypto 24/7 \u2014 BTC/ETH/AVAX refreshed. VIX 16.99 (low/risk-on). No options. No signals. No action warranted.",
+  "notes": "Sat 05:00 UTC tick. Weekend quiet. No action warranted.",
   "stats": {
     "closed": 11,
     "wins": 4,
