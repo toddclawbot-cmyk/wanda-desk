@@ -1,25 +1,25 @@
 {
-  "nav": 9764.24,
+  "nav": 9761.2,
   "cash": 5153.44,
   "peak": 10044.57,
-  "dd_pct": -2.79,
+  "dd_pct": -2.82,
   "inception": "2026-05-01T19:03:21+00:00",
-  "last_updated": "2026-05-02T04:02:11.486811+00:00",
+  "last_updated": "2026-05-02T04:31:39+00:00",
   "circuit_breaker": false,
   "notes": "Sat 04:00 UTC. US markets closed. VIX 16.99 (low/risk-on). No options open. All positions within caps. Cash 52.8% due to weekend \u2014 no deployment available.",
-  "reconcile": {
-    "status": "ok"
-  },
   "stats": {
     "closed": 11,
     "wins": 4,
     "losses": 6,
     "scratches": 0,
     "win_rate": 40.0,
-    "realized_pnl": -226.73,
+    "realized_pnl": -227.76,
     "best_ticker": "SPY260504C724",
     "best_pnl": 50.33,
     "worst_ticker": "SPY260504C729",
     "worst_pnl": -75.98
+  },
+  "reconcile": {
+    "status": "ok"
   }
 }
