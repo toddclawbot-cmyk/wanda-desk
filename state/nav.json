@@ -1,10 +1,10 @@
 {
-  "nav": 10663.62,
+  "nav": 10659.3,
   "cash": 1199.57,
   "peak": 10663.62,
-  "dd_pct": 0.0,
+  "dd_pct": 0.04,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T16:12:00+00:00",
+  "last_updated": "2026-05-02T16:32:51.121962+00:00",
   "circuit_breaker": false,
   "notes": "NAV corrected 2026-05-02T16:12Z: positions.json had stale entries (XLE 32 shares phantom, AVAX/SOXL still listed after exit). Full ledger reconstruction. Cash $1,199.57 + MV $9,464.05 = NAV $10,663.62. Prior NAV $11,258 was inflated by stale position data.",
   "stats": {
