@@ -1,12 +1,12 @@
 {
-  "nav": 12932.64,
+  "nav": 12934.13,
   "cash": 2036.26,
   "peak": 12938.62,
-  "dd_pct": -0.05,
+  "dd_pct": -0.03,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T11:32:11+00:00",
+  "last_updated": "2026-05-02T11:33:10+00:00",
   "circuit_breaker": false,
-  "notes": "Sat tick 11:16 UTC: crypto flat, equity stale. NAV essentially flat. No signals.",
+  "notes": "Sat tick 11:32 UTC: XLE sector cap trim 13 shares. BTC/ETH/SOL fresh. No entries.",
   "stats": {
     "closed": 13,
     "wins": 4,
