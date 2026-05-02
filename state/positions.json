@@ -99,22 +99,7 @@
       "multiplier": 1
     }
   ],
-  "options": [
-    {
-      "ticker": "SPY260504P711",
-      "quantity": 1.0,
-      "side": "long",
-      "avg_cost": 27.03,
-      "cost_basis": 2703.0,
-      "current_price": 0.001,
-      "unrealized_pnl": -2702.9,
-      "pct_change": -100.0,
-      "last_refresh": "2026-05-02T06:55:31.121529+00:00",
-      "stale": false,
-      "market_value": 0.1,
-      "multiplier": 100
-    }
-  ],
+  "options": [],
   "crypto": [
     {
       "ticker": "SOL-USD",
@@ -173,5 +158,5 @@
       "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-02T07:16:26+00:00"
+  "last_updated": "2026-05-02T07:34:58+00:00"
 }

@@ -1,23 +1,23 @@
 {
   "nav": 12936.54,
-  "cash": 1271.62,
+  "cash": 1271.72,
   "peak": 12938.46,
-  "dd_pct": 0.01,
+  "dd_pct": -0.01,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T07:17:18.530499+00:00",
+  "last_updated": "2026-05-02T07:34:58+00:00",
   "circuit_breaker": false,
   "notes": "Sat tick: crypto only. Equity stale (US market closed). NAV slight uptick from crypto.",
   "stats": {
-    "closed": 11,
+    "closed": 12,
     "wins": 4,
-    "losses": 6,
+    "losses": 7,
     "scratches": 0,
-    "win_rate": 40.0,
-    "realized_pnl": 5668.08,
+    "win_rate": 36.36,
+    "realized_pnl": 2965.18,
     "best_ticker": "SPY260504C724",
     "best_pnl": 50.33,
-    "worst_ticker": "SPY260504C729",
-    "worst_pnl": -75.98
+    "worst_ticker": "SPY260504P711",
+    "worst_pnl": -2702.9
   },
   "reconcile": {
     "status": "ok"
