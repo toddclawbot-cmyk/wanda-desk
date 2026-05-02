@@ -1,10 +1,10 @@
 {
-  "nav": 12934.94,
+  "nav": 12935.11,
   "cash": 2036.26,
   "peak": 12938.62,
-  "dd_pct": -0.03,
+  "dd_pct": -0.027,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T12:46:10+00:00",
+  "last_updated": "2026-05-02T13:01:39+00:00",
   "circuit_breaker": false,
   "notes": "Sat tick 12:46 UTC: NAV $12,935 (-0.03% DD). US equity/options closed for weekend. Crypto holds steady with slight gains. No trades warranted.",
   "stats": {
@@ -13,7 +13,7 @@
     "losses": 8,
     "scratches": 0,
     "win_rate": 33.33,
-    "realized_pnl": 2951.43,
+    "realized_pnl": 2949.9,
     "best_ticker": "SPY260504C724",
     "best_pnl": 50.33,
     "worst_ticker": "SPY260504P711",
