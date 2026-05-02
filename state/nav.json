@@ -1,12 +1,12 @@
 {
-  "nav": 12934.91,
+  "nav": 12935.96,
   "cash": 1271.72,
   "peak": 12938.46,
-  "dd_pct": -0.03,
+  "dd_pct": -0.02,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T08:31:42+00:00",
+  "last_updated": "2026-05-02T08:46:21+00:00",
   "circuit_breaker": false,
-  "notes": "Sat tick: US equities closed. Crypto flat. No action.",
+  "notes": "Sat tick 08:46 UTC: US equities closed, crypto slightly up. No action warranted.",
   "stats": {
     "closed": 12,
     "wins": 4,
