@@ -1,12 +1,12 @@
 {
-  "nav": 12424.94,
+  "nav": 12424.49,
   "cash": 1199.57,
   "peak": 12424.94,
-  "dd_pct": 0.0,
+  "dd_pct": -0.0036,
   "circuit_breaker": false,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T16:44:54+00:00",
-  "notes": "CORRECTED 2026-05-02T16:44:54+00:00: corrupted positions.json rewritten from ledger ground truth. XLE qty fixed 2\u219232, GOOGL cost fixed $1048\u2192$699, MSFT cost fixed $2094\u2192$818, QQQ cost fixed $799\u2192$675. Corrected NAV $12424.94. Prior $10,659 was inflated-cost-basis phantom figure.",
+  "last_updated": "2026-05-02T16:47:42.092417+00:00",
+  "notes": "Saturday tick \u2014 US equities closed (Memorial Day Mon 5/26). Crypto live. NAV at peak.",
   "stats": {
     "closed": 15,
     "wins": 4,
