@@ -2,14 +2,14 @@
   "equity": [
     {
       "ticker": "XLE",
-      "quantity": 45,
+      "quantity": 32.0,
       "side": "long",
       "avg_cost": 59.986444,
-      "cost_basis": 2699.39,
+      "cost_basis": 1919.57,
       "current_price": 58.84,
       "unrealized_pnl": -51.59,
       "pct_change": -1.91,
-      "last_refresh": "2026-05-02T11:00:40+00:00",
+      "last_refresh": "2026-05-02T11:32:11+00:00",
       "stale": false,
       "market_value": 2647.8,
       "multiplier": 1
@@ -158,5 +158,5 @@
       "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-02T11:00:40+00:00"
+  "last_updated": "2026-05-02T11:32:11+00:00"
 }
