@@ -1,12 +1,12 @@
 {
-  "nav": 12424.49,
+  "nav": 12425.65,
   "cash": 1199.57,
-  "peak": 12424.94,
-  "dd_pct": -0.0036,
+  "peak": 12425.65,
+  "dd_pct": 0.0057,
   "circuit_breaker": false,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T16:47:42.092417+00:00",
-  "notes": "Saturday tick \u2014 US equities closed (Memorial Day Mon 5/26). Crypto live. NAV at peak.",
+  "last_updated": "2026-05-02T17:02:21.887353+00:00",
+  "notes": "Saturday tick \u2014 US equities closed (Memorial Day Mon 5/26). Crypto live. VIX 17.0, risk-on expansion.",
   "stats": {
     "closed": 15,
     "wins": 4,
