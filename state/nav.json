@@ -1,12 +1,12 @@
 {
-  "nav": 12426.68,
+  "nav": 12426.15,
   "cash": 1199.57,
   "peak": 12428.27,
-  "dd_pct": -0.01,
+  "dd_pct": -0.02,
   "circuit_breaker": false,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T20:32:11.261106+00:00",
-  "notes": "Saturday tick \u2014 US equities closed. Crypto live (BTC +0.05%, ETH +0.03%, SOL +0.01%). No trading warranted.",
+  "last_updated": "2026-05-02T20:46:44.307279+00:00",
+  "notes": "Saturday tick \u2014 US equities closed. Crypto live (BTC +0.86%, ETH +0.48%, SOL +1.46%). No trading action needed.",
   "stats": {
     "closed": 15,
     "wins": 4,
