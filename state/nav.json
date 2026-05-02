@@ -4,9 +4,9 @@
   "peak": 10044.57,
   "dd_pct": -2.84,
   "inception": "2026-05-01T19:03:21+00:00",
-  "last_updated": "2026-05-02T05:00:34+00:00",
+  "last_updated": "2026-05-02T05:31:46.819203+00:00",
   "circuit_breaker": false,
-  "notes": "Sat 05:00 UTC tick. Weekend quiet. No action warranted.",
+  "notes": "Sat 05:30 UTC tick. Weekend quiet. No action warranted.",
   "stats": {
     "closed": 11,
     "wins": 4,
