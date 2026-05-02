@@ -1,12 +1,12 @@
 {
-  "nav": 9763.21,
+  "nav": 9764.24,
   "cash": 5153.44,
   "peak": 10044.57,
-  "dd_pct": -2.8,
+  "dd_pct": -2.79,
   "inception": "2026-05-01T19:03:21+00:00",
-  "last_updated": "2026-05-02T03:47:51.002611+00:00",
+  "last_updated": "2026-05-02T04:02:11.486811+00:00",
   "circuit_breaker": false,
-  "notes": "Sat 03:47 UTC. US equity/options closed. SOXL +4.8%, BTC +0.2%, ETH +0.4%. All stops OK. Cash 52.8% \u2014 deployment lag noted.",
+  "notes": "Sat 04:00 UTC. US markets closed. VIX 16.99 (low/risk-on). No options open. All positions within caps. Cash 52.8% due to weekend \u2014 no deployment available.",
   "reconcile": {
     "status": "ok"
   },
@@ -16,7 +16,7 @@
     "losses": 6,
     "scratches": 0,
     "win_rate": 40.0,
-    "realized_pnl": -227.76,
+    "realized_pnl": -226.73,
     "best_ticker": "SPY260504C724",
     "best_pnl": 50.33,
     "worst_ticker": "SPY260504C729",
