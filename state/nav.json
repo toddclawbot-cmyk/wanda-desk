@@ -1,10 +1,10 @@
 {
-  "nav": 12940.95,
+  "nav": 12941.03,
   "cash": 2036.26,
   "peak": 12941.18,
-  "dd_pct": -0.0,
+  "dd_pct": -0.0012,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T14:32:09+00:00",
+  "last_updated": "2026-05-02T14:45:00+00:00",
   "circuit_breaker": false,
   "notes": "Sat tick 14:15 UTC: NAV $12,937.98 (DD -0.02% from peak $12,941.18). US equities closed for weekend. Crypto slightly up (BTC 78308, ETH 2305, SOL 83.93, AVAX 9.12). No trades warranted.",
   "stats": {
