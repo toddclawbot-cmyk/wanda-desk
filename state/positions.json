@@ -83,20 +83,6 @@
       "stale": false,
       "market_value": 674.16,
       "multiplier": 1
-    },
-    {
-      "ticker": "SOXL",
-      "quantity": 5.0,
-      "side": "long",
-      "avg_cost": 130.376,
-      "cost_basis": 651.88,
-      "current_price": 130.33,
-      "unrealized_pnl": -0.23,
-      "pct_change": -0.04,
-      "last_refresh": "2026-05-02T15:34:59+00:00",
-      "stale": false,
-      "market_value": 651.65,
-      "multiplier": 1
     }
   ],
   "options": [],
@@ -142,21 +128,7 @@
       "stale": false,
       "market_value": 1499.77,
       "multiplier": 1
-    },
-    {
-      "ticker": "AVAX-USD",
-      "quantity": 21.81,
-      "side": "long",
-      "avg_cost": 9.183860614397066,
-      "cost_basis": 200.3,
-      "current_price": 9.14,
-      "unrealized_pnl": -0.96,
-      "pct_change": -0.48,
-      "last_refresh": "2026-05-02T15:34:59+00:00",
-      "stale": false,
-      "market_value": 199.34,
-      "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-02T15:34:59+00:00"
+  "last_updated": "2026-05-02T15:48:11+00:00"
 }
