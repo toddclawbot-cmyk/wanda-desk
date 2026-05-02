@@ -1,11 +1,11 @@
 {
-  "nav": 12428.13,
+  "nav": 12427.029707373047,
   "cash": 1199.57,
   "peak": 12428.27,
-  "dd_pct": -0.001,
+  "dd_pct": -0.009979607998167328,
   "circuit_breaker": false,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T21:00:00.000000+00:00",
+  "last_updated": "2026-05-02T21:17:05.132081+00:00",
   "notes": "Saturday tick 21:00 UTC. US equities closed. Crypto live (BTC 78488 +0.28%, ETH 2312 +0.70%, SOL 84.2 +0.60%). No trading action.",
   "stats": {
     "closed": 15,
@@ -13,7 +13,7 @@
     "losses": 10,
     "scratches": 0,
     "win_rate": 28.57,
-    "realized_pnl": 2311.47,
+    "realized_pnl": 2309.49,
     "best_ticker": "SPY260504C724",
     "best_pnl": 50.33,
     "worst_ticker": "SPY260504P711",
