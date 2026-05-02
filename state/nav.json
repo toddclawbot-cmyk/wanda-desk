@@ -1,25 +1,25 @@
 {
-  "nav": 12442.41,
+  "nav": 12440.78,
   "cash": 1199.57,
   "peak": 12448.15,
-  "dd_pct": -0.000461,
+  "dd_pct": -0.0005920558476559956,
   "circuit_breaker": false,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T23:01:59.532592+00:00",
-  "notes": "Saturday tick 22:46 UTC. Weekend. US equities closed. Crypto: BTC 78761.34, ETH 2324.10, SOL 84.35. Marginal crypto uptick. No trading action.",
+  "last_updated": "2026-05-02T23:16:36.719684+00:00",
+  "notes": "Saturday tick 23:16 UTC. Weekend. US equities closed. Crypto: BTC 78732, ETH 2322, SOL 84.36. Marginal drift, within noise. No trading action.",
+  "reconcile": {
+    "status": "ok"
+  },
   "stats": {
     "closed": 15,
     "wins": 4,
     "losses": 10,
     "scratches": 0,
     "win_rate": 28.57,
-    "realized_pnl": 2309.49,
+    "realized_pnl": 2307.86,
     "best_ticker": "SPY260504C724",
     "best_pnl": 50.33,
     "worst_ticker": "SPY260504P711",
     "worst_pnl": -2702.9
-  },
-  "reconcile": {
-    "status": "ok"
   }
 }
