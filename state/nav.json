@@ -1,10 +1,10 @@
 {
-  "nav": 12937.42,
+  "nav": 12935.55,
   "cash": 1271.72,
   "peak": 12938.46,
   "dd_pct": -0.02,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T09:17:22.559612+00:00",
+  "last_updated": "2026-05-02T09:31:25+00:00",
   "circuit_breaker": false,
   "notes": "Sat tick 09:01 UTC: US equities closed. Crypto slight up.",
   "stats": {
@@ -13,7 +13,7 @@
     "losses": 7,
     "scratches": 0,
     "win_rate": 36.36,
-    "realized_pnl": 2966.87,
+    "realized_pnl": 2965.18,
     "best_ticker": "SPY260504C724",
     "best_pnl": 50.33,
     "worst_ticker": "SPY260504P711",
