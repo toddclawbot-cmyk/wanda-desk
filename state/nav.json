@@ -1,11 +1,11 @@
 {
-  "nav": 12422.29,
+  "nav": 12422.49,
   "cash": 1199.57,
   "peak": 12425.65,
-  "dd_pct": -0.03,
+  "dd_pct": -0.025,
   "circuit_breaker": false,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T17:31:06.000000+00:00",
+  "last_updated": "2026-05-02T17:46:00Z",
   "notes": "Saturday tick \u2014 US equities closed (weekend). Memorial Day Mon 5/26. Crypto slight red: BTC -0.21, ETH -1.63, SOL -0.71. NAV virtually flat vs peak. All positions within caps.",
   "stats": {
     "closed": 15,
@@ -13,7 +13,7 @@
     "losses": 10,
     "scratches": 0,
     "win_rate": 28.57,
-    "realized_pnl": 2306.13,
+    "realized_pnl": 2306.33,
     "best_ticker": "SPY260504C724",
     "best_pnl": 50.33,
     "worst_ticker": "SPY260504P711",
