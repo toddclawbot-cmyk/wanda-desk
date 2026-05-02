@@ -1,12 +1,15 @@
 {
-  "nav": 12935.63,
+  "nav": 12938.46,
   "cash": 1271.62,
   "peak": 10044.57,
-  "dd_pct": 28.78,
+  "dd_pct": 28.81,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-02T06:55:31.121542+00:00",
+  "last_updated": "2026-05-02T07:02:30.185409+00:00",
   "circuit_breaker": false,
-  "notes": "State rebuilt from ledger at 2026-05-02 06:53 UTC. positions.json was stale (missing XLE 45sh, XLF 20sh, MSFT 2sh, SPY 1sh, SOL-USD 5.88sh). NAV recomputed from ledger cash + current prices.",
+  "notes": "Sat tick: crypto only. Equity stale (US market closed). NAV slight uptick from crypto.",
+  "reconcile": {
+    "status": "ok"
+  },
   "stats": {
     "closed": 11,
     "wins": 4,
@@ -18,8 +21,5 @@
     "best_pnl": 50.33,
     "worst_ticker": "SPY260504C729",
     "worst_pnl": -75.98
-  },
-  "reconcile": {
-    "status": "ok"
   }
 }
