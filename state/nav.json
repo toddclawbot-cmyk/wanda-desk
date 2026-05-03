@@ -1,11 +1,11 @@
 {
-  "nav": 11632.24,
+  "nav": 11630.97,
   "cash": 999.21,
   "peak": 12448.15,
-  "dd_pct": -6.5869,
+  "dd_pct": -6.56,
   "circuit_breaker": false,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-03T18:33:01.679145+00:00",
+  "last_updated": "2026-05-03T18:47:17.702401+00:00",
   "reconcile": {
     "status": "ok"
   },
@@ -23,23 +23,23 @@
   },
   "prices": {
     "XLE": 58.85,
-    "MSFT": 414.44,
+    "MSFT": 414.195,
     "NVDA": 198.45,
-    "QQQ": 674.15,
+    "QQQ": 674.18,
     "SPY": 720.65,
     "XLF": 51.92,
     "GOOGL": 385.69,
-    "BTC-USD": 78715.9219,
-    "ETH-USD": 2331.4199,
-    "SOL-USD": 84.16,
-    "AVAX-USD": 9.11,
-    "LINK-USD": 9.152
+    "BTC-USD": 78694.24,
+    "ETH-USD": 2330.82,
+    "SOL-USD": 84.25,
+    "AVAV-USD": 9.1,
+    "LINK-USD": 9.161
   },
   "regime": {
     "vix": 16.99,
     "spy": 720.65,
     "spy_change": 0.28,
-    "btc": 78625.06,
-    "eth": 2327.92
+    "btc": 78694.24,
+    "eth": 2330.82
   }
 }
