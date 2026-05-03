@@ -1,11 +1,11 @@
 {
-  "nav": 8310.69,
+  "nav": 8307.97,
   "cash": 3945.43,
   "peak": 12448.15,
-  "dd_pct": -33.24,
+  "dd_pct": -33.26,
   "circuit_breaker": true,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-03T23:00:18.000000+00:00",
+  "last_updated": "2026-05-03T23:16:49.895172+00:00",
   "reconcile": {
     "status": "ok"
   },
@@ -15,7 +15,7 @@
     "losses": 12,
     "scratches": 0,
     "win_rate": 40.0,
-    "realized_pnl": -1716.93,
+    "realized_pnl": -1719.65,
     "best_ticker": "SPY260504C724",
     "best_pnl": 50.33,
     "worst_ticker": "SPY260504C729",
@@ -29,9 +29,9 @@
     "SPY": 720.65,
     "XLF": 51.92,
     "GOOGL": 385.69,
-    "BTC-USD": 79140.2812,
-    "ETH-USD": 2341.9099,
-    "SOL-USD": 84.67,
+    "BTC-USD": 79011.0234,
+    "ETH-USD": 2337.1001,
+    "SOL-USD": 84.52,
     "LINK-USD": 9.186,
     "VXX": 28.4
   },
