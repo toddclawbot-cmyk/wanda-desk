@@ -9,7 +9,7 @@
       "current_price": 58.84,
       "unrealized_pnl": 39.55,
       "pct_change": 2.15,
-      "last_refresh": "2026-05-03T00:47:06+00:00",
+      "last_refresh": "2026-05-03T01:02:37+00:00",
       "stale": false,
       "market_value": 1882.88,
       "multiplier": 1
@@ -23,7 +23,7 @@
       "current_price": 414.51,
       "unrealized_pnl": 11.35,
       "pct_change": 1.39,
-      "last_refresh": "2026-05-03T00:47:06+00:00",
+      "last_refresh": "2026-05-03T01:02:37+00:00",
       "stale": false,
       "market_value": 829.02,
       "multiplier": 1
@@ -37,7 +37,7 @@
       "current_price": 198.42,
       "unrealized_pnl": -32.23,
       "pct_change": -1.77,
-      "last_refresh": "2026-05-03T00:47:06+00:00",
+      "last_refresh": "2026-05-03T01:02:37+00:00",
       "stale": false,
       "market_value": 1785.78,
       "multiplier": 1
@@ -51,7 +51,7 @@
       "current_price": 674.16,
       "unrealized_pnl": -1.11,
       "pct_change": -0.16,
-      "last_refresh": "2026-05-03T00:47:06+00:00",
+      "last_refresh": "2026-05-03T01:02:37+00:00",
       "stale": false,
       "market_value": 674.16,
       "multiplier": 1
@@ -65,7 +65,7 @@
       "current_price": 720.67,
       "unrealized_pnl": -2.74,
       "pct_change": -0.38,
-      "last_refresh": "2026-05-03T00:47:06+00:00",
+      "last_refresh": "2026-05-03T01:02:37+00:00",
       "stale": false,
       "market_value": 720.67,
       "multiplier": 1
@@ -79,7 +79,7 @@
       "current_price": 51.94,
       "unrealized_pnl": 2.2,
       "pct_change": 0.21,
-      "last_refresh": "2026-05-03T00:47:06+00:00",
+      "last_refresh": "2026-05-03T01:02:37+00:00",
       "stale": false,
       "market_value": 1038.8,
       "multiplier": 1
@@ -93,7 +93,7 @@
       "current_price": 385.69,
       "unrealized_pnl": 72.32,
       "pct_change": 10.35,
-      "last_refresh": "2026-05-03T00:47:06+00:00",
+      "last_refresh": "2026-05-03T01:02:37+00:00",
       "stale": false,
       "market_value": 771.38,
       "multiplier": 1
@@ -106,12 +106,12 @@
       "side": "long",
       "avg_cost": 77761.171032,
       "cost_basis": 1514.01,
-      "current_price": 78639.1406,
-      "unrealized_pnl": 17.09,
-      "pct_change": 1.13,
-      "last_refresh": "2026-05-03T00:47:06+00:00",
+      "current_price": 78369.0,
+      "unrealized_pnl": 11.83,
+      "pct_change": 0.78,
+      "last_refresh": "2026-05-03T01:02:37+00:00",
       "stale": false,
-      "market_value": 1531.1,
+      "market_value": 1525.84,
       "multiplier": 1
     },
     {
@@ -120,12 +120,12 @@
       "side": "long",
       "avg_cost": 2299.8,
       "cost_basis": 1494.87,
-      "current_price": 2314.3999,
-      "unrealized_pnl": 9.49,
-      "pct_change": 0.63,
-      "last_refresh": "2026-05-03T00:47:06+00:00",
+      "current_price": 2307.9399,
+      "unrealized_pnl": 5.29,
+      "pct_change": 0.35,
+      "last_refresh": "2026-05-03T01:02:37+00:00",
       "stale": false,
-      "market_value": 1504.36,
+      "market_value": 1500.16,
       "multiplier": 1
     },
     {
@@ -134,15 +134,15 @@
       "side": "long",
       "avg_cost": 82.940476,
       "cost_basis": 487.69,
-      "current_price": 84.09,
-      "unrealized_pnl": 6.76,
-      "pct_change": 1.39,
-      "last_refresh": "2026-05-03T00:47:06+00:00",
+      "current_price": 83.88,
+      "unrealized_pnl": 5.52,
+      "pct_change": 1.13,
+      "last_refresh": "2026-05-03T01:02:37+00:00",
       "stale": false,
-      "market_value": 494.45,
+      "market_value": 493.21,
       "multiplier": 1
     }
   ],
   "options": [],
-  "last_updated": "2026-05-03T00:47:06+00:00"
+  "last_updated": "2026-05-03T01:02:37+00:00"
 }
