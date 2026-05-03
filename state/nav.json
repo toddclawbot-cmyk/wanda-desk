@@ -1,11 +1,11 @@
 {
-  "nav": 12434.42,
+  "nav": 12432.17,
   "cash": 1199.57,
   "peak": 12448.15,
-  "dd_pct": -0.11,
+  "dd_pct": -0.13,
   "circuit_breaker": false,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-03T00:32:00+00:00",
+  "last_updated": "2026-05-03T00:47:06+00:00",
   "notes": "Sunday tick 00:32 UTC. Weekend. US equities closed. Crypto up modestly: BTC +0.17%, ETH +0.31%, SOL +0.39%. No trading action.",
   "stats": {
     "closed": 15,
