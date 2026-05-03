@@ -1,17 +1,137 @@
 {
   "equity": [
-    {"ticker": "XLE",  "quantity": 30, "avg_cost": 57.604062,  "cost_basis": 1728.12,  "current_price": 58.85,  "market_value": 1765.50,  "unrealized_pnl": 37.38,  "pct_change": 0.1736,  "last_refresh": "2026-05-03T09:17:30.657957+00:00", "stale": false, "multiplier": 1},
-    {"ticker": "MSFT",  "quantity": 2,  "avg_cost": 408.835,   "cost_basis": 817.67,   "current_price": 414.44,  "market_value": 828.88,   "unrealized_pnl": 11.21,  "pct_change": 1.3710,  "last_refresh": "2026-05-03T09:17:30.657957+00:00", "stale": false, "multiplier": 1},
-    {"ticker": "NVDA",  "quantity": 9,  "avg_cost": 202.001111,"cost_basis": 1818.01,  "current_price": 198.45,  "market_value": 1786.05,  "unrealized_pnl": -31.96, "pct_change": -1.7580, "last_refresh": "2026-05-03T09:17:30.657957+00:00", "stale": false, "multiplier": 1},
-    {"ticker": "QQQ",   "quantity": 1,  "avg_cost": 675.27,    "cost_basis": 675.27,   "current_price": 674.15,  "market_value": 674.15,  "unrealized_pnl": -1.12,  "pct_change": -0.1659, "last_refresh": "2026-05-03T09:17:30.657957+00:00", "stale": false, "multiplier": 1},
-    {"ticker": "SPY",   "quantity": 1,  "avg_cost": 723.41,    "cost_basis": 723.41,   "current_price": 720.65,  "market_value": 720.65,  "unrealized_pnl": -2.76,  "pct_change": -0.3815, "last_refresh": "2026-05-03T09:17:30.657957+00:00", "stale": false, "multiplier": 1},
-    {"ticker": "XLF",   "quantity": 20, "avg_cost": 51.83,     "cost_basis": 1036.60,  "current_price": 51.92,   "market_value": 1038.40, "unrealized_pnl": 1.80,   "pct_change": 0.1736,  "last_refresh": "2026-05-03T09:17:30.657957+00:00", "stale": false, "multiplier": 1},
-    {"ticker": "GOOGL", "quantity": 2,  "avg_cost": 349.53,    "cost_basis": 699.06,   "current_price": 385.69,  "market_value": 771.38,  "unrealized_pnl": 72.32,  "pct_change": 10.3453, "last_refresh": "2026-05-03T09:17:30.657957+00:00", "stale": false, "multiplier": 1}
+    {
+      "ticker": "XLE",
+      "quantity": 30,
+      "avg_cost": 57.604062,
+      "cost_basis": 1728.12,
+      "current_price": 58.84,
+      "market_value": 1765.2,
+      "unrealized_pnl": 37.08,
+      "pct_change": 2.15,
+      "last_refresh": "2026-05-03T09:45:37+00:00",
+      "stale": false,
+      "multiplier": 1
+    },
+    {
+      "ticker": "MSFT",
+      "quantity": 2,
+      "avg_cost": 408.835,
+      "cost_basis": 817.67,
+      "current_price": 414.51,
+      "market_value": 829.02,
+      "unrealized_pnl": 11.35,
+      "pct_change": 1.39,
+      "last_refresh": "2026-05-03T09:45:37+00:00",
+      "stale": false,
+      "multiplier": 1
+    },
+    {
+      "ticker": "NVDA",
+      "quantity": 9,
+      "avg_cost": 202.001111,
+      "cost_basis": 1818.01,
+      "current_price": 198.42,
+      "market_value": 1785.78,
+      "unrealized_pnl": -32.23,
+      "pct_change": -1.77,
+      "last_refresh": "2026-05-03T09:45:37+00:00",
+      "stale": false,
+      "multiplier": 1
+    },
+    {
+      "ticker": "QQQ",
+      "quantity": 1,
+      "avg_cost": 675.27,
+      "cost_basis": 675.27,
+      "current_price": 674.16,
+      "market_value": 674.16,
+      "unrealized_pnl": -1.11,
+      "pct_change": -0.16,
+      "last_refresh": "2026-05-03T09:45:37+00:00",
+      "stale": false,
+      "multiplier": 1
+    },
+    {
+      "ticker": "SPY",
+      "quantity": 1,
+      "avg_cost": 723.41,
+      "cost_basis": 723.41,
+      "current_price": 720.67,
+      "market_value": 720.67,
+      "unrealized_pnl": -2.74,
+      "pct_change": -0.38,
+      "last_refresh": "2026-05-03T09:45:37+00:00",
+      "stale": false,
+      "multiplier": 1
+    },
+    {
+      "ticker": "XLF",
+      "quantity": 20,
+      "avg_cost": 51.83,
+      "cost_basis": 1036.6,
+      "current_price": 51.94,
+      "market_value": 1038.8,
+      "unrealized_pnl": 2.2,
+      "pct_change": 0.21,
+      "last_refresh": "2026-05-03T09:45:37+00:00",
+      "stale": false,
+      "multiplier": 1
+    },
+    {
+      "ticker": "GOOGL",
+      "quantity": 2,
+      "avg_cost": 349.53,
+      "cost_basis": 699.06,
+      "current_price": 385.69,
+      "market_value": 771.38,
+      "unrealized_pnl": 72.32,
+      "pct_change": 10.35,
+      "last_refresh": "2026-05-03T09:45:37+00:00",
+      "stale": false,
+      "multiplier": 1
+    }
   ],
   "crypto": [
-    {"ticker": "BTC-USD", "quantity": 0.01947, "avg_cost": 77761.17, "cost_basis": 1514.01,  "current_price": 78392.26, "market_value": 1526.30, "unrealized_pnl": 12.29, "pct_change": 0.7802, "last_refresh": "2026-05-03T09:17:30.657957+00:00", "stale": false, "multiplier": 1},
-    {"ticker": "ETH-USD", "quantity": 0.65,    "avg_cost": 2299.8,   "cost_basis": 1494.87,  "current_price": 2308.01, "market_value": 1500.21, "unrealized_pnl": 5.34,   "pct_change": 0.3309, "last_refresh": "2026-05-03T09:17:30.657957+00:00", "stale": false, "multiplier": 1},
-    {"ticker": "SOL-USD", "quantity": 5.88,    "avg_cost": 82.940476,"cost_basis": 487.69,   "current_price": 83.93,   "market_value": 493.51,  "unrealized_pnl": 5.82,   "pct_change": 1.1328, "last_refresh": "2026-05-03T09:17:30.657957+00:00", "stale": false, "multiplier": 1}
+    {
+      "ticker": "BTC-USD",
+      "quantity": 0.01947,
+      "avg_cost": 77761.17,
+      "cost_basis": 1514.01,
+      "current_price": 78507.3984,
+      "market_value": 1528.54,
+      "unrealized_pnl": 14.53,
+      "pct_change": 0.96,
+      "last_refresh": "2026-05-03T09:45:37+00:00",
+      "stale": false,
+      "multiplier": 1
+    },
+    {
+      "ticker": "ETH-USD",
+      "quantity": 0.65,
+      "avg_cost": 2299.8,
+      "cost_basis": 1494.87,
+      "current_price": 2315.5901,
+      "market_value": 1505.13,
+      "unrealized_pnl": 10.26,
+      "pct_change": 0.69,
+      "last_refresh": "2026-05-03T09:45:37+00:00",
+      "stale": false,
+      "multiplier": 1
+    },
+    {
+      "ticker": "SOL-USD",
+      "quantity": 5.88,
+      "avg_cost": 82.940476,
+      "cost_basis": 487.69,
+      "current_price": 84.0,
+      "market_value": 493.92,
+      "unrealized_pnl": 6.23,
+      "pct_change": 1.28,
+      "last_refresh": "2026-05-03T09:45:37+00:00",
+      "stale": false,
+      "multiplier": 1
+    }
   ],
-  "last_updated": "2026-05-03T09:17:30.657957+00:00"
+  "last_updated": "2026-05-03T09:45:37+00:00"
 }
