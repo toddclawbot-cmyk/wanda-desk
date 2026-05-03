@@ -118,20 +118,7 @@
       "last_refresh": "2026-05-03T13:01:58+00:00",
       "multiplier": 1,
       "stale": false
-    },
-    {
-      "ticker": "SOL-USD",
-      "quantity": 5.88,
-      "avg_cost": 82.940476,
-      "cost_basis": 487.69,
-      "current_price": 84.08,
-      "market_value": 494.39,
-      "unrealized_pnl": 6.7,
-      "pct_change": 1.37,
-      "last_refresh": "2026-05-03T13:01:58+00:00",
-      "multiplier": 1,
-      "stale": false
     }
   ],
-  "last_updated": "2026-05-03T13:01:58+00:00"
+  "last_updated": "2026-05-03T13:05:37+00:00"
 }
