@@ -10,11 +10,11 @@
     "status": "ok"
   },
   "stats": {
-    "closed": 17,
-    "wins": 6,
+    "closed": 19,
+    "wins": 8,
     "losses": 10,
     "scratches": 0,
-    "win_rate": 37.5,
+    "win_rate": 44.44,
     "realized_pnl": 1506.23,
     "best_ticker": "SPY260504C724",
     "best_pnl": 50.33,
