@@ -5,22 +5,33 @@
   "dd_pct": -0.04,
   "circuit_breaker": false,
   "inception": "2026-05-04T13:03:17+00:00",
-  "last_updated": "2026-05-04T13:07:10+00:00",
+  "last_updated": "2026-05-04T13:08:00+00:00",
   "reconcile": {
     "status": "ok"
   },
   "stats": {
-    "closed": 0,
+    "closed": 1,
     "wins": 0,
     "losses": 0,
     "scratches": 0,
     "win_rate": 0.0,
-    "realized_pnl": 0,
+    "realized_pnl": -4673.35,
     "best_ticker": null,
     "best_pnl": null,
     "worst_ticker": null,
     "worst_pnl": null
   },
-  "prices": {},
-  "regime": {}
+  "prices": {
+    "SPY": 720.65,
+    "QQQ": 674.15,
+    "BTC-USD": 78688.08,
+    "ETH-USD": 2330.75
+  },
+  "regime": {
+    "vix": 17.73,
+    "btc_ma50": 72766.92,
+    "btc_price": 78676.5,
+    "regime": "risk-on expansion",
+    "posted": "2026-05-04T13:08:00+00:00"
+  }
 }
