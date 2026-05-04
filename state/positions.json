@@ -6,12 +6,12 @@
       "avg_cost": 720.65,
       "asset_class": "equity",
       "strategy": "Momentum (12-1) + trend-follow",
-      "current_price": 720.650024,
-      "last_refresh": "2026-05-04T13:17:33.910603+00:00",
+      "current_price": 719.579895,
+      "last_refresh": "2026-05-04T13:32:18.621732+00:00",
       "cost_basis": 1441.3,
-      "market_value": 1441.300049,
-      "unrealized_pnl": 4.9e-05,
-      "pct_change": 3e-06,
+      "market_value": 1439.15979,
+      "unrealized_pnl": -2.14021,
+      "pct_change": -0.148492,
       "multiplier": 1,
       "stale": false
     },
@@ -21,12 +21,12 @@
       "avg_cost": 674.15,
       "asset_class": "equity",
       "strategy": "Momentum (12-1) + tech breakout",
-      "current_price": 674.150024,
-      "last_refresh": "2026-05-04T13:17:34.139114+00:00",
+      "current_price": 673.880005,
+      "last_refresh": "2026-05-04T13:32:18.897536+00:00",
       "cost_basis": 1348.3,
-      "market_value": 1348.300049,
-      "unrealized_pnl": 4.9e-05,
-      "pct_change": 4e-06,
+      "market_value": 1347.76001,
+      "unrealized_pnl": -0.53999,
+      "pct_change": -0.04005,
       "multiplier": 1,
       "stale": false
     }
@@ -39,12 +39,12 @@
       "avg_cost": 78688.08,
       "asset_class": "crypto",
       "strategy": "Momentum (12-1) + BTC ETF-flow tailwind",
-      "current_price": 78944.257812,
-      "last_refresh": "2026-05-04T13:17:34.340470+00:00",
+      "current_price": 78957.71875,
+      "last_refresh": "2026-05-04T13:32:19.229026+00:00",
       "cost_basis": 1180.32,
-      "market_value": 1184.163867,
-      "unrealized_pnl": 3.842667,
-      "pct_change": 0.325561,
+      "market_value": 1184.365781,
+      "unrealized_pnl": 4.044581,
+      "pct_change": 0.342668,
       "multiplier": 1,
       "stale": false
     },
@@ -55,7 +55,7 @@
       "asset_class": "crypto",
       "strategy": "Momentum (12-1) + ETH L2/narrative flip",
       "current_price": 2340.030029,
-      "last_refresh": "2026-05-04T13:17:34.513379+00:00",
+      "last_refresh": "2026-05-04T13:32:19.493719+00:00",
       "cost_basis": 699.23,
       "market_value": 702.009009,
       "unrealized_pnl": 2.784009,
@@ -64,5 +64,5 @@
       "stale": false
     }
   ],
-  "last_updated": "2026-05-04T13:17:34.513408+00:00"
+  "last_updated": "2026-05-04T13:32:19.493767+00:00"
 }
