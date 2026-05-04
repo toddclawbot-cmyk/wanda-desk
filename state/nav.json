@@ -1,37 +1,24 @@
 {
-  "nav": 12225.36,
-  "cash": 7539.24,
-  "peak": 12219.55,
+  "nav": 10000.0,
+  "cash": 10000.0,
+  "peak": 10000.0,
   "dd_pct": 0.0,
   "circuit_breaker": false,
-  "inception": "2026-05-04T13:03:17+00:00",
-  "last_updated": "2026-05-04T14:31:46.633710+00:00",
+  "inception": "2026-05-04T14:46:09+00:00",
+  "last_updated": "2026-05-04T14:46:09+00:00",
   "reconcile": {
     "status": "ok"
   },
   "stats": {
-    "closed": 3,
+    "closed": 0,
     "wins": 0,
-    "losses": 2,
+    "losses": 0,
     "scratches": 0,
     "win_rate": 0.0,
-    "realized_pnl": 2208.39,
-    "best_ticker": "NVDA",
-    "best_pnl": -1.84,
-    "worst_ticker": "NVDA",
-    "worst_pnl": -92.42
-  },
-  "prices": {
-    "SPY": 721.52,
-    "QQQ": 675.28,
-    "BTC-USD": 79236.5,
-    "ETH-USD": 2346.58
-  },
-  "regime": {
-    "vix": 17.29,
-    "btc_ma50": 72073.24,
-    "btc_price": 79273.79,
-    "regime": "risk-on expansion",
-    "posted": "2026-05-04T14:31:46.633671+00:00"
+    "realized_pnl": 0,
+    "best_ticker": null,
+    "best_pnl": null,
+    "worst_ticker": null,
+    "worst_pnl": null
   }
 }
