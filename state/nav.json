@@ -1,36 +1,37 @@
 {
-  "nav": 11790.34,
-  "cash": 7121.66,
-  "peak": 11790.34,
+  "nav": 12207.92,
+  "cash": 7539.24,
+  "peak": 12207.92,
   "dd_pct": 0.0,
   "circuit_breaker": false,
   "inception": "2026-05-04T13:03:17+00:00",
-  "last_updated": "2026-05-04T14:10:34.733462+00:00",
+  "last_updated": "2026-05-04T14:25:51.000000+00:00",
   "reconcile": {
     "status": "ok"
   },
   "stats": {
-    "closed": 2,
+    "closed": 3,
     "wins": 0,
-    "losses": 1,
+    "losses": 2,
     "scratches": 0,
     "win_rate": 0.0,
-    "realized_pnl": 1790.81,
+    "realized_pnl": 2196.76,
     "best_ticker": "NVDA",
     "best_pnl": -1.84,
     "worst_ticker": "NVDA",
-    "worst_pnl": -1.84
+    "worst_pnl": -92.42
   },
   "prices": {
-    "SPY": 720.2200927734375,
-    "QQQ": 674.9000244140625,
-    "BTC-USD": 78601.796875,
-    "ETH-USD": 2331.360107421875
+    "SPY": 721.2,
+    "QQQ": 675.62,
+    "BTC-USD": 78971.01,
+    "ETH-USD": 2340.36,
+    "NVDA": 197.96
   },
   "regime": {
-    "vix": 17.73,
-    "btc_ma50": 72766.92,
-    "btc_price": 78676.5,
+    "vix": 17.39,
+    "btc_ma50": 76961.61,
+    "btc_price": 78971.01,
     "regime": "risk-on expansion",
     "posted": "2026-05-04T13:08:00+00:00"
   }
