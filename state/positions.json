@@ -12,7 +12,7 @@
       "side": "long",
       "asset_class": "equity",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T21:16:01+00:00",
+      "last_refresh": "2026-05-04T21:46:48+00:00",
       "stale": false
     },
     {
@@ -27,7 +27,7 @@
       "side": "long",
       "asset_class": "equity",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T21:16:01+00:00",
+      "last_refresh": "2026-05-04T21:46:48+00:00",
       "stale": false
     },
     {
@@ -42,7 +42,7 @@
       "side": "long",
       "asset_class": "equity",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T21:16:01+00:00",
+      "last_refresh": "2026-05-04T21:46:48+00:00",
       "stale": false
     }
   ],
@@ -52,14 +52,14 @@
       "quantity": 0.0848,
       "avg_cost": 2360.38,
       "cost_basis": 200.16,
-      "current_price": 2357.3701,
-      "market_value": 199.9,
-      "unrealized_pnl": -0.26,
-      "pct_change": -0.13,
+      "current_price": 2361.8601,
+      "market_value": 200.29,
+      "unrealized_pnl": 0.13,
+      "pct_change": 0.06,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T21:16:01+00:00",
+      "last_refresh": "2026-05-04T21:46:48+00:00",
       "stale": false
     },
     {
@@ -67,14 +67,14 @@
       "quantity": 0.0187,
       "avg_cost": 79804.28,
       "cost_basis": 1492.34,
-      "current_price": 80115.0,
-      "market_value": 1498.15,
-      "unrealized_pnl": 5.81,
-      "pct_change": 0.39,
+      "current_price": 80276.1562,
+      "market_value": 1501.16,
+      "unrealized_pnl": 8.82,
+      "pct_change": 0.59,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T21:16:01+00:00",
+      "last_refresh": "2026-05-04T21:46:48+00:00",
       "stale": false
     },
     {
@@ -82,14 +82,14 @@
       "quantity": 3.5,
       "avg_cost": 85.25,
       "cost_basis": 298.38,
-      "current_price": 84.24,
-      "market_value": 294.84,
-      "unrealized_pnl": -3.54,
-      "pct_change": -1.18,
+      "current_price": 84.44,
+      "market_value": 295.54,
+      "unrealized_pnl": -2.84,
+      "pct_change": -0.95,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T21:16:01+00:00",
+      "last_refresh": "2026-05-04T21:46:48+00:00",
       "stale": false
     }
   ],
@@ -159,5 +159,5 @@
       "stale": false
     }
   ],
-  "last_updated": "2026-05-04T21:16:01+00:00"
+  "last_updated": "2026-05-04T21:46:48+00:00"
 }

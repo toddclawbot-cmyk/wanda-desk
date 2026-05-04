@@ -1,11 +1,11 @@
 {
-  "nav": 9649.95,
+  "nav": 9651.03,
   "cash": 4330.72,
   "peak": 10002.71,
-  "dd_pct": -3.5267,
+  "dd_pct": -3.52,
   "circuit_breaker": false,
   "inception": "2026-05-04T14:46:09+00:00",
-  "last_updated": "2026-05-04T21:35:16.829740+00:00",
+  "last_updated": "2026-05-04T21:46:48+00:00",
   "reconcile": {
     "status": "ok"
   },
@@ -15,7 +15,7 @@
     "losses": 0,
     "scratches": 0,
     "win_rate": 0.0,
-    "realized_pnl": 3.04,
+    "realized_pnl": 0.03,
     "best_ticker": null,
     "best_pnl": null,
     "worst_ticker": null,
