@@ -1,51 +1,26 @@
 {
-  "nav": 8318.34,
-  "cash": 8318.34,
-  "peak": 12448.15,
-  "dd_pct": -33.1761,
-  "circuit_breaker": true,
-  "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-04T12:47:35.263352+00:00",
+  "nav": 10000.0,
+  "cash": 10000.0,
+  "peak": 10000.0,
+  "dd_pct": 0.0,
+  "circuit_breaker": false,
+  "inception": "2026-05-04T12:58:19+00:00",
+  "last_updated": "2026-05-04T12:58:19+00:00",
   "reconcile": {
     "status": "ok"
   },
   "stats": {
-    "closed": 27,
-    "wins": 13,
-    "losses": 13,
+    "closed": 0,
+    "wins": 0,
+    "losses": 0,
     "scratches": 0,
-    "win_rate": 50.0,
-    "realized_pnl": -1681.66,
-    "best_ticker": "SPY260504C724",
-    "best_pnl": 50.33,
-    "worst_ticker": "SPY260504C729",
-    "worst_pnl": -75.98
+    "win_rate": 0.0,
+    "realized_pnl": 0,
+    "best_ticker": null,
+    "best_pnl": null,
+    "worst_ticker": null,
+    "worst_pnl": null
   },
-  "prices": {
-    "SPY": 720.6500244140625,
-    "QQQ": 674.1500244140625,
-    "IWM": 279.2799987792969,
-    "AAPL": 280.1400146484375,
-    "AMZN": 268.260009765625,
-    "META": 608.75,
-    "TSLA": 390.82000732421875,
-    "NVDA": 198.4499969482422,
-    "GOOGL": 385.69000244140625,
-    "MSFT": 414.44000244140625,
-    "XLF": 51.91999816894531,
-    "XLE": 58.849998474121094,
-    "GLD": 423.17999267578125,
-    "VXX": 28.399999618530273,
-    "BTC-USD": 78960.0,
-    "ETH-USD": 2340.85009765625,
-    "SOL-USD": 84.0199966430664
-  },
-  "regime": {
-    "vix": 17.850000381469727,
-    "spy": 720.6500244140625,
-    "spy_change": 0.0,
-    "btc": 78960.0,
-    "eth": 2340.85009765625,
-    "regime_viz": "elevated"
-  }
+  "prices": {},
+  "regime": {}
 }
