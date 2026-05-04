@@ -12,7 +12,7 @@
       "side": "long",
       "asset_class": "equity",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T20:47:00+00:00",
+      "last_refresh": "2026-05-04T21:00:20+00:00",
       "stale": false
     },
     {
@@ -27,7 +27,7 @@
       "side": "long",
       "asset_class": "equity",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T20:47:00+00:00",
+      "last_refresh": "2026-05-04T21:00:20+00:00",
       "stale": false
     },
     {
@@ -42,7 +42,7 @@
       "side": "long",
       "asset_class": "equity",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T20:47:00+00:00",
+      "last_refresh": "2026-05-04T21:00:20+00:00",
       "stale": false
     }
   ],
@@ -52,14 +52,14 @@
       "quantity": 0.0848,
       "avg_cost": 2360.38,
       "cost_basis": 200.16,
-      "current_price": 2349.23,
-      "market_value": 199.21,
-      "unrealized_pnl": -0.95,
-      "pct_change": -0.47,
+      "current_price": 2349.96,
+      "market_value": 199.28,
+      "unrealized_pnl": -0.88,
+      "pct_change": -0.44,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T20:47:00+00:00",
+      "last_refresh": "2026-05-04T21:00:20+00:00",
       "stale": false
     },
     {
@@ -67,14 +67,14 @@
       "quantity": 0.0187,
       "avg_cost": 79804.28,
       "cost_basis": 1492.34,
-      "current_price": 79954.04,
-      "market_value": 1495.14,
-      "unrealized_pnl": 2.8,
-      "pct_change": 0.19,
+      "current_price": 79950.4766,
+      "market_value": 1495.07,
+      "unrealized_pnl": 2.73,
+      "pct_change": 0.18,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T20:47:00+00:00",
+      "last_refresh": "2026-05-04T21:00:20+00:00",
       "stale": false
     },
     {
@@ -89,7 +89,7 @@
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T20:47:00+00:00",
+      "last_refresh": "2026-05-04T21:00:20+00:00",
       "stale": false
     }
   ],
@@ -159,5 +159,5 @@
       "stale": false
     }
   ],
-  "last_updated": "2026-05-04T20:47:00+00:00"
+  "last_updated": "2026-05-04T21:00:20+00:00"
 }
