@@ -5,7 +5,7 @@
   "dd_pct": -33.11,
   "circuit_breaker": true,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-04T03:01:00+00:00",
+  "last_updated": "2026-05-04T03:31:00+00:00",
   "reconcile": {
     "status": "ok"
   },
@@ -25,15 +25,15 @@
     "XLE": 58.85,
     "MSFT": 414.44,
     "NVDA": 198.45,
-    "BTC-USD": 80036.36,
-    "ETH-USD": 2372.74,
-    "SOL-USD": 85.24
+    "BTC-USD": 80043.64,
+    "ETH-USD": 2380.81,
+    "SOL-USD": 85.29
   },
   "regime": {
     "vix": 16.99,
     "spy": 720.65,
     "spy_change": 0.28,
-    "btc": 80036.36,
-    "eth": 2372.74
+    "btc": 80043.64,
+    "eth": 2380.81
   }
 }
