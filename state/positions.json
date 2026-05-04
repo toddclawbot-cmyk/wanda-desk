@@ -29,6 +29,17 @@
       "pct_change": 0.14,
       "multiplier": 1,
       "stale": false
+    },
+    {
+      "ticker": "NVDA",
+      "quantity": 2.0,
+      "side": "long",
+      "avg_cost": 10.255,
+      "cost_basis": 20.51,
+      "current_price": 10.25,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-04T14:06:29+00:00"
     }
   ],
   "options": [],
@@ -64,5 +75,5 @@
       "stale": false
     }
   ],
-  "last_updated": "2026-05-04T14:04:09+00:00"
+  "last_updated": "2026-05-04T14:06:29+00:00"
 }
