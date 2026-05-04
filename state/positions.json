@@ -1,6 +1,31 @@
 {
   "equity": [],
-  "options": [],
+  "options": [
+    {
+      "ticker": "SPY260503C720",
+      "quantity": 2.0,
+      "side": "long",
+      "avg_cost": 1.5,
+      "cost_basis": 300.0,
+      "current_price": 0.05,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-03T20:00:00+00:00"
+    },
+    {
+      "ticker": "SPY260503P700",
+      "quantity": -1.0,
+      "side": "short",
+      "avg_cost": 2.0,
+      "credit_received": 200.0,
+      "cost_basis": -200.0,
+      "max_loss": 500.0,
+      "current_price": 0.1,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-03T20:00:00+00:00"
+    }
+  ],
   "crypto": [],
-  "last_updated": "2026-05-04T12:58:19+00:00"
+  "last_updated": "2026-05-03T20:00:00+00:00"
 }
