@@ -54,7 +54,20 @@
       "last_refresh": "2026-05-04T14:50:22+00:00",
       "avg_cost": 2360.377358,
       "cost_basis": 200.16
+    },
+    {
+      "ticker": "BTC-USD",
+      "quantity": 0.0187,
+      "side": "long",
+      "asset_class": "crypto",
+      "multiplier": 1,
+      "current_price": 79684.5,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-04T14:50:37+00:00",
+      "avg_cost": 79804.278075,
+      "cost_basis": 1492.34
     }
   ],
-  "last_updated": "2026-05-04T14:50:24+00:00"
+  "last_updated": "2026-05-04T14:50:37+00:00"
 }
