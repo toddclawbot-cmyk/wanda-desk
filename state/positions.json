@@ -1,6 +1,52 @@
 {
-  "equity": [],
+  "equity": [
+    {
+      "ticker": "SPY",
+      "quantity": 2.0,
+      "side": "long",
+      "avg_cost": 721.01,
+      "cost_basis": 1442.02,
+      "current_price": 720.65,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-04T13:07:08+00:00"
+    },
+    {
+      "ticker": "QQQ",
+      "quantity": 2.0,
+      "side": "long",
+      "avg_cost": 674.485,
+      "cost_basis": 1348.97,
+      "current_price": 674.15,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-04T13:07:10+00:00"
+    }
+  ],
   "options": [],
-  "crypto": [],
-  "last_updated": "2026-05-04T13:03:17+00:00"
+  "crypto": [
+    {
+      "ticker": "BTC-USD",
+      "quantity": 0.015,
+      "side": "long",
+      "avg_cost": 78806.0,
+      "cost_basis": 1182.09,
+      "current_price": 78688.08,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-04T13:06:51+00:00"
+    },
+    {
+      "ticker": "ETH-USD",
+      "quantity": 0.3,
+      "side": "long",
+      "avg_cost": 2334.233333,
+      "cost_basis": 700.27,
+      "current_price": 2330.75,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-04T13:06:53+00:00"
+    }
+  ],
+  "last_updated": "2026-05-04T13:07:10+00:00"
 }
