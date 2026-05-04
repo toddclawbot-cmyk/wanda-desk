@@ -93,5 +93,63 @@
       "stale": false
     }
   ],
-  "last_updated": "2026-05-04T19:03:32.571365+00:00"
+  "last_updated": "2026-05-04T19:28:39+00:00",
+  "options": [
+    {
+      "ticker": "SPY260522P698",
+      "quantity": 1.0,
+      "side": "long",
+      "asset_class": "options",
+      "multiplier": 100,
+      "current_price": 4.22,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-04T19:28:03+00:00",
+      "avg_cost": 4.2242,
+      "cost_basis": 422.42
+    },
+    {
+      "ticker": "SPY260522P718",
+      "quantity": -1.0,
+      "side": "short",
+      "asset_class": "options",
+      "multiplier": 100,
+      "current_price": 6.33,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-04T19:28:34+00:00",
+      "avg_cost": 6.3237,
+      "credit_received": 632.37,
+      "cost_basis": -632.37,
+      "max_loss": 1491.0
+    },
+    {
+      "ticker": "SPY260522C738",
+      "quantity": 1.0,
+      "side": "long",
+      "asset_class": "options",
+      "multiplier": 100,
+      "current_price": 2.04,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-04T19:28:39+00:00",
+      "avg_cost": 2.042,
+      "cost_basis": 204.2
+    },
+    {
+      "ticker": "SPY260522C728",
+      "quantity": -1.0,
+      "side": "short",
+      "asset_class": "options",
+      "multiplier": 100,
+      "current_price": 5.02,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-04T19:28:39+00:00",
+      "avg_cost": 5.015,
+      "credit_received": 501.5,
+      "cost_basis": -501.5,
+      "max_loss": 1491.0
+    }
+  ]
 }
