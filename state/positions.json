@@ -6,12 +6,12 @@
       "avg_cost": 720.65,
       "asset_class": "equity",
       "strategy": "Momentum (12-1) + trend-follow",
-      "current_price": 720.3399,
-      "last_refresh": "2026-05-04T14:04:09+00:00",
+      "current_price": 720.63,
+      "last_refresh": "2026-05-04T14:08:04+00:00",
       "cost_basis": 1441.3,
-      "market_value": 1440.68,
-      "unrealized_pnl": -0.62,
-      "pct_change": -0.04,
+      "market_value": 1441.26,
+      "unrealized_pnl": -0.04,
+      "pct_change": -0.0,
       "multiplier": 1,
       "stale": false
     },
@@ -21,28 +21,53 @@
       "avg_cost": 674.15,
       "asset_class": "equity",
       "strategy": "Momentum (12-1) + tech breakout",
-      "current_price": 675.08,
-      "last_refresh": "2026-05-04T14:04:09+00:00",
+      "current_price": 675.46,
+      "last_refresh": "2026-05-04T14:08:04+00:00",
       "cost_basis": 1348.3,
-      "market_value": 1350.16,
-      "unrealized_pnl": 1.86,
-      "pct_change": 0.14,
+      "market_value": 1350.92,
+      "unrealized_pnl": 2.62,
+      "pct_change": 0.19,
       "multiplier": 1,
       "stale": false
-    },
+    }
+  ],
+  "options": [
     {
       "ticker": "NVDA",
       "quantity": 2.0,
       "side": "long",
-      "avg_cost": 10.255,
-      "cost_basis": 20.51,
-      "current_price": 10.25,
-      "unrealized_pnl": 0.0,
-      "pct_change": 0.0,
-      "last_refresh": "2026-05-04T14:06:29+00:00"
+      "avg_cost": 2.55,
+      "cost_basis": 510.0,
+      "current_price": 198.635,
+      "market_value": 39727.0,
+      "unrealized_pnl": 39217.0,
+      "pct_change": 7689.61,
+      "last_refresh": "2026-05-04T14:08:04+00:00",
+      "asset_class": "options",
+      "strategy": "Momentum (12-1) + mean-reversion bounce",
+      "expiry": "2026-05-29",
+      "strike_long": 200.0,
+      "strike_short": 205.0,
+      "type": "call_debit_spread",
+      "legs": [
+        {
+          "action": "buy",
+          "strike": 200,
+          "type": "call",
+          "premium": 10.25
+        },
+        {
+          "action": "sell",
+          "strike": 205,
+          "type": "call",
+          "premium": 7.7
+        }
+      ],
+      "multiplier": 100,
+      "stale": false,
+      "thesis": "theses/NVDA-20260504.md"
     }
   ],
-  "options": [],
   "crypto": [
     {
       "ticker": "BTC-USD",
@@ -50,12 +75,12 @@
       "avg_cost": 78688.08,
       "asset_class": "crypto",
       "strategy": "Momentum (12-1) + BTC ETF-flow tailwind",
-      "current_price": 78615.3672,
-      "last_refresh": "2026-05-04T14:04:09+00:00",
+      "current_price": 78651.75,
+      "last_refresh": "2026-05-04T14:08:04+00:00",
       "cost_basis": 1180.32,
-      "market_value": 1179.23,
-      "unrealized_pnl": -1.09,
-      "pct_change": -0.09,
+      "market_value": 1179.78,
+      "unrealized_pnl": -0.54,
+      "pct_change": -0.05,
       "multiplier": 1,
       "stale": false
     },
@@ -65,15 +90,15 @@
       "avg_cost": 2330.75,
       "asset_class": "crypto",
       "strategy": "Momentum (12-1) + ETH L2/narrative flip",
-      "current_price": 2332.21,
-      "last_refresh": "2026-05-04T14:04:09+00:00",
+      "current_price": 2332.6799,
+      "last_refresh": "2026-05-04T14:08:04+00:00",
       "cost_basis": 699.23,
-      "market_value": 699.66,
-      "unrealized_pnl": 0.43,
-      "pct_change": 0.06,
+      "market_value": 699.8,
+      "unrealized_pnl": 0.57,
+      "pct_change": 0.08,
       "multiplier": 1,
       "stale": false
     }
   ],
-  "last_updated": "2026-05-04T14:06:29+00:00"
+  "last_updated": "2026-05-04T14:08:04+00:00"
 }
