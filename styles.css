@@ -399,7 +399,7 @@ body {
   display: flex; flex-direction: column; gap: 6px;
 }
 .trade {
-  display: grid; grid-template-columns: 68px 1fr auto; gap: 8px;
+  display: grid; grid-template-columns: 68px 1fr auto auto; gap: 8px;
   padding: 8px 10px;
   border: 1px solid var(--line-soft);
   border-radius: 3px;
@@ -421,13 +421,43 @@ body {
   text-overflow: ellipsis;
 }
 .act-BUY { color: var(--green); border-color: rgba(61,255,154,.4); background: rgba(61,255,154,.06); }
-.act-SELL, .act-EXIT { color: var(--red); border-color: rgba(255,59,107,.4); background: rgba(255,59,107,.06); }
+.act-SELL, .act-EXIT, .act-CLOSE { color: var(--red); border-color: rgba(255,59,107,.4); background: rgba(255,59,107,.06); }
 .act-TRIM { color: var(--amber); border-color: rgba(255,176,32,.4); background: rgba(255,176,32,.06); }
+.act-SHORT { color: var(--magenta, #ff2bd6); border-color: rgba(255,43,214,.4); background: rgba(255,43,214,.06); }
 .act-RECONCILE_BUY, .act-RECONCILE_EXIT, .act-RECONCILE_RESTORE {
   color: var(--amber); border-color: rgba(255,176,32,.4);
   background: rgba(255,176,32,.06);
   letter-spacing: .12em;
   font-size: 9px;
+}
+
+/* Realized P&L chip on closed-trade rows. Sits between body and time. */
+.trade .trade-pnl {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 3px 8px;
+  border-radius: 2px;
+  border: 1px solid;
+  letter-spacing: .02em;
+  justify-self: end;
+}
+.trade .trade-pnl.up {
+  color: var(--green);
+  border-color: rgba(61,255,154,.35);
+  background: rgba(61,255,154,.07);
+}
+.trade .trade-pnl.down {
+  color: var(--red);
+  border-color: rgba(255,59,107,.35);
+  background: rgba(255,59,107,.07);
+}
+.trade .trade-pnl .pnl-pct {
+  font-size: 10px;
+  opacity: .7;
+  margin-left: 4px;
+  font-weight: 600;
 }
 .trade .body { min-width: 0; overflow: hidden; }
 .trade .body .why {
@@ -645,13 +675,16 @@ body {
   .pos-table th:first-child { position: sticky; left: 0; z-index: 2; }
   .cls-chip { font-size: 8px; letter-spacing: .14em; padding: 1px 4px; }
 
-  /* trades — compress the action chip column */
+  /* trades — compress the action chip column; P&L chip wraps under body */
   .trade { grid-template-columns: 56px 1fr auto; gap: 6px; padding: 7px 8px; font-size: 11px; }
   .trade .act { font-size: 9px; letter-spacing: .1em; padding: 3px 2px; }
   .act-RECONCILE_BUY, .act-RECONCILE_EXIT, .act-RECONCILE_RESTORE { font-size: 8px; }
+  .trade .body { grid-column: 2 / 3; }
   .trade .body .tk { margin-right: 4px; }
   .trade .body .why { font-size: 10px; -webkit-line-clamp: 2; line-clamp: 2; }
-  .trade .when { font-size: 9px; letter-spacing: .08em; }
+  .trade .trade-pnl { grid-column: 2 / 3; justify-self: start; font-size: 11px; padding: 2px 6px; margin-top: 2px; }
+  .trade .trade-pnl .pnl-pct { font-size: 9px; }
+  .trade .when { grid-column: 3 / 4; grid-row: 1; font-size: 9px; letter-spacing: .08em; align-self: start; }
 
   /* watchlist — single-column on narrow phones */
   .watch-grid { grid-template-columns: 1fr; gap: 8px; }

@@ -692,6 +692,102 @@
   }
 
   // ---------- render: trades ----------
+  // Each ledger row becomes:
+  //   [ACTION chip]  [ticker · qty @ price · plain-English explanation]  [P&L, if a close]  [time ago]
+  // Goal: anyone glancing at the pane can read the row and know what Wanda did
+  // and how much she made or lost — no trader jargon required.
+
+  // Common ticker → friendly label. Missing tickers fall back to the symbol.
+  const TICKER_NAME = {
+    SPY: "S&P 500 ETF", QQQ: "Nasdaq 100 ETF", IWM: "Russell 2000 ETF",
+    AAPL: "Apple", MSFT: "Microsoft", GOOGL: "Alphabet", AMZN: "Amazon",
+    META: "Meta", TSLA: "Tesla", NVDA: "Nvidia", AMD: "AMD", NFLX: "Netflix",
+    XLF: "Financials ETF", XLE: "Energy ETF", XLK: "Tech ETF", XLV: "Healthcare ETF",
+    XLY: "Consumer Disc. ETF", XLP: "Consumer Stap. ETF", XLI: "Industrials ETF",
+    GLD: "Gold ETF", SLV: "Silver ETF", TLT: "20Y Treasury ETF", VXX: "Volatility ETF",
+    "BTC-USD": "Bitcoin", "ETH-USD": "Ethereum", "SOL-USD": "Solana",
+    "ADA-USD": "Cardano", "AVAX-USD": "Avalanche", "DOGE-USD": "Dogecoin",
+  };
+  const friendlyName = (tk) => TICKER_NAME[tk] || tk;
+
+  // Parse Wanda's compact option symbol: SPY260508P720 → {und, expISO, type, strike}
+  const OPT_RE = /^([A-Z]{1,6})(\d{2})(\d{2})(\d{2})([CP])(\d+(?:\.\d+)?)$/;
+  function parseOption(tk) {
+    const m = OPT_RE.exec(tk || "");
+    if (!m) return null;
+    const [, und, yy, mm, dd, t, k] = m;
+    // 2-digit year — Wanda's inception is 2026, so assume 2000+yy is always correct.
+    return { und, year: 2000 + Number(yy), month: Number(mm), day: Number(dd), type: t, strike: Number(k) };
+  }
+  // Short month name for option expiries (e.g. "Jun 6")
+  const MONTH_SHORT = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  function optLabel(opt) {
+    const right = opt.type === "C" ? "call" : "put";
+    return `$${opt.strike} ${opt.und} ${right} expiring ${MONTH_SHORT[opt.month]} ${opt.day}`;
+  }
+
+  // Layman explanation — one sentence per row.
+  function laymanExplain(t) {
+    const act = (t.action || "").toUpperCase();
+    const cls = (t.asset_class || "").toLowerCase();
+    const side = (t.side || "long").toLowerCase();
+    const qty = Math.abs(Number(t.quantity) || 0);
+    const tk = t.ticker || "";
+    const name = friendlyName(tk);
+    const opt = parseOption(tk);
+
+    // Helper: qty word by asset class
+    const units = cls === "options"
+      ? `${fmtNum(qty, 0)} ${qty === 1 ? "contract" : "contracts"}`
+      : cls === "crypto"
+        ? `${fmtNum(qty, 6)} ${name}`
+        : `${fmtNum(qty, 0)} ${qty === 1 ? "share" : "shares"} of ${name}`;
+
+    if (act === "BUY") {
+      return cls === "options"
+        ? `Bought ${fmtNum(qty, 0)} ${opt ? optLabel(opt) : tk} ${qty === 1 ? "contract" : "contracts"} — bet the price moves ${opt?.type === "C" ? "up" : "down"}`
+        : `Bought ${units}`;
+    }
+    if (act === "SELL_TO_OPEN") {
+      return opt
+        ? `Sold ${fmtNum(qty, 0)} ${optLabel(opt)} ${qty === 1 ? "contract" : "contracts"} short — collecting premium, betting it expires worthless`
+        : `Sold short ${units}`;
+    }
+    if (act === "BUY_TO_CLOSE" || act === "TRIM_TO_CLOSE") {
+      const label = opt ? optLabel(opt) : tk;
+      const reason = (t.reason || "").toLowerCase();
+      if (t.auto_expire) return `${opt ? opt.und : tk} option expired worthless — short position closed`;
+      return `Bought back ${fmtNum(qty, 0)} ${label} ${qty === 1 ? "contract" : "contracts"} to close the short`;
+    }
+    if (act === "EXIT") {
+      if (t.auto_expire) return `${opt ? opt.und : tk} option expired worthless — position closed`;
+      return cls === "options"
+        ? `Closed ${fmtNum(qty, 0)} ${opt ? optLabel(opt) : tk} ${qty === 1 ? "contract" : "contracts"}`
+        : `Sold all ${units}`;
+    }
+    if (act === "TRIM" || act === "SELL") {
+      return cls === "options"
+        ? `Trimmed ${fmtNum(qty, 0)} ${opt ? optLabel(opt) : tk} ${qty === 1 ? "contract" : "contracts"}`
+        : `Sold ${units}`;
+    }
+    // Legacy reconciliation rows — render as neutral adjustment text so the
+    // feed stays readable even if old backups get imported.
+    if (act.startsWith("RECONCILE")) {
+      return `Adjustment on ${name}`;
+    }
+    return `${act} ${name}`.trim();
+  }
+
+  // Action chip label (short, uppercase). Reconcile rows collapse to BUY/EXIT.
+  const ACT_LABEL = {
+    BUY: "BUY", SELL: "SELL", EXIT: "EXIT", TRIM: "TRIM", HOLD: "HOLD",
+    SELL_TO_OPEN: "SHORT", BUY_TO_CLOSE: "CLOSE", TRIM_TO_CLOSE: "CLOSE",
+    RECONCILE_BUY: "BUY", RECONCILE_EXIT: "EXIT", RECONCILE_RESTORE: "BUY",
+  };
+
+  // Which actions carry realized P&L (closes).
+  const PNL_ACTIONS = new Set(["EXIT", "TRIM", "SELL", "BUY_TO_CLOSE", "TRIM_TO_CLOSE", "RECONCILE_EXIT"]);
+
   function renderTrades() {
     const host = $("#trades-list");
     host.innerHTML = "";
@@ -700,38 +796,12 @@
       host.innerHTML = `<li class="trade"><span class="body" style="grid-column:1/-1;color:var(--ink-mute);text-align:center">NO TRADES YET</span></li>`;
       return;
     }
-    // Map every action (including RECONCILE_*) to a clean BUY/SELL/EXIT label.
-    // Reconciliation entries were internal bookkeeping repairs and should
-    // render to the public desk as if they were normal trades.
-    const ACT_LABEL = {
-      BUY: "BUY", SELL: "SELL", EXIT: "EXIT", TRIM: "TRIM", HOLD: "HOLD",
-      RECONCILE_BUY: "BUY", RECONCILE_EXIT: "EXIT", RECONCILE_RESTORE: "BUY",
-    };
 
-    // Strategy/reason fallback for reconcile rows that lack a human-friendly note.
-    const STRATEGY_FALLBACK = {
-      XLE: "Mean-reversion + oversold bounce",
-      NVDA: "Quality tilt + momentum",
-      GOOGL: "Quality tilt + momentum",
-      MSFT: "Quality tilt + momentum",
-      XLF: "Sector rotation + momentum",
-    };
-
-    // Scrub any mention of reconciliation / gaps / bookkeeping from display text.
-    const scrub = (s) => {
-      if (!s) return "";
-      // If it's a raw recon note, prefer to drop it entirely in favor of the
-      // strategy fallback.
-      if (/reconcil|backfill|heartbeat|repair|audit|bookkeep|without a (cash|ledger)|positions\.json/i.test(s)) {
-        return "";
-      }
-      return s;
-    };
-
-    // Recover a plausible price for reconcile rows that only carry cost_basis/qty.
+    // Recover a plausible per-unit price for rows that only carry cost_basis/qty.
     const recoverPrice = (t) => {
       if (t.price != null) return t.price;
       if (t.exit_price != null) return t.exit_price;
+      if (t.effective_price != null) return t.effective_price;
       if (t.avg_cost != null) return t.avg_cost;
       if (t.cost_basis != null && t.quantity) return t.cost_basis / t.quantity;
       if (t.proceeds != null && t.quantity) return t.proceeds / t.quantity;
@@ -742,20 +812,35 @@
       const ts = t.timestamp || t.ts;
       const rawAct = (t.action || "").toUpperCase();
       const dispAct = ACT_LABEL[rawAct] || rawAct.slice(0, 7);
-      const label = dispAct;
-      // Prefer clean strategy/reason; fall back by ticker if the source text
-      // is a reconciliation note.
-      let why = scrub(t.reason) || scrub(t.strategy) || STRATEGY_FALLBACK[t.ticker] || "";
       const price = recoverPrice(t);
-      const qtyStr = (t.quantity != null && price != null)
-        ? `${fmtNum(t.quantity, 5)} @ ${fmtUSD(price)}`
-        : (t.quantity != null ? `${fmtNum(t.quantity, 5)} shares` : "");
+      const qty = t.quantity;
+      const qtyStr = (qty != null && price != null)
+        ? `${fmtNum(qty, 5)} @ ${fmtUSD(price)}`
+        : (qty != null ? `${fmtNum(qty, 5)}` : "");
+      const explain = laymanExplain(t);
+
+      // P&L cell — only for close-side actions.
+      let pnlCell = "";
+      if (PNL_ACTIONS.has(rawAct) && typeof t.pnl === "number") {
+        const up = t.pnl >= 0;
+        const sign = up ? "+" : "−";
+        const amt = fmtUSD(Math.abs(t.pnl), 2);
+        const pctStr = (typeof t.pnl_pct === "number")
+          ? ` <span class="pnl-pct">${up ? "+" : ""}${t.pnl_pct.toFixed(1)}%</span>`
+          : "";
+        pnlCell = `<span class="trade-pnl ${up ? "up" : "down"}" title="Realized profit/loss on this close">${sign}${amt}${pctStr}</span>`;
+      }
+
       const li = document.createElement("li");
       li.className = "trade";
-      li.title = dispAct + (why ? " — " + why : "");
+      li.title = dispAct + (t.reason ? " — " + t.reason : "");
       li.innerHTML = `
-        <span class="act act-${dispAct}" title="${dispAct}">${label}</span>
-        <span class="body"><span class="tk">${t.ticker || "—"}</span>${qtyStr}<span class="why">${escapeHTML(why)}</span></span>
+        <span class="act act-${dispAct}" title="${dispAct}">${dispAct}</span>
+        <span class="body">
+          <span class="tk">${t.ticker || "—"}</span>${qtyStr}
+          <span class="why">${escapeHTML(explain)}</span>
+        </span>
+        ${pnlCell}
         <span class="when">${fmtTimeAgo(ts)}</span>
       `;
       host.appendChild(li);
