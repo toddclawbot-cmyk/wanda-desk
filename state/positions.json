@@ -5,14 +5,30 @@
       "quantity": 2.0,
       "avg_cost": 720.65,
       "asset_class": "equity",
-      "strategy": "Momentum (12-1) + trend-follow"
+      "strategy": "Momentum (12-1) + trend-follow",
+      "current_price": 720.67,
+      "last_refresh": "2026-05-04T13:16:23+00:00",
+      "cost_basis": 1441.3,
+      "market_value": 1441.34,
+      "unrealized_pnl": 0.04,
+      "pct_change": 0.0,
+      "multiplier": 1,
+      "stale": false
     },
     {
       "ticker": "QQQ",
       "quantity": 2.0,
       "avg_cost": 674.15,
       "asset_class": "equity",
-      "strategy": "Momentum (12-1) + tech breakout"
+      "strategy": "Momentum (12-1) + tech breakout",
+      "current_price": 674.16,
+      "last_refresh": "2026-05-04T13:16:23+00:00",
+      "cost_basis": 1348.3,
+      "market_value": 1348.32,
+      "unrealized_pnl": 0.02,
+      "pct_change": 0.0,
+      "multiplier": 1,
+      "stale": false
     }
   ],
   "options": [],
@@ -22,15 +38,31 @@
       "quantity": 0.015,
       "avg_cost": 78688.08,
       "asset_class": "crypto",
-      "strategy": "Momentum (12-1) + BTC ETF-flow tailwind"
+      "strategy": "Momentum (12-1) + BTC ETF-flow tailwind",
+      "current_price": 78904.1406,
+      "last_refresh": "2026-05-04T13:16:23+00:00",
+      "cost_basis": 1180.32,
+      "market_value": 1183.56,
+      "unrealized_pnl": 3.24,
+      "pct_change": 0.27,
+      "multiplier": 1,
+      "stale": false
     },
     {
       "ticker": "ETH-USD",
       "quantity": 0.3,
       "avg_cost": 2330.75,
       "asset_class": "crypto",
-      "strategy": "Momentum (12-1) + ETH L2/narrative flip"
+      "strategy": "Momentum (12-1) + ETH L2/narrative flip",
+      "current_price": 2338.0801,
+      "last_refresh": "2026-05-04T13:16:23+00:00",
+      "cost_basis": 699.23,
+      "market_value": 701.42,
+      "unrealized_pnl": 2.19,
+      "pct_change": 0.31,
+      "multiplier": 1,
+      "stale": false
     }
   ],
-  "last_updated": "2026-05-04T13:08:56+00:00"
+  "last_updated": "2026-05-04T13:16:23+00:00"
 }
