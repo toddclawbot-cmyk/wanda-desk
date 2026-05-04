@@ -5,7 +5,7 @@
   "dd_pct": -33.1,
   "circuit_breaker": true,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-04T03:46:25+00:00",
+  "last_updated": "2026-05-04T04:01:28+00:00",
   "reconcile": {
     "status": "ok"
   },
