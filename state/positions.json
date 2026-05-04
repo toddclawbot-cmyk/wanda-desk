@@ -49,17 +49,17 @@
   "crypto": [
     {
       "ticker": "ETH-USD",
-      "quantity": 0.0848,
-      "avg_cost": 2360.38,
-      "cost_basis": 200.16,
-      "current_price": 2361.8601,
+      "quantity": 0.254,
+      "avg_cost": 2365.11811,
+      "cost_basis": 600.74,
+      "current_price": 2363.92,
       "market_value": 200.29,
       "unrealized_pnl": 0.13,
       "pct_change": 0.06,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "last_refresh": "2026-05-04T21:46:48+00:00",
+      "last_refresh": "2026-05-04T21:52:19+00:00",
       "stale": false
     },
     {
@@ -93,71 +93,6 @@
       "stale": false
     }
   ],
-  "options": [
-    {
-      "ticker": "SPY260522P698",
-      "quantity": 1.0,
-      "side": "long",
-      "asset_class": "options",
-      "multiplier": 100,
-      "current_price": 4.09,
-      "unrealized_pnl": -13.42,
-      "pct_change": -3.18,
-      "last_refresh": "2026-05-04T21:02:32.043333+00:00",
-      "avg_cost": 4.2242,
-      "cost_basis": 422.42,
-      "market_value": 409.0,
-      "stale": false
-    },
-    {
-      "ticker": "SPY260522P718",
-      "quantity": -1.0,
-      "side": "short",
-      "asset_class": "options",
-      "multiplier": 100,
-      "current_price": 9.325,
-      "unrealized_pnl": -300.13,
-      "pct_change": 47.46,
-      "last_refresh": "2026-05-04T21:02:32.194636+00:00",
-      "avg_cost": 6.3237,
-      "credit_received": 632.37,
-      "cost_basis": -632.37,
-      "max_loss": 1491.0,
-      "market_value": -932.5,
-      "stale": false
-    },
-    {
-      "ticker": "SPY260522C738",
-      "quantity": 1.0,
-      "side": "long",
-      "asset_class": "options",
-      "multiplier": 100,
-      "current_price": 1.83,
-      "unrealized_pnl": -21.2,
-      "pct_change": -10.38,
-      "last_refresh": "2026-05-04T21:02:32.263984+00:00",
-      "avg_cost": 2.042,
-      "cost_basis": 204.2,
-      "market_value": 183.0,
-      "stale": false
-    },
-    {
-      "ticker": "SPY260522C728",
-      "quantity": -1.0,
-      "side": "short",
-      "asset_class": "options",
-      "multiplier": 100,
-      "current_price": 5.08,
-      "unrealized_pnl": -6.5,
-      "pct_change": 1.3,
-      "last_refresh": "2026-05-04T21:02:32.353275+00:00",
-      "avg_cost": 5.015,
-      "credit_received": 501.5,
-      "cost_basis": -501.5,
-      "max_loss": 1491.0,
-      "market_value": -508.0,
-      "stale": false
-    }
-  ],
-  "last_updated": "2026-05-04T21:46:48+00:00"
+  "options": [],
+  "last_updated": "2026-05-04T21:52:19+00:00"
 }
