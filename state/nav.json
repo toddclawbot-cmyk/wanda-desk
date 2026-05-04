@@ -1,11 +1,11 @@
 {
-  "nav": 11820.69,
-  "cash": 7146.4,
+  "nav": 11820.34,
+  "cash": 7150.61,
   "peak": 11820.69,
-  "dd_pct": 0.0,
+  "dd_pct": -0.0029,
   "circuit_breaker": false,
   "inception": "2026-05-04T13:03:17+00:00",
-  "last_updated": "2026-05-04T14:02:41+00:00",
+  "last_updated": "2026-05-04T14:04:57.521259+00:00",
   "reconcile": {
     "status": "ok"
   },
@@ -15,7 +15,7 @@
     "losses": 1,
     "scratches": 0,
     "win_rate": 0.0,
-    "realized_pnl": 1815.55,
+    "realized_pnl": 1819.76,
     "best_ticker": "NVDA",
     "best_pnl": -1.84,
     "worst_ticker": "NVDA",
