@@ -5,7 +5,7 @@
   "dd_pct": -33.18,
   "circuit_breaker": true,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-04T07:46:28+00:00",
+  "last_updated": "2026-05-04T08:31:32.497341+00:00",
   "reconcile": {
     "status": "ok"
   },
@@ -22,9 +22,9 @@
     "worst_pnl": -75.98
   },
   "prices": {
-    "BTC-USD": 79832.57,
-    "ETH-USD": 2367.0,
-    "SOL-USD": 84.82,
+    "BTC-USD": 79709.9921875,
+    "ETH-USD": 2358.60009765625,
+    "SOL-USD": 84.80999755859375,
     "XLE": 58.849998474121094,
     "MSFT": 414.44,
     "NVDA": 198.45,
