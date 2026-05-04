@@ -5,7 +5,7 @@
   "dd_pct": -33.1761,
   "circuit_breaker": true,
   "inception": "2026-04-27T14:05:00+00:00",
-  "last_updated": "2026-05-04T11:01:30+00:00",
+  "last_updated": "2026-05-04T11:47:02.052108+00:00",
   "reconcile": {
     "status": "ok"
   },
@@ -22,20 +22,30 @@
     "worst_pnl": -75.98
   },
   "prices": {
-    "BTC-USD": 79724.7031,
-    "ETH-USD": 2361.8,
-    "SOL-USD": 84.78,
-    "XLE": 58.849998474121094,
-    "MSFT": 414.44,
-    "NVDA": 198.45,
     "SPY": 720.65,
-    "QQQ": 674.15
+    "QQQ": 674.15,
+    "IWM": 279.28,
+    "AAPL": 280.14,
+    "AMZN": 268.26,
+    "META": 608.75,
+    "TSLA": 390.82,
+    "NVDA": 198.45,
+    "GOOGL": 385.69,
+    "MSFT": 414.44,
+    "XLF": 51.92,
+    "XLE": 58.85,
+    "GLD": 423.18,
+    "VXX": 28.4,
+    "BTC-USD": 78739.9375,
+    "ETH-USD": 2334.21,
+    "SOL-USD": 83.92
   },
   "regime": {
-    "vix": 16.99,
+    "vix": 28.4,
     "spy": 720.65,
-    "spy_change": 0.28,
-    "btc": 79978.94,
-    "eth": 2375.77
+    "spy_change": 0.0,
+    "btc": 78739.94,
+    "eth": 2334.21,
+    "regime_viz": "elevated"
   }
 }
