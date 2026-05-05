@@ -64,17 +64,17 @@
     },
     {
       "ticker": "BTC-USD",
-      "quantity": 0.0187,
+      "quantity": 0.013,
       "avg_cost": 79804.2781,
-      "cost_basis": 1492.34,
-      "current_price": 80200.0,
+      "cost_basis": 1037.46,
+      "current_price": 80199.01,
       "market_value": 1499.74,
       "unrealized_pnl": 7.4,
       "pct_change": 0.5,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "last_refresh": "2026-05-05T01:32:24+00:00",
+      "last_refresh": "2026-05-05T01:35:27+00:00",
       "stale": false
     },
     {
@@ -94,5 +94,5 @@
     }
   ],
   "options": [],
-  "last_updated": "2026-05-05T01:32:24+00:00"
+  "last_updated": "2026-05-05T01:35:27+00:00"
 }
