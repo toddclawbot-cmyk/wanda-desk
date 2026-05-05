@@ -12,7 +12,7 @@
       "side": "long",
       "asset_class": "equity",
       "multiplier": 1,
-      "last_refresh": "2026-05-05T06:46:59.952927+00:00",
+      "last_refresh": "2026-05-05T07:16:30.124242+00:00",
       "stale": false
     },
     {
@@ -27,7 +27,7 @@
       "side": "long",
       "asset_class": "equity",
       "multiplier": 1,
-      "last_refresh": "2026-05-05T06:46:59.952936+00:00",
+      "last_refresh": "2026-05-05T07:16:30.124242+00:00",
       "stale": false
     },
     {
@@ -42,7 +42,7 @@
       "side": "long",
       "asset_class": "equity",
       "multiplier": 1,
-      "last_refresh": "2026-05-05T06:46:59.952940+00:00",
+      "last_refresh": "2026-05-05T07:16:30.124242+00:00",
       "stale": false
     }
   ],
@@ -52,14 +52,14 @@
       "quantity": 0.254,
       "avg_cost": 2365.1181,
       "cost_basis": 600.74,
-      "current_price": 2375.39,
-      "market_value": 603.35,
-      "unrealized_pnl": 2.61,
-      "pct_change": 1.24,
+      "current_price": 2381.83,
+      "market_value": 605.18,
+      "unrealized_pnl": 4.44,
+      "pct_change": 1.26,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "last_refresh": "2026-05-05T06:46:59.952943+00:00",
+      "last_refresh": "2026-05-05T07:16:30.124242+00:00",
       "stale": false
     },
     {
@@ -67,14 +67,14 @@
       "quantity": 0.013,
       "avg_cost": 79804.2781,
       "cost_basis": 1037.46,
-      "current_price": 80842.99,
-      "market_value": 1050.96,
-      "unrealized_pnl": 13.5,
+      "current_price": 80992.42,
+      "market_value": 1052.90,
+      "unrealized_pnl": 15.44,
       "pct_change": 1.27,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "last_refresh": "2026-05-05T06:46:59.952946+00:00",
+      "last_refresh": "2026-05-05T07:16:30.124242+00:00",
       "stale": false
     },
     {
@@ -82,17 +82,17 @@
       "quantity": 3.5,
       "avg_cost": 85.2514,
       "cost_basis": 298.38,
-      "current_price": 84.61,
-      "market_value": 296.14,
-      "unrealized_pnl": -2.1,
+      "current_price": 84.89,
+      "market_value": 297.12,
+      "unrealized_pnl": -1.26,
       "pct_change": 0.62,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "last_refresh": "2026-05-05T06:46:59.952949+00:00",
+      "last_refresh": "2026-05-05T07:16:30.124242+00:00",
       "stale": false
     }
   ],
   "options": [],
-  "last_updated": "2026-05-05T06:46:59.952952+00:00"
+  "last_updated": "2026-05-05T07:16:30.124242+00:00"
 }
