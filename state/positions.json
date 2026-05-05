@@ -4,43 +4,43 @@
       "ticker": "SPY",
       "quantity": 1.722,
       "avg_cost": 722.21,
-      "current_price": 722.55,
-      "market_value": 1244.23,
+      "current_price": 722.780029,
+      "market_value": 1244.62721,
       "cost_basis": 1243.65,
-      "unrealized_pnl": 0.58,
-      "pct_change": 0.05,
+      "unrealized_pnl": 0.98159,
+      "pct_change": 0.078928,
       "entry_date": "2026-05-04",
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-05T13:46:20+00:00"
+      "last_refresh": "2026-05-05T14:02:00.055717+00:00"
     },
     {
       "ticker": "NVDA",
       "quantity": 6.229,
       "avg_cost": 198.34,
-      "current_price": 200.04,
-      "market_value": 1246.05,
+      "current_price": 198.852798,
+      "market_value": 1238.654082,
       "cost_basis": 1235.46,
-      "unrealized_pnl": 10.59,
-      "pct_change": 0.86,
+      "unrealized_pnl": 3.194222,
+      "pct_change": 0.258545,
       "entry_date": "2026-05-04",
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-05T13:46:20+00:00"
+      "last_refresh": "2026-05-05T14:02:00.501442+00:00"
     },
     {
       "ticker": "QQQ",
       "quantity": 1.837,
       "avg_cost": 676.44,
-      "current_price": 680.665,
-      "market_value": 1250.38,
+      "current_price": 680.53009,
+      "market_value": 1250.133776,
       "cost_basis": 1242.62,
-      "unrealized_pnl": 7.76,
-      "pct_change": 0.62,
+      "unrealized_pnl": 7.513496,
+      "pct_change": 0.604649,
       "entry_date": "2026-05-04",
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-05T13:46:20+00:00"
+      "last_refresh": "2026-05-05T14:02:00.997086+00:00"
     }
   ],
   "crypto": [
@@ -48,44 +48,44 @@
       "ticker": "ETH-USD",
       "quantity": 0.254,
       "avg_cost": 2365.12,
-      "current_price": 2393.7,
-      "market_value": 608.0,
+      "current_price": 2386.790039,
+      "market_value": 606.24467,
       "cost_basis": 600.74,
-      "unrealized_pnl": 7.26,
-      "pct_change": 1.21,
+      "unrealized_pnl": 5.50419,
+      "pct_change": 0.916234,
       "entry_date": "2026-05-04",
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-05T13:46:20+00:00"
+      "last_refresh": "2026-05-05T14:02:01.561723+00:00"
     },
     {
       "ticker": "BTC-USD",
       "quantity": 0.013,
       "avg_cost": 80553.0,
-      "current_price": 81520.5312,
-      "market_value": 1059.77,
+      "current_price": 81261.578125,
+      "market_value": 1056.400516,
       "cost_basis": 1047.19,
-      "unrealized_pnl": 12.58,
-      "pct_change": 1.2,
+      "unrealized_pnl": 9.211516,
+      "pct_change": 0.879642,
       "entry_date": "2026-05-04",
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-05T13:46:20+00:00"
+      "last_refresh": "2026-05-05T14:02:02.180066+00:00"
     },
     {
       "ticker": "SOL-USD",
       "quantity": 3.5,
       "avg_cost": 85.25,
-      "current_price": 85.65,
-      "market_value": 299.78,
+      "current_price": 85.639999,
+      "market_value": 299.739998,
       "cost_basis": 298.38,
-      "unrealized_pnl": 1.4,
-      "pct_change": 0.47,
+      "unrealized_pnl": 1.364998,
+      "pct_change": 0.457477,
       "entry_date": "2026-05-04",
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-05T13:46:20+00:00"
+      "last_refresh": "2026-05-05T14:02:02.401209+00:00"
     }
   ],
-  "last_updated": "2026-05-05T13:46:20+00:00"
+  "last_updated": "2026-05-05T14:02:02.401275+00:00"
 }
