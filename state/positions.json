@@ -52,47 +52,47 @@
       "quantity": 0.254,
       "avg_cost": 2365.1181,
       "cost_basis": 600.74,
-      "current_price": 2378.189941,
-      "market_value": 604.060245,
-      "unrealized_pnl": 3.320248,
-      "pct_change": 0.552693,
+      "current_price": 2381.739990234375,
+      "market_value": 604.9619575195312,
+      "unrealized_pnl": 4.221957519531202,
+      "pct_change": 0.7027932446322599,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-05T11:33:59.364152+00:00"
+      "last_refresh": "2026-05-05T11:46:00.000+00:00"
     },
     {
       "ticker": "BTC-USD",
       "quantity": 0.013,
       "avg_cost": 79804.2781,
       "cost_basis": 1037.46,
-      "current_price": 80967.617188,
-      "market_value": 1052.579023,
-      "unrealized_pnl": 15.123408,
-      "pct_change": 1.45774,
+      "current_price": 81073.1875,
+      "market_value": 1053.9514374999999,
+      "unrealized_pnl": 16.491437499999847,
+      "pct_change": 1.590026788300719,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-05T11:33:59.480203+00:00"
+      "last_refresh": "2026-05-05T11:46:00.000+00:00"
     },
     {
       "ticker": "SOL-USD",
       "quantity": 3.5,
       "avg_cost": 85.2514,
       "cost_basis": 298.38,
-      "current_price": 84.849998,
-      "market_value": 296.974995,
-      "unrealized_pnl": -1.404905,
-      "pct_change": -0.470844,
+      "current_price": 85.0,
+      "market_value": 297.5,
+      "unrealized_pnl": -0.8799999999999955,
+      "pct_change": -0.2948925178941388,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
       "stale": false,
-      "last_refresh": "2026-05-05T11:33:59.611366+00:00"
+      "last_refresh": "2026-05-05T11:46:00.000+00:00"
     }
   ],
   "options": [],
-  "last_updated": "2026-05-05T11:33:59.611394+00:00"
+  "last_updated": "2026-05-05T11:46:00.000+00:00"
 }
