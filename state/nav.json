@@ -1,11 +1,11 @@
 {
-  "nav": 8831.22,
+  "nav": 8832.02,
   "cash": 2709.76,
   "peak": 10002.71,
-  "dd_pct": -11.7117,
+  "dd_pct": -11.7,
   "circuit_breaker": false,
   "inception": "2026-05-04T14:46:09+00:00",
-  "last_updated": "2026-05-05T04:32:03.474779+00:00",
+  "last_updated": "2026-05-05T04:47:14+00:00",
   "stats": {
     "closed": 6,
     "wins": 2,
