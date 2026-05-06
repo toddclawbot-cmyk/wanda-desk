@@ -8,13 +8,13 @@
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "current_price": 81487.0078125,
+      "current_price": 81494.4609375,
       "avg_cost": 81744.785276,
       "cost_basis": 1332.44,
-      "market_value": 1328.23822734375,
-      "unrealized_pnl": -4.201772656250114,
-      "pct_change": -0.3153442297629705,
-      "last_refresh": "2026-05-06T17:50:28.291681+00:00",
+      "market_value": 1328.35971328125,
+      "unrealized_pnl": -4.080286718750131,
+      "pct_change": -0.30622667568923134,
+      "last_refresh": "2026-05-06T18:16:00.000000+00:00",
       "stale": false
     },
     {
@@ -23,13 +23,13 @@
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "current_price": 88.93,
+      "current_price": 88.76000213623047,
       "avg_cost": 89.054108,
       "cost_basis": 444.38,
-      "market_value": 443.76070000000004,
-      "unrealized_pnl": -0.6192999999999529,
-      "pct_change": -0.13936246489605342,
-      "last_refresh": "2026-05-06T17:50:28.291690+00:00",
+      "market_value": 442.91241065979005,
+      "unrealized_pnl": -1.4675893402099405,
+      "pct_change": -0.33025524636048303,
+      "last_refresh": "2026-05-06T18:16:00.000000+00:00",
       "stale": false
     },
     {
@@ -38,15 +38,15 @@
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "current_price": 9.996,
+      "current_price": 9.987000465393066,
       "avg_cost": 10.049017,
       "cost_basis": 444.87,
-      "market_value": 442.52292000000006,
-      "unrealized_pnl": -2.3470799999999485,
-      "pct_change": -0.5275839417925088,
-      "last_refresh": "2026-05-06T17:50:28.291692+00:00",
+      "market_value": 442.1245106029511,
+      "unrealized_pnl": -2.745489397048914,
+      "pct_change": -0.61714030941467,
+      "last_refresh": "2026-05-06T18:16:00.000000+00:00",
       "stale": false
     }
   ],
-  "last_updated": "2026-05-06T17:50:28.291694+00:00"
+  "last_updated": "2026-05-06T18:16:00.000000+00:00"
 }
