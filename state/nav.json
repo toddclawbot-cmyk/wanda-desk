@@ -1,15 +1,15 @@
 {
-  "nav": 8872.12,
+  "nav": 8871.97,
   "cash": 5831.94,
   "peak": 10002.7,
   "dd_pct": -11.3,
   "inception": "2026-05-04T14:50:00Z",
-  "last_updated": "2026-05-06T19:21:30.643519+00:00",
+  "last_updated": "2026-05-06T19:32:01.354575+00:00",
   "circuit_breaker": false,
   "circuit_breaker_tripped_at": "2026-05-06T14:02:00+00:00",
   "alert_level": "YELLOW",
   "positions_closed": false,
-  "regime_vix": 17.0,
+  "regime_vix": 17.18,
   "regime_label": "Risk-on expansion",
   "awaiting_regime_reload": false,
   "reconcile": {
