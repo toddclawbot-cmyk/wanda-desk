@@ -1,12 +1,12 @@
 {
-  "nav": 8848.32,
+  "nav": 8847.47,
   "cash": 4586.75,
   "peak": 10002.7,
-  "dd_pct": -11.5407,
+  "dd_pct": -11.55,
   "inception": "2026-05-04T14:50:00Z",
-  "last_updated": "2026-05-06T03:30:56.916297+00:00",
+  "last_updated": "2026-05-06T03:46:45.000000+00:00",
   "circuit_breaker": false,
-  "alert_level": "GREEN",
+  "alert_level": "YELLOW",
   "reconcile": {
     "status": "ok"
   },
@@ -16,7 +16,7 @@
     "losses": 7,
     "scratches": 0,
     "win_rate": 46.15,
-    "realized_pnl": -1156.73,
+    "realized_pnl": -1157.58,
     "best_ticker": "SPY260522C728",
     "best_pnl": 150.15,
     "worst_ticker": "SPY260522P718",
