@@ -4,11 +4,15 @@
   "peak": 10002.7,
   "dd_pct": -11.64,
   "inception": "2026-05-04T14:50:00Z",
-  "last_updated": "2026-05-06T04:46:53.499278+00:00",
+  "last_updated": "2026-05-06T05:16:00+00:00",
   "circuit_breaker": true,
   "alert_level": "RED",
   "positions_closed": true,
   "closed_at": "2026-05-06T04:39:46.459033+00:00",
+  "regime_vix": 17.38,
+  "regime_label": "Risk-on expansion",
+  "vix_at_trip": 27.7,
+  "awaiting_regime_reload": true,
   "reconcile": {
     "status": "ok"
   },
