@@ -12,8 +12,13 @@
       "avg_cost": 81483.673469,
       "side": "long",
       "cost_basis": 399.27,
-      "current_price": 82207.72,
-      "last_refresh": "2026-05-06T10:35:57+00:00"
+      "current_price": 82469.9688,
+      "last_refresh": "2026-05-06T11:16:39+00:00",
+      "market_value": 404.1,
+      "unrealized_pnl": 4.83,
+      "pct_change": 1.21,
+      "multiplier": 1,
+      "stale": false
     },
     {
       "ticker": "ETH-USD",
@@ -25,8 +30,13 @@
       "avg_cost": 2368.888889,
       "side": "long",
       "cost_basis": 26.65,
-      "current_price": 2410.92,
-      "last_refresh": "2026-05-06T10:33:41.311118+00:00"
+      "current_price": 2417.72,
+      "last_refresh": "2026-05-06T11:16:39+00:00",
+      "market_value": 27.2,
+      "unrealized_pnl": 0.55,
+      "pct_change": 2.06,
+      "multiplier": 1,
+      "stale": false
     },
     {
       "ticker": "SOL-USD",
@@ -38,9 +48,14 @@
       "avg_cost": 87.391111,
       "side": "long",
       "cost_basis": 196.63,
-      "current_price": 89.53,
-      "last_refresh": "2026-05-06T10:33:41.311118+00:00"
+      "current_price": 89.62,
+      "last_refresh": "2026-05-06T11:16:39+00:00",
+      "market_value": 201.65,
+      "unrealized_pnl": 5.02,
+      "pct_change": 2.55,
+      "multiplier": 1,
+      "stale": false
     }
   ],
-  "last_updated": "2026-05-06T10:35:57+00:00"
+  "last_updated": "2026-05-06T11:16:39+00:00"
 }
