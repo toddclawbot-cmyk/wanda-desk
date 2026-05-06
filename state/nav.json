@@ -4,7 +4,7 @@
   "peak": 10002.7,
   "dd_pct": -11.09,
   "inception": "2026-05-04T14:50:00Z",
-  "last_updated": "2026-05-06T11:46:26+00:00",
+  "last_updated": "2026-05-06T11:45:00+00:00",
   "circuit_breaker": false,
   "alert_level": "ORANGE",
   "positions_closed": false,
