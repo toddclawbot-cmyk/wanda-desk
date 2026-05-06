@@ -4,15 +4,15 @@
       "ticker": "SPY",
       "quantity": 1.2915,
       "avg_cost": 722.21,
-      "current_price": 723.77,
+      "current_price": 723.74,
       "multiplier": 1,
       "entry_date": "2026-05-04",
-      "market_value": 934.749,
+      "market_value": 934.71,
       "cost_basis": 932.73,
-      "unrealized_pnl": 2.019,
-      "pct_change": 0.216,
+      "unrealized_pnl": 1.98,
+      "pct_change": 0.21,
       "stale": false,
-      "last_refresh": "2026-05-05T20:00:00+00:00"
+      "last_refresh": "2026-05-06T00:31:04+00:00"
     },
     {
       "ticker": "NVDA",
@@ -21,26 +21,26 @@
       "current_price": 196.5,
       "multiplier": 1,
       "entry_date": "2026-05-04",
-      "market_value": 1223.9985,
+      "market_value": 1224.0,
       "cost_basis": 1235.46,
-      "unrealized_pnl": -11.4615,
-      "pct_change": -0.9277,
+      "unrealized_pnl": -11.46,
+      "pct_change": -0.93,
       "stale": false,
-      "last_refresh": "2026-05-05T20:00:00+00:00"
+      "last_refresh": "2026-05-06T00:31:04+00:00"
     },
     {
       "ticker": "QQQ",
       "quantity": 1.3778,
       "avg_cost": 676.44,
-      "current_price": 681.61,
+      "current_price": 681.51,
       "multiplier": 1,
       "entry_date": "2026-05-04",
-      "market_value": 939.1223,
+      "market_value": 938.98,
       "cost_basis": 932.0,
-      "unrealized_pnl": 7.1223,
-      "pct_change": 0.7643,
+      "unrealized_pnl": 6.98,
+      "pct_change": 0.75,
       "stale": false,
-      "last_refresh": "2026-05-05T20:00:00+00:00"
+      "last_refresh": "2026-05-06T00:31:04+00:00"
     }
   ],
   "options": [
@@ -59,7 +59,7 @@
       "cost_basis": -658.34,
       "max_loss": 291.0,
       "market_value": -679.5,
-      "stale": true
+      "stale": false
     },
     {
       "ticker": "SPY260522P716",
@@ -74,7 +74,7 @@
       "avg_cost": 5.5055,
       "cost_basis": 550.55,
       "market_value": 563.0,
-      "stale": true
+      "stale": false
     },
     {
       "ticker": "SPY260522C728",
@@ -91,7 +91,7 @@
       "cost_basis": -778.22,
       "max_loss": 291.0,
       "market_value": -741.5,
-      "stale": true
+      "stale": false
     },
     {
       "ticker": "SPY260522C732",
@@ -106,7 +106,7 @@
       "avg_cost": 5.7858,
       "cost_basis": 578.58,
       "market_value": 540.5,
-      "stale": true
+      "stale": false
     }
   ],
   "crypto": [
@@ -114,45 +114,45 @@
       "ticker": "ETH-USD",
       "quantity": 0.1905,
       "avg_cost": 2365.12,
-      "current_price": 2364.85,
+      "current_price": 2357.3,
       "multiplier": 1,
       "entry_date": "2026-05-04",
-      "market_value": 450.503925,
+      "market_value": 449.07,
       "cost_basis": 450.56,
       "unrealizedized_pnl": 3.2,
-      "pct_change": -0.011415911243406462,
+      "pct_change": -0.33,
       "stale": false,
-      "last_refresh": "2026-05-06T00:15:00+00:00",
-      "unrealized_pnl": -0.05607500000002119
+      "last_refresh": "2026-05-06T00:31:04+00:00",
+      "unrealized_pnl": -1.49
     },
     {
       "ticker": "BTC-USD",
       "quantity": 0.0098,
       "avg_cost": 80553.0,
-      "current_price": 81191.88,
+      "current_price": 80907.0625,
       "multiplier": 1,
       "entry_date": "2026-05-04",
-      "market_value": 795.680424,
+      "market_value": 792.89,
       "cost_basis": 789.42,
-      "unrealized_pnl": 6.260424000000057,
-      "pct_change": 0.793117574764457,
+      "unrealized_pnl": 3.47,
+      "pct_change": 0.44,
       "stale": false,
-      "last_refresh": "2026-05-06T00:15:00+00:00"
+      "last_refresh": "2026-05-06T00:31:04+00:00"
     },
     {
       "ticker": "SOL-USD",
       "quantity": 2.625,
       "avg_cost": 85.25,
-      "current_price": 86.43,
+      "current_price": 86.16,
       "multiplier": 1,
       "entry_date": "2026-05-04",
-      "market_value": 226.87875000000003,
+      "market_value": 226.17,
       "cost_basis": 223.78,
-      "unrealized_pnl": 3.098750000000024,
-      "pct_change": 1.384164222873907,
+      "unrealized_pnl": 2.39,
+      "pct_change": 1.07,
       "stale": false,
-      "last_refresh": "2026-05-06T00:15:00+00:00"
+      "last_refresh": "2026-05-06T00:31:04+00:00"
     }
   ],
-  "last_updated": "2026-05-06T00:15:00+00:00"
+  "last_updated": "2026-05-06T00:31:04+00:00"
 }
