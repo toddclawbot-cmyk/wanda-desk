@@ -12,7 +12,7 @@
       "market_value": 695.59,
       "unrealized_pnl": -0.35,
       "pct_change": -0.05,
-      "last_refresh": "2026-05-06T21:00:19+00:00",
+      "last_refresh": "2026-05-06T21:01:08+00:00",
       "stale": false
     },
     {
@@ -27,7 +27,7 @@
       "market_value": 824.73,
       "unrealized_pnl": -6.6,
       "pct_change": -0.79,
-      "last_refresh": "2026-05-06T21:00:19+00:00",
+      "last_refresh": "2026-05-06T21:01:08+00:00",
       "stale": false
     }
   ],
@@ -41,11 +41,11 @@
       "multiplier": 1,
       "avg_cost": 81744.52,
       "cost_basis": 1332.44,
-      "current_price": 81434.9922,
-      "market_value": 1327.39,
-      "unrealized_pnl": -5.05,
-      "pct_change": -0.38,
-      "last_refresh": "2026-05-06T21:00:19+00:00",
+      "current_price": 81450.2188,
+      "market_value": 1327.64,
+      "unrealized_pnl": -4.8,
+      "pct_change": -0.36,
+      "last_refresh": "2026-05-06T21:01:08+00:00",
       "stale": false
     },
     {
@@ -56,11 +56,11 @@
       "multiplier": 1,
       "avg_cost": 89.05,
       "cost_basis": 444.36,
-      "current_price": 89.2,
-      "market_value": 445.11,
-      "unrealized_pnl": 0.75,
-      "pct_change": 0.17,
-      "last_refresh": "2026-05-06T21:00:19+00:00",
+      "current_price": 89.23,
+      "market_value": 445.26,
+      "unrealized_pnl": 0.9,
+      "pct_change": 0.2,
+      "last_refresh": "2026-05-06T21:01:08+00:00",
       "stale": false
     },
     {
@@ -71,13 +71,13 @@
       "multiplier": 1,
       "avg_cost": 10.05,
       "cost_basis": 444.91,
-      "current_price": 10.012,
-      "market_value": 443.23,
-      "unrealized_pnl": -1.68,
-      "pct_change": -0.38,
-      "last_refresh": "2026-05-06T21:00:19+00:00",
+      "current_price": 10.013,
+      "market_value": 443.28,
+      "unrealized_pnl": -1.63,
+      "pct_change": -0.37,
+      "last_refresh": "2026-05-06T21:01:08+00:00",
       "stale": false
     }
   ],
-  "last_updated": "2026-05-06T21:00:19+00:00"
+  "last_updated": "2026-05-06T21:01:08+00:00"
 }

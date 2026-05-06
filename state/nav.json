@@ -1,5 +1,5 @@
 {
-  "nav": 8872.05,
+  "nav": 8872.49,
   "cash": 5136.0,
   "peak": 10000.0,
   "dd_pct": -11.28,
@@ -17,7 +17,7 @@
     "worst_pnl": -773.03
   },
   "circuit_breaker": false,
-  "last_updated": "2026-05-06T21:00:19+00:00",
+  "last_updated": "2026-05-06T21:01:08+00:00",
   "reconcile": {
     "status": "ok"
   }
