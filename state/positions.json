@@ -8,12 +8,14 @@
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "current_price": 81622.09,
-      "unrealized_pnl": 0.0,
-      "pct_change": 0.0,
-      "last_refresh": "2026-05-06T16:05:40+00:00",
+      "current_price": 81703.3984,
+      "unrealized_pnl": -0.67,
+      "pct_change": -0.05,
+      "last_refresh": "2026-05-06T16:07:33+00:00",
       "avg_cost": 81744.785276,
-      "cost_basis": 1332.44
+      "cost_basis": 1332.44,
+      "market_value": 1331.77,
+      "stale": false
     },
     {
       "ticker": "SOL-USD",
@@ -21,12 +23,14 @@
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "current_price": 88.92,
-      "unrealized_pnl": 0.0,
-      "pct_change": 0.0,
-      "last_refresh": "2026-05-06T16:05:54+00:00",
+      "current_price": 88.95,
+      "unrealized_pnl": -0.52,
+      "pct_change": -0.12,
+      "last_refresh": "2026-05-06T16:07:33+00:00",
       "avg_cost": 89.054108,
-      "cost_basis": 444.38
+      "cost_basis": 444.38,
+      "market_value": 443.86,
+      "stale": false
     },
     {
       "ticker": "LINK-USD",
@@ -34,13 +38,15 @@
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "current_price": 10.034,
-      "unrealized_pnl": 0.0,
-      "pct_change": 0.0,
-      "last_refresh": "2026-05-06T16:05:57+00:00",
+      "current_price": 10.054,
+      "unrealized_pnl": 0.22,
+      "pct_change": 0.05,
+      "last_refresh": "2026-05-06T16:07:33+00:00",
       "avg_cost": 10.049017,
-      "cost_basis": 444.87
+      "cost_basis": 444.87,
+      "market_value": 445.09,
+      "stale": false
     }
   ],
-  "last_updated": "2026-05-06T16:05:57+00:00"
+  "last_updated": "2026-05-06T16:07:33+00:00"
 }
