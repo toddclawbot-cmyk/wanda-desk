@@ -4,33 +4,42 @@
   "crypto": [
     {
       "ticker": "BTC-USD",
-      "last": 82024.0078125,
-      "mv": 533.16,
+      "last": 82207.72,
+      "mv": 402.82,
       "entry_date": "2026-05-06",
       "entry_price": 81362.56,
-      "quantity": 0.0065,
-      "avg_cost": 81484.615385,
-      "side": "long"
+      "quantity": 0.0049,
+      "avg_cost": 81483.673469,
+      "side": "long",
+      "cost_basis": 399.27,
+      "current_price": 82207.72,
+      "last_refresh": "2026-05-06T10:33:41.311118+00:00"
     },
     {
       "ticker": "ETH-USD",
-      "last": 2410.169921875,
-      "mv": 36.15,
+      "last": 2410.92,
+      "mv": 27.12,
       "entry_date": "2026-05-06",
       "entry_price": 2364.79,
-      "quantity": 0.015,
-      "avg_cost": 2368.666667,
-      "side": "long"
+      "quantity": 0.01125,
+      "avg_cost": 2368.888889,
+      "side": "long",
+      "cost_basis": 26.65,
+      "current_price": 2410.92,
+      "last_refresh": "2026-05-06T10:33:41.311118+00:00"
     },
     {
       "ticker": "SOL-USD",
-      "last": 89.44000244140625,
-      "mv": 268.32,
+      "last": 89.53,
+      "mv": 201.44,
       "entry_date": "2026-05-06",
       "entry_price": 87.26,
-      "quantity": 3.0,
-      "avg_cost": 87.39,
-      "side": "long"
+      "quantity": 2.25,
+      "avg_cost": 87.391111,
+      "side": "long",
+      "cost_basis": 196.63,
+      "current_price": 89.53,
+      "last_refresh": "2026-05-06T10:33:41.311118+00:00"
     }
   ],
   "last_updated": "2026-05-06T10:16:45.037143+00:00"
