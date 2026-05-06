@@ -1,6 +1,37 @@
 {
   "equity": [],
   "options": [],
-  "crypto": [],
-  "last_updated": "2026-05-06T04:39:46.461426+00:00"
+  "crypto": [
+    {
+      "ticker": "BTC-USD",
+      "last": 82024.0078125,
+      "mv": 533.16,
+      "entry_date": "2026-05-06",
+      "entry_price": 81362.56,
+      "quantity": 0.0065,
+      "avg_cost": 81484.615385,
+      "side": "long"
+    },
+    {
+      "ticker": "ETH-USD",
+      "last": 2410.169921875,
+      "mv": 36.15,
+      "entry_date": "2026-05-06",
+      "entry_price": 2364.79,
+      "quantity": 0.015,
+      "avg_cost": 2368.666667,
+      "side": "long"
+    },
+    {
+      "ticker": "SOL-USD",
+      "last": 89.44000244140625,
+      "mv": 268.32,
+      "entry_date": "2026-05-06",
+      "entry_price": 87.26,
+      "quantity": 3.0,
+      "avg_cost": 87.39,
+      "side": "long"
+    }
+  ],
+  "last_updated": "2026-05-06T10:16:45.037143+00:00"
 }
