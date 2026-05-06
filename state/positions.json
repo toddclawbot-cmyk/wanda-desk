@@ -1,5 +1,21 @@
 {
-  "equity": [],
+  "equity": [
+    {
+      "ticker": "AMZN",
+      "quantity": 3.0,
+      "side": "long",
+      "asset_class": "equity",
+      "multiplier": 1,
+      "current_price": 276.97,
+      "avg_cost": 276.97,
+      "cost_basis": 830.91,
+      "market_value": 830.91,
+      "unrealized_pnl": 0.0,
+      "pct_change": 0.0,
+      "last_refresh": "2026-05-06T19:21:02.322239+00:00",
+      "stale": false
+    }
+  ],
   "options": [],
   "crypto": [
     {
@@ -8,13 +24,13 @@
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "current_price": 81447.1094,
+      "current_price": 81246.95,
       "avg_cost": 81744.785276,
       "cost_basis": 1332.44,
-      "market_value": 1327.59,
-      "unrealized_pnl": -4.85,
-      "pct_change": -0.36,
-      "last_refresh": "2026-05-06T18:31:59+00:00",
+      "market_value": 1324.33,
+      "unrealized_pnl": -8.11,
+      "pct_change": -0.61,
+      "last_refresh": "2026-05-06T19:21:30.642996+00:00",
       "stale": false
     },
     {
@@ -23,13 +39,13 @@
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "current_price": 88.79,
+      "current_price": 88.99,
       "avg_cost": 89.054108,
       "cost_basis": 444.38,
-      "market_value": 443.06,
-      "unrealized_pnl": -1.32,
-      "pct_change": -0.3,
-      "last_refresh": "2026-05-06T18:31:59+00:00",
+      "market_value": 444.06,
+      "unrealized_pnl": -0.32,
+      "pct_change": -0.07,
+      "last_refresh": "2026-05-06T19:21:30.643024+00:00",
       "stale": false
     },
     {
@@ -44,9 +60,9 @@
       "market_value": 440.88,
       "unrealized_pnl": -3.99,
       "pct_change": -0.9,
-      "last_refresh": "2026-05-06T18:31:59+00:00",
+      "last_refresh": "2026-05-06T19:21:30.643029+00:00",
       "stale": false
     }
   ],
-  "last_updated": "2026-05-06T18:31:59+00:00"
+  "last_updated": "2026-05-06T19:21:19.267776+00:00"
 }
