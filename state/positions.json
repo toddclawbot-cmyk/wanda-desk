@@ -8,12 +8,12 @@
       "mv": 402.82,
       "entry_date": "2026-05-06",
       "entry_price": 81362.56,
-      "quantity": 0.0049,
+      "quantity": 0.0044,
       "avg_cost": 81483.673469,
       "side": "long",
-      "cost_basis": 399.27,
+      "cost_basis": 358.53,
       "current_price": 82207.72,
-      "last_refresh": "2026-05-06T10:33:41.311118+00:00"
+      "last_refresh": "2026-05-06T10:35:57+00:00"
     },
     {
       "ticker": "ETH-USD",
@@ -42,5 +42,5 @@
       "last_refresh": "2026-05-06T10:33:41.311118+00:00"
     }
   ],
-  "last_updated": "2026-05-06T10:16:45.037143+00:00"
+  "last_updated": "2026-05-06T10:35:57+00:00"
 }
