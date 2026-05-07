@@ -4,23 +4,27 @@
       "ticker": "QQQ",
       "quantity": 1.0,
       "avg_cost": 695.94,
-      "current_price": 694.6300048828125,
-      "market_value": 694.63,
-      "unrealized_pnl": -1.31,
-      "pct_change": -0.19,
-      "last_refresh": "2026-05-07T18:31:00.000000+00:00",
-      "stale": false
+      "current_price": 693.49,
+      "market_value": 693.49,
+      "unrealized_pnl": -2.45,
+      "pct_change": -0.35,
+      "last_refresh": "2026-05-07T18:46:39+00:00",
+      "stale": false,
+      "cost_basis": 695.94,
+      "multiplier": 1
     },
     {
       "ticker": "AMZN",
       "quantity": 3.0,
       "avg_cost": 277.11,
-      "current_price": 272.67999267578125,
-      "market_value": 818.04,
-      "unrealized_pnl": -13.29,
-      "pct_change": -1.6,
-      "last_refresh": "2026-05-07T18:31:00.000000+00:00",
-      "stale": false
+      "current_price": 271.8419,
+      "market_value": 815.53,
+      "unrealized_pnl": -15.8,
+      "pct_change": -1.9,
+      "last_refresh": "2026-05-07T18:46:39+00:00",
+      "stale": false,
+      "cost_basis": 831.33,
+      "multiplier": 1
     }
   ],
   "crypto": [
@@ -28,35 +32,41 @@
       "ticker": "BTC-USD",
       "quantity": 0.0163,
       "avg_cost": 81744.52,
-      "current_price": 80126.5234375,
-      "market_value": 1306.06,
-      "unrealized_pnl": -26.38,
-      "pct_change": -1.98,
-      "last_refresh": "2026-05-07T18:31:00.000000+00:00",
-      "stale": false
+      "current_price": 80139.1484,
+      "market_value": 1306.27,
+      "unrealized_pnl": -26.17,
+      "pct_change": -1.96,
+      "last_refresh": "2026-05-07T18:46:39+00:00",
+      "stale": false,
+      "cost_basis": 1332.44,
+      "multiplier": 1
     },
     {
       "ticker": "SOL-USD",
       "quantity": 4.99,
       "avg_cost": 89.05,
-      "current_price": 88.87000274658203,
-      "market_value": 443.46,
-      "unrealized_pnl": -0.9,
-      "pct_change": -0.2,
-      "last_refresh": "2026-05-07T18:31:00.000000+00:00",
-      "stale": false
+      "current_price": 88.65,
+      "market_value": 442.36,
+      "unrealized_pnl": -2.0,
+      "pct_change": -0.45,
+      "last_refresh": "2026-05-07T18:46:39+00:00",
+      "stale": false,
+      "cost_basis": 444.36,
+      "multiplier": 1
     },
     {
       "ticker": "LINK-USD",
       "quantity": 44.27,
       "avg_cost": 10.05,
-      "current_price": 9.925999641418457,
-      "market_value": 439.42,
-      "unrealized_pnl": -5.49,
-      "pct_change": -1.23,
-      "last_refresh": "2026-05-07T18:31:00.000000+00:00",
-      "stale": false
+      "current_price": 9.912,
+      "market_value": 438.8,
+      "unrealized_pnl": -6.11,
+      "pct_change": -1.37,
+      "last_refresh": "2026-05-07T18:46:39+00:00",
+      "stale": false,
+      "cost_basis": 444.91,
+      "multiplier": 1
     }
   ],
-  "last_updated": "2026-05-07T18:31:00.000000+00:00"
+  "last_updated": "2026-05-07T18:46:39+00:00"
 }
