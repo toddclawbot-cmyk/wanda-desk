@@ -12,7 +12,7 @@
       "asset_class": "equity",
       "multiplier": 1,
       "cost_basis": 695.94,
-      "last_refresh": "2026-05-07T11:46:13+00:00",
+      "last_refresh": "2026-05-07T12:01:15+00:00",
       "stale": false
     },
     {
@@ -27,7 +27,7 @@
       "asset_class": "equity",
       "multiplier": 1,
       "cost_basis": 831.33,
-      "last_refresh": "2026-05-07T11:46:13+00:00",
+      "last_refresh": "2026-05-07T12:01:15+00:00",
       "stale": false
     }
   ],
@@ -36,47 +36,47 @@
       "ticker": "BTC-USD",
       "quantity": 0.0163,
       "avg_cost": 81744.52,
-      "current_price": 80967.0703,
-      "market_value": 1319.76,
-      "unrealized_pnl": -12.68,
-      "pct_change": -0.95,
+      "current_price": 80859.2188,
+      "market_value": 1318.01,
+      "unrealized_pnl": -14.43,
+      "pct_change": -1.08,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
       "cost_basis": 1332.44,
-      "last_refresh": "2026-05-07T11:46:13+00:00",
+      "last_refresh": "2026-05-07T12:01:15+00:00",
       "stale": false
     },
     {
       "ticker": "SOL-USD",
       "quantity": 4.99,
       "avg_cost": 89.05,
-      "current_price": 89.61,
-      "market_value": 447.15,
-      "unrealized_pnl": 2.79,
-      "pct_change": 0.63,
+      "current_price": 89.58,
+      "market_value": 447.0,
+      "unrealized_pnl": 2.64,
+      "pct_change": 0.6,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
       "cost_basis": 444.36,
-      "last_refresh": "2026-05-07T11:46:13+00:00",
+      "last_refresh": "2026-05-07T12:01:15+00:00",
       "stale": false
     },
     {
       "ticker": "LINK-USD",
       "quantity": 44.27,
       "avg_cost": 10.05,
-      "current_price": 10.038,
-      "market_value": 444.38,
-      "unrealized_pnl": -0.53,
-      "pct_change": -0.12,
+      "current_price": 10.025,
+      "market_value": 443.81,
+      "unrealized_pnl": -1.1,
+      "pct_change": -0.25,
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
       "cost_basis": 444.91,
-      "last_refresh": "2026-05-07T11:46:13+00:00",
+      "last_refresh": "2026-05-07T12:01:15+00:00",
       "stale": false
     }
   ],
-  "last_updated": "2026-05-07T11:46:13+00:00"
+  "last_updated": "2026-05-07T12:01:15+00:00"
 }
