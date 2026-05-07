@@ -4,40 +4,31 @@
       "ticker": "QQQ",
       "quantity": 1.0,
       "avg_cost": 695.94,
-      "current_price": 694.92,
-      "market_value": 694.92,
-      "unrealized_pnl": -1.02,
-      "pct_change": -0.15,
-      "last_refresh": "2026-05-07T20:01:30+00:00",
-      "stale": false,
       "cost_basis": 695.94,
-      "multiplier": 1
+      "current_price": 694.9400024414062,
+      "market_value": 694.9400024414062,
+      "unrealized_pnl": -0.9999975585938046,
+      "pct_change": -0.14369019722875598
     },
     {
       "ticker": "AMZN",
       "quantity": 3.0,
       "avg_cost": 277.11,
-      "current_price": 271.25,
-      "market_value": 813.75,
-      "unrealized_pnl": -17.58,
-      "pct_change": -2.11,
-      "last_refresh": "2026-05-07T20:01:30+00:00",
-      "stale": false,
       "cost_basis": 831.33,
-      "multiplier": 1
+      "current_price": 271.1700134277344,
+      "market_value": 813.5100402832031,
+      "unrealized_pnl": -17.819959716796916,
+      "pct_change": -2.1435482560231094
     },
     {
       "ticker": "NVDA",
       "quantity": 6.0,
-      "side": "long",
-      "asset_class": "equity",
-      "multiplier": 1,
-      "current_price": 211.5,
-      "unrealized_pnl": 0.0,
-      "pct_change": 0.0,
-      "last_refresh": "2026-05-07T20:08:39+00:00",
       "avg_cost": 211.605,
-      "cost_basis": 1269.63
+      "cost_basis": 1269.63,
+      "current_price": 211.5,
+      "market_value": 1269.0,
+      "unrealized_pnl": -0.6300000000001091,
+      "pct_change": -0.049620755653216976
     }
   ],
   "crypto": [
@@ -45,41 +36,32 @@
       "ticker": "BTC-USD",
       "quantity": 0.0163,
       "avg_cost": 81744.52,
-      "current_price": 80137.1875,
-      "market_value": 1306.24,
-      "unrealized_pnl": -26.2,
-      "pct_change": -1.97,
-      "last_refresh": "2026-05-07T20:01:30+00:00",
-      "stale": false,
       "cost_basis": 1332.44,
-      "multiplier": 1
+      "current_price": 80158.4609375,
+      "market_value": 1306.5829132812498,
+      "unrealized_pnl": -25.857086718750224,
+      "pct_change": -1.9402634727074108
     },
     {
       "ticker": "SOL-USD",
       "quantity": 4.99,
       "avg_cost": 89.05,
-      "current_price": 88.4,
-      "market_value": 441.12,
-      "unrealized_pnl": -3.24,
-      "pct_change": -0.73,
-      "last_refresh": "2026-05-07T20:01:30+00:00",
-      "stale": false,
       "cost_basis": 444.36,
-      "multiplier": 1
+      "current_price": 88.55999755859375,
+      "market_value": 441.9143878173828,
+      "unrealized_pnl": -2.4456121826171966,
+      "pct_change": -0.550255408653843
     },
     {
       "ticker": "LINK-USD",
       "quantity": 44.27,
       "avg_cost": 10.05,
-      "current_price": 9.889,
-      "market_value": 437.79,
-      "unrealized_pnl": -7.12,
-      "pct_change": -1.6,
-      "last_refresh": "2026-05-07T20:01:30+00:00",
-      "stale": false,
       "cost_basis": 444.91,
-      "multiplier": 1
+      "current_price": 9.920000076293945,
+      "market_value": 439.158403377533,
+      "unrealized_pnl": -5.751596622467048,
+      "pct_change": -1.2935315791647302
     }
   ],
-  "last_updated": "2026-05-07T20:08:39+00:00"
+  "last_updated": "2026-05-07T20:15:00+00:00"
 }
