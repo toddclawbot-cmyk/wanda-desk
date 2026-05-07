@@ -12,7 +12,7 @@
       "market_value": 695.77,
       "unrealized_pnl": -0.17,
       "pct_change": -0.024,
-      "last_refresh": "2026-05-07T05:00:58.461955+00:00",
+      "last_refresh": "2026-05-07T05:17:42.830354+00:00",
       "stale": false
     },
     {
@@ -27,7 +27,7 @@
       "market_value": 824.97,
       "unrealized_pnl": -6.36,
       "pct_change": -0.765,
-      "last_refresh": "2026-05-07T05:00:58.461955+00:00",
+      "last_refresh": "2026-05-07T05:17:42.830354+00:00",
       "stale": false
     }
   ],
@@ -45,7 +45,7 @@
       "market_value": 1320.78,
       "unrealized_pnl": -11.66,
       "pct_change": -0.984,
-      "last_refresh": "2026-05-07T05:00:58.461955+00:00",
+      "last_refresh": "2026-05-07T05:17:42.830354+00:00",
       "stale": false
     },
     {
@@ -60,7 +60,7 @@
       "market_value": 441.47,
       "unrealized_pnl": -2.89,
       "pct_change": -0.652,
-      "last_refresh": "2026-05-07T05:00:58.461955+00:00",
+      "last_refresh": "2026-05-07T05:17:42.830354+00:00",
       "stale": false
     },
     {
@@ -75,9 +75,9 @@
       "market_value": 441.02,
       "unrealized_pnl": -3.89,
       "pct_change": -0.874,
-      "last_refresh": "2026-05-07T05:00:58.461955+00:00",
+      "last_refresh": "2026-05-07T05:17:42.830354+00:00",
       "stale": false
     }
   ],
-  "last_updated": "2026-05-07T05:00:58.461955+00:00"
+  "last_updated": "2026-05-07T05:17:42.830354+00:00"
 }
