@@ -4,7 +4,10 @@
   "peak": 10002.71,
   "dd_pct": -27.92,
   "circuit_breaker": true,
-  "last_updated": "2026-05-07T23:30:00+00:00",
+  "last_updated": "2026-05-07T23:46:45.197698+00:00",
+  "reconcile": {
+    "status": "ok"
+  },
   "stats": {
     "closed": 34,
     "wins": 21,
@@ -16,8 +19,5 @@
     "best_pnl": 150.15,
     "worst_ticker": "SPY260522P718",
     "worst_pnl": -773.03
-  },
-  "reconcile": {
-    "status": "ok"
   }
 }
