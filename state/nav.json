@@ -1,11 +1,11 @@
 {
-  "nav": 8827.37,
+  "nav": 8825.46,
   "cash": 5136.0,
   "peak": 10000.0,
-  "dd_pct": -11.7263,
+  "dd_pct": -11.7454,
   "inception": "2026-04-27T00:00:00Z",
   "circuit_breaker": false,
-  "last_updated": "2026-05-07T17:01:37+00:00",
+  "last_updated": "2026-05-07T17:17:50.648740+00:00",
   "reconcile": {
     "status": "ok"
   },
@@ -15,7 +15,7 @@
     "losses": 12,
     "scratches": 0,
     "win_rate": 63.64,
-    "realized_pnl": -4870.74,
+    "realized_pnl": -4864.0,
     "best_ticker": "SPY260522C728",
     "best_pnl": 150.15,
     "worst_ticker": "SPY260522P718",
