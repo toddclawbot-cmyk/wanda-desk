@@ -7,12 +7,13 @@
       "side": "long",
       "asset_class": "equity",
       "multiplier": 1,
-      "current_price": 695.77,
-      "market_value": 695.77,
-      "unrealized_pnl": -0.17,
-      "pct_change": -0.02,
-      "last_refresh": "2026-05-07T13:02:22.433809+00:00",
-      "stale": false
+      "current_price": 695.59,
+      "market_value": 695.59,
+      "unrealized_pnl": -0.35,
+      "pct_change": -0.05,
+      "last_refresh": "2026-05-07T13:17:16+00:00",
+      "stale": false,
+      "cost_basis": 695.94
     },
     {
       "ticker": "AMZN",
@@ -21,12 +22,13 @@
       "side": "long",
       "asset_class": "equity",
       "multiplier": 1,
-      "current_price": 274.99,
-      "market_value": 824.97,
-      "unrealized_pnl": -6.36,
-      "pct_change": -0.77,
-      "last_refresh": "2026-05-07T13:02:22.433833+00:00",
-      "stale": false
+      "current_price": 274.91,
+      "market_value": 824.73,
+      "unrealized_pnl": -6.6,
+      "pct_change": -0.79,
+      "last_refresh": "2026-05-07T13:17:16+00:00",
+      "stale": false,
+      "cost_basis": 831.33
     }
   ],
   "crypto": [
@@ -37,12 +39,13 @@
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "current_price": 81095.71,
-      "market_value": 1321.86,
-      "unrealized_pnl": -10.58,
-      "pct_change": -0.79,
-      "last_refresh": "2026-05-07T13:02:22.433837+00:00",
-      "stale": false
+      "current_price": 80964.6172,
+      "market_value": 1319.72,
+      "unrealized_pnl": -12.72,
+      "pct_change": -0.95,
+      "last_refresh": "2026-05-07T13:17:16+00:00",
+      "stale": false,
+      "cost_basis": 1332.44
     },
     {
       "ticker": "SOL-USD",
@@ -51,12 +54,13 @@
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "current_price": 89.6,
-      "market_value": 447.1,
-      "unrealized_pnl": 2.74,
-      "pct_change": 0.62,
-      "last_refresh": "2026-05-07T13:02:22.433840+00:00",
-      "stale": false
+      "current_price": 89.3,
+      "market_value": 445.61,
+      "unrealized_pnl": 1.25,
+      "pct_change": 0.28,
+      "last_refresh": "2026-05-07T13:17:16+00:00",
+      "stale": false,
+      "cost_basis": 444.36
     },
     {
       "ticker": "LINK-USD",
@@ -65,13 +69,14 @@
       "side": "long",
       "asset_class": "crypto",
       "multiplier": 1,
-      "current_price": 10.06,
-      "market_value": 445.18,
-      "unrealized_pnl": 0.27,
-      "pct_change": 0.06,
-      "last_refresh": "2026-05-07T13:02:22.433844+00:00",
-      "stale": false
+      "current_price": 10.031,
+      "market_value": 444.07,
+      "unrealized_pnl": -0.84,
+      "pct_change": -0.19,
+      "last_refresh": "2026-05-07T13:17:16+00:00",
+      "stale": false,
+      "cost_basis": 444.91
     }
   ],
-  "last_updated": "2026-05-07T13:02:22.433847+00:00"
+  "last_updated": "2026-05-07T13:17:16+00:00"
 }
