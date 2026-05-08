@@ -17,16 +17,16 @@
     },
     {
       "ticker": "NVDA",
-      "quantity": 15.0,
+      "quantity": 8.0,
       "side": "long",
       "asset_class": "equity",
       "multiplier": 1,
       "current_price": 211.5,
       "avg_cost": 147.673,
-      "cost_basis": 2215.1,
+      "cost_basis": 1181.39,
       "unrealized_pnl": 957.4,
       "pct_change": 43.2215,
-      "last_refresh": "2026-05-08T01:21:54.594816+00:00",
+      "last_refresh": "2026-05-08T01:32:53+00:00",
       "market_value": 3172.5,
       "stale": false
     },
@@ -124,5 +124,5 @@
     }
   ],
   "options": [],
-  "last_updated": "2026-05-08T01:21:54.594816+00:00"
+  "last_updated": "2026-05-08T01:32:53+00:00"
 }
