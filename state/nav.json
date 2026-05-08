@@ -1,23 +1,23 @@
 {
-  "nav": 10705.55,
-  "cash": 2520.11,
-  "peak": 11821.83,
-  "dd_pct": -9.44,
-  "inception": "2026-05-04T14:46:09+00:00",
+  "nav": 10000.0,
+  "cash": 10000.0,
+  "peak": 10000.0,
+  "dd_pct": 0.0,
+  "inception": "2026-05-08T01:50:00+00:00",
   "stats": {
-    "closed": 35,
-    "wins": 22,
-    "losses": 12,
+    "closed": 1,
+    "wins": 0,
+    "losses": 0,
     "scratches": 0,
-    "win_rate": 64.71,
-    "realized_pnl": -85.89,
-    "best_ticker": "NVDA",
-    "best_pnl": 446.05,
-    "worst_ticker": "SPY260522P718",
-    "worst_pnl": -773.03
+    "win_rate": 0.0,
+    "realized_pnl": -791.44,
+    "best_ticker": null,
+    "best_pnl": null,
+    "worst_ticker": null,
+    "worst_pnl": null
   },
   "circuit_breaker": false,
-  "last_updated": "2026-05-08T01:34:33+00:00",
+  "last_updated": "2026-05-08T01:50:00+00:00",
   "reconcile": {
     "status": "ok"
   }
